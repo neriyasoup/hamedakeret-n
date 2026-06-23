@@ -1,0 +1,351 @@
+<!DOCTYPE html><html dir="rtl" lang="he" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>נריה מרק - רפואה סינית עתיקה</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#723424",
+                        "outline-variant": "#d9c1bc",
+                        "cream-bg": "#FDFBF7",
+                        "primary-fixed": "#ffdbd2",
+                        "surface": "#fbf9f4",
+                        "surface-tint": "#904b39",
+                        "primary-container": "#8e4a38",
+                        "inverse-primary": "#ffb4a1",
+                        "inverse-on-surface": "#f2f1ec",
+                        "ink-text": "#2D2926",
+                        "on-tertiary": "#ffffff",
+                        "background": "#fbf9f4",
+                        "surface-dim": "#dbdad5",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-secondary-container": "#716252",
+                        "surface-container-highest": "#e4e2dd",
+                        "surface-container-high": "#eae8e3",
+                        "on-primary": "#ffffff",
+                        "on-primary-container": "#ffcbbd",
+                        "surface-variant": "#e4e2dd",
+                        "secondary-container": "#f4dfcb",
+                        "surface-container-low": "#f5f3ee",
+                        "on-secondary-fixed": "#241a0e",
+                        "on-surface": "#1b1c19",
+                        "on-error": "#ffffff",
+                        "tertiary": "#43482b",
+                        "inverse-surface": "#30312e",
+                        "tertiary-fixed-dim": "#c5caa4",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#ffb4a1",
+                        "on-tertiary-fixed": "#191e06",
+                        "secondary-fixed-dim": "#d7c3b0",
+                        "secondary": "#6b5c4c",
+                        "tertiary-container": "#5b6041",
+                        "outline": "#86736e",
+                        "on-primary-fixed": "#3a0a01",
+                        "on-tertiary-fixed-variant": "#44492c",
+                        "soft-clay": "#B67B6B",
+                        "surface-container": "#f0eee9",
+                        "sage-muted": "#A3A98E",
+                        "on-tertiary-container": "#d5dab4",
+                        "on-surface-variant": "#53433f",
+                        "tertiary-fixed": "#e1e6bf",
+                        "primary": "#713323",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#524436",
+                        "on-background": "#1b1c19",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#fbf9f4",
+                        "secondary-fixed": "#f4dfcb"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "120px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "container-max": "1140px",
+                        "unit": "8px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Literata"],
+                        "headline-lg": ["Literata"],
+                        "headline-md": ["Literata"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "body-md": ["Hanken Grotesk"],
+                        "label-caps": ["Hanken Grotesk"],
+                        "headline-xl-mobile": ["Literata"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-caps": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "headline-xl-mobile": ["36px", {"lineHeight": "1.1", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #FDFBF7;
+            color: #2D2926;
+            font-family: 'Hanken Grotesk', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .organic-shadow {
+            box-shadow: 0 10px 40px -10px rgba(113, 51, 35, 0.08);
+        }
+        .nav-item::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #713323;
+            transition: width .3s;
+        }
+        .nav-item:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-cream-bg text-ink-text selection:bg-soft-clay selection:text-white overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="fixed top-0 z-50 w-full bg-cream-bg/90 backdrop-blur-md">
+<nav class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 w-full max-w-container-max mx-auto">
+
+<div class="hidden md:flex gap-8 items-center">
+<a class="nav-item font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1" href="#">בית</a>
+<a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">קצת עלי</a>
+<a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">תינוקות וילדים</a>
+<a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">שין-סן-דו</a>
+<a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">מתכונים</a>
+<a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">מתיחות</a>
+</div>
+<a class="hidden md:flex items-center gap-2 px-6 py-3 bg-primary text-white font-label-caps text-label-caps rounded-full hover:bg-soft-clay transition-all duration-300" href="tel:054-444-2103">
+<span class="material-symbols-outlined text-[18px]">phone</span>054-444-2103</a>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-[32px]">menu</span>
+</button>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative overflow-hidden min-h-[90vh] flex items-center bg-cream-bg">
+<div class="max-w-container-max mx-auto w-full px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-6 order-2 md:order-1 space-y-8 py-12 md:py-0">
+<div class="space-y-4">
+
+<h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary leading-tight">
+                            נריה מרק
+                        </h1>
+</div>
+<div class="space-y-6 max-w-lg">
+<div class="flex items-start gap-4">
+<span class="h-px w-8 bg-sage-muted mt-3"></span>
+<p class="font-body-lg text-body-lg text-secondary">
+                                מטפלת מוסמכת (Dip.Ac) ברפואה סינית עתיקה משנת 2014.
+                            </p>
+</div>
+<div class="flex items-start gap-4">
+<span class="h-px w-8 bg-sage-muted mt-3"></span>
+<p class="font-body-lg text-body-lg text-secondary">
+                                מתמחה בטיפול בילדים ובמבוגרים, תוך שימת דגש על איזון וזרימה טבעית.
+                            </p>
+</div>
+<div class="flex items-start gap-4">
+<span class="h-px w-8 bg-sage-muted mt-3"></span>
+<p class="font-body-lg text-body-lg text-secondary">
+                                מורה ליוגה ולתנועה טיפולית בשיטת "שין-סן-דו".
+                            </p>
+</div>
+</div>
+<div class="pt-6">
+<a class="inline-flex items-center gap-3 px-10 py-5 bg-primary text-white font-headline-md text-headline-md rounded-xl hover:bg-soft-clay organic-shadow transition-all group" href="https://wa.me/972544442103" target="_blank">
+                            קביעת תור ב-WhatsApp
+                            <span class="material-symbols-outlined transition-transform group-hover:translate-x-[-4px]">chat_bubble</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-6 order-1 md:order-2 relative">
+<div class="relative z-10 rounded-2xl overflow-hidden organic-shadow aspect-[0.67]">
+<img alt="Neria Mark providing traditional Chinese medicine treatment" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLtq19ZVlZ-eYszQ6j0JqIZ79wxeDx7TmoA7bJIZyjmYPOhvrfeP5f1zeVtkVDb8pOgQF446fg70h0WyMZu27hNaRhHgxzmWOcOLLDCAOemETXTnj2Iq--mY_qh_aDccDHp4rdkZe5OgY5kgomL78eeOZQoHbWt8VUVqxPY1OMyOyMqTGY16_ERonz_I4YcSSIxTgD_j_4SHK3qohuNNgL2T7A6wtkVDOjz8lzzJsE607htn9WK5RxjV6g">
+</div>
+<!-- Abstract Background Shape -->
+<div class="absolute -top-12 -right-12 w-64 h-64 bg-sage-muted/10 rounded-full blur-3xl -z-10"></div>
+<div class="absolute -bottom-12 -left-12 w-80 h-80 bg-soft-clay/10 rounded-full blur-3xl -z-10"></div>
+</div>
+</div>
+</section>
+<!-- Aesthetic Divider -->
+<div class="w-full flex justify-center py-12">
+<span class="material-symbols-outlined text-sage-muted text-[48px] opacity-40">spa</span>
+</div>
+<!-- Testimonial Section -->
+<section class="bg-surface py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="max-w-3xl mx-auto text-center space-y-12">
+
+<div class="space-y-8">
+<h2 class="font-headline-lg text-headline-lg text-primary">
+                            "הדלקת שליוותה אותי חודשים רבים נעלמה לגמרי"
+                        </h2>
+<blockquote class="font-body-lg text-body-lg leading-relaxed text-secondary italic">
+                            לפני כשנה התחילה להתפתח אצלי דלקת בכתפיים. לאחר חודשים ארוכים של טיפולים תרופתיים ופיזיותרפיים שונים שלא שיפרו את המצב, פניתי לדיקור אצל נריה. ראשית, התנהלותה מסבירת הפנים והנעימה הורידה משמעותית את כמות החרדה הכרוכה בציפייה לדקירות. הטיפול היה אפקטיבי ומיידי יותר משיכולתי לקוות - כעבור שלוש פגישות הדלקת נעלמה לגמרי. אני ממליצה בחום!
+                        </blockquote>
+<div class="pt-6 border-t border-outline-variant inline-block px-12">
+<p class="font-label-caps text-label-caps text-primary">שני, בת 24, תל אביב</p>
+<p class="font-body-md text-body-md text-on-surface-variant">דלקת בכתפיים</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Locations Section (Bento-style Cards) -->
+<section class="py-section-gap bg-cream-bg">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop space-y-16">
+<div class="text-center space-y-4">
+<h2 class="font-headline-lg text-headline-lg text-primary">הקליניקות</h2>
+<p class="font-body-md text-body-md text-secondary">מרחבי טיפול שקטים ומזמינים</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="group bg-surface-container p-10 rounded-2xl organic-shadow transition-all hover:-translate-y-2">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">תל אביב</h3>
+<p class="font-body-md text-body-md text-secondary mb-6">"בית מרפא", לבונטין 12, קומה 3</p>
+<a class="font-label-caps text-label-caps text-soft-clay flex items-center gap-2 group-hover:gap-4 transition-all" href="https://maps.google.com?q=Levontin+12+Tel+Aviv">
+                            מפה והוראות הגעה <span class="material-symbols-outlined text-[16px]">arrow_back</span>
+</a>
+</div>
+<!-- Card 2 -->
+<div class="group bg-surface-container p-10 rounded-2xl organic-shadow transition-all hover:-translate-y-2">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary">nature_people</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">נווה שלום</h3>
+<p class="font-body-md text-body-md text-secondary mb-6">واحة السلام - נווה שלום, סביבה כפרית ורגועה</p>
+<a class="font-label-caps text-label-caps text-soft-clay flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
+                            מפה והוראות הגעה <span class="material-symbols-outlined text-[16px]">arrow_back</span>
+</a>
+</div>
+<!-- Card 3 -->
+<div class="group bg-surface-container p-10 rounded-2xl organic-shadow transition-all hover:-translate-y-2">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary">home_health</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">כפר סבא</h3>
+<p class="font-body-md text-body-md text-secondary mb-6">"מרפאת עידנים", הצומת 9</p>
+<a class="font-label-caps text-label-caps text-soft-clay flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
+                            מפה והוראות הגעה <span class="material-symbols-outlined text-[16px]">arrow_back</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact/CTA Section -->
+<section class="py-section-gap relative overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="bg-primary py-24 px-8 rounded-3xl text-center text-white organic-shadow">
+<h2 class="font-headline-lg text-headline-lg mb-8">להתייעצות ולקביעת תור</h2>
+
+<div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+<a class="w-full md:w-auto px-12 py-5 bg-white text-primary font-headline-md text-headline-md rounded-xl hover:bg-cream-bg transition-colors flex items-center justify-center gap-4" href="tel:054-444-2103">
+<span class="material-symbols-outlined">call</span>
+                            054-444-2103
+                        </a>
+<a class="w-full md:w-auto px-12 py-5 border-2 border-white/30 text-white font-headline-md text-headline-md rounded-xl hover:bg-white/10 transition-colors flex items-center justify-center gap-4" href="https://wa.me/972544442103">
+<span class="material-symbols-outlined">chat</span>
+                            שלחי הודעה
+                        </a>
+</div>
+</div>
+</div>
+<!-- Background Decoration -->
+<div class="absolute top-0 right-0 w-full h-full pointer-events-none opacity-20">
+<div class="absolute -top-24 -right-24 w-[600px] h-[600px] bg-soft-clay rounded-full blur-3xl"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container pt-section-gap pb-20">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+<div class="col-span-1 md:col-span-2 space-y-6">
+<div class="font-headline-md text-headline-md font-semibold text-primary">
+                        נריה מרק - רפואה סינית וטיפול בתנועה</div>
+<p class="font-body-md text-body-md text-secondary max-w-sm">
+                        רפואה סינית עתיקה המותאמת לעולם המודרני. טיפול שורשי בבריאות הפיזית והנפשית בשיטה מסורתית.
+                    </p>
+</div>
+<div class="space-y-6">
+<h4 class="font-label-caps text-label-caps text-primary">ניווט מהיר</h4>
+<ul class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+<li class=""><a class="hover:text-primary transition-colors" href="#">קצת עלי</a></li>
+<li class=""><a class="hover:text-primary transition-colors" href="#">תינוקות וילדים</a></li>
+<li class=""><a class="hover:text-primary transition-colors" href="#">שין-סן-דו</a></li>
+<li class=""><a class="hover:text-primary transition-colors" href="#">מתכונים</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-label-caps text-label-caps text-primary">מידע</h4>
+<ul class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+<li class=""><a class="hover:text-primary transition-colors" href="#">מדיניות פרטיות</a></li>
+<li class=""><a class="hover:text-primary transition-colors" href="#">תנאי שימוש</a></li>
+<li class=""><a class="hover:text-primary transition-colors" href="#">צילומים: ענבר זק</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="font-label-caps text-label-caps text-on-surface-variant">
+                    © 2026 נריה מרק. כל הזכויות שמורות</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="https://wa.me/972544442103">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Persistent Floating WhatsApp -->
+<a class="fixed bottom-8 right-8 z-[100] w-16 h-16 bg-primary text-white rounded-xl flex items-center justify-center organic-shadow hover:scale-110 hover:bg-soft-clay transition-all duration-300" href="https://wa.me/972544442103" target="_blank">
+<span class="material-symbols-outlined text-[32px]">chat</span>
+</a>
+<script>
+        // Simple micro-interaction for smooth scroll or hover effects
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+
+
+
+</body></html>
