@@ -1,109 +1,77 @@
-<!DOCTYPE html><html dir="rtl" lang="he"><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>מתכונים בריאים - נריה מרק - רפואה סינית עתיקה</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<script id="tailwind-config">
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>מתכונים ותזונה מבריאה - נריה מרק - רפואה סינית עתיקה</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700&family=Frank+Ruhl+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
-                    "colors": {
-                        "on-primary-fixed-variant": "#723424",
-                        "outline-variant": "#d9c1bc",
-                        "cream-bg": "#FDFBF7",
-                        "primary-fixed": "#ffdbd2",
-                        "surface": "#fbf9f4",
-                        "surface-tint": "#904b39",
-                        "primary-container": "#8e4a38",
-                        "inverse-primary": "#ffb4a1",
-                        "inverse-on-surface": "#f2f1ec",
-                        "ink-text": "#2D2926",
-                        "on-tertiary": "#ffffff",
-                        "background": "#fbf9f4",
-                        "surface-dim": "#dbdad5",
-                        "on-secondary": "#ffffff",
-                        "error-container": "#ffdad6",
-                        "on-secondary-container": "#716252",
-                        "surface-container-highest": "#e4e2dd",
-                        "surface-container-high": "#eae8e3",
-                        "on-primary": "#ffffff",
-                        "on-primary-container": "#ffcbbd",
-                        "surface-variant": "#e4e2dd",
-                        "secondary-container": "#f4dfcb",
-                        "surface-container-low": "#f5f3ee",
-                        "on-secondary-fixed": "#241a0e",
-                        "on-surface": "#1b1c19",
-                        "on-error": "#ffffff",
-                        "tertiary": "#43482b",
-                        "inverse-surface": "#30312e",
-                        "tertiary-fixed-dim": "#c5caa4",
-                        "error": "#ba1a1a",
-                        "primary-fixed-dim": "#ffb4a1",
-                        "on-tertiary-fixed": "#191e06",
-                        "secondary-fixed-dim": "#d7c3b0",
-                        "secondary": "#6b5c4c",
-                        "tertiary-container": "#5b6041",
-                        "outline": "#86736e",
-                        "on-primary-fixed": "#3a0a01",
-                        "on-tertiary-fixed-variant": "#44492c",
-                        "soft-clay": "#B67B6B",
-                        "surface-container": "#f0eee9",
-                        "sage-muted": "#A3A98E",
-                        "on-tertiary-container": "#d5dab4",
-                        "on-surface-variant": "#53433f",
-                        "tertiary-fixed": "#e1e6bf",
+                    colors: {
                         "primary": "#713323",
-                        "on-error-container": "#93000a",
-                        "on-secondary-fixed-variant": "#524436",
-                        "on-background": "#1b1c19",
-                        "surface-container-lowest": "#ffffff",
-                        "surface-bright": "#fbf9f4",
-                        "secondary-fixed": "#f4dfcb"
+                        "soft-clay": "#B67B6B",
+                        "sage-muted": "#A3A98E",
+                        "cream-bg": "#FDFBF7",
+                        "surface": "#fbf9f4",
+                        "surface-container": "#f0eee9",
+                        "surface-container-high": "#eae8e3",
+                        "ink-text": "#2D2926",
+                        "secondary": "#5a4d3f",
+                        "on-surface-variant": "#53433f",
+                        "outline-variant": "#d9c1bc"
                     },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
+                    borderRadius: {
+                        "DEFAULT": "0.375rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "2xl": "1.25rem",
+                        "3xl": "1.75rem",
                         "full": "9999px"
                     },
-                    "spacing": {
-                        "section-gap": "120px",
+                    spacing: {
                         "gutter": "24px",
                         "margin-desktop": "64px",
                         "container-max": "1140px",
-                        "unit": "8px",
                         "margin-mobile": "20px"
                     },
-                    "fontFamily": {
-                        "headline-xl": ["Literata"],
-                        "headline-lg": ["Literata"],
-                        "headline-md": ["Literata"],
-                        "body-lg": ["Hanken Grotesk"],
-                        "body-md": ["Hanken Grotesk"],
-                        "label-caps": ["Hanken Grotesk"],
-                        "headline-xl-mobile": ["Literata"]
+                    fontFamily: {
+                        "headline-xl": ["'Frank Ruhl Libre'", "serif"],
+                        "headline-lg": ["'Frank Ruhl Libre'", "serif"],
+                        "headline-md": ["'Frank Ruhl Libre'", "serif"],
+                        "body-lg": ["'Assistant'", "sans-serif"],
+                        "body-md": ["'Assistant'", "sans-serif"],
+                        "label-caps": ["'Assistant'", "sans-serif"],
+                        "headline-xl-mobile": ["'Frank Ruhl Libre'", "serif"]
                     },
-                    "fontSize": {
-                        "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
-                        "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}],
-                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
-                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "label-caps": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600"}],
-                        "headline-xl-mobile": ["36px", {"lineHeight": "1.1", "fontWeight": "600"}]
+                    fontSize: {
+                        "headline-xl": ["52px", {"lineHeight": "1.15", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "headline-lg": ["36px", {"lineHeight": "1.25", "fontWeight": "600"}],
+                        "headline-md": ["26px", {"lineHeight": "1.35", "fontWeight": "600"}],
+                        "body-lg": ["20px", {"lineHeight": "1.65", "fontWeight": "400"}],
+                        "body-md": ["17px", {"lineHeight": "1.65", "fontWeight": "400"}],
+                        "label-caps": ["16px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-xl-mobile": ["38px", {"lineHeight": "1.2", "fontWeight": "700"}]
                     }
-                },
-            },
-        }
+                }
+            }
+        };
     </script>
-<style>
+    <style>
         body {
             background-color: #FDFBF7;
             color: #2D2926;
-            font-family: 'Hanken Grotesk', sans-serif;
+            font-family: 'Assistant', sans-serif;
+            font-size: 17px;
+        }
+        h1, h2, h3, .font-headline {
+            font-family: 'Frank Ruhl Libre', serif;
         }
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
@@ -122,246 +90,528 @@
         .nav-item:hover::after {
             width: 100%;
         }
+        .category-tab.active {
+            background-color: #713323;
+            color: #ffffff;
+            border-color: #713323;
+        }
     </style>
 </head>
 <body class="bg-cream-bg text-ink-text selection:bg-soft-clay selection:text-white overflow-x-hidden">
+
 <!-- TopNavBar -->
-<header class="fixed top-0 z-50 w-full bg-cream-bg/90 backdrop-blur-md">
-<nav class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 w-full max-w-container-max mx-auto">
-
-<div class="hidden md:flex gap-8 items-center">
-<a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="index.html">בית</a>
-<a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="about.html">קצת עלי</a>
-<a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="kids.html">תינוקות וילדים</a>
-<a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="shinsendo.html">שין-סן-דו</a>
-<a class="nav-item font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1" href="recipes.html">מתכונים</a>
-<a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="stretches.html">מתיחות</a>
-</div>
-<a class="hidden md:flex items-center gap-2 px-6 py-3 bg-primary text-white font-label-caps text-label-caps rounded-full hover:bg-soft-clay transition-all duration-300" href="tel:054-444-2103">
-<span class="material-symbols-outlined text-[18px]">phone</span>054-444-2103</a>
-<!-- Mobile Menu Toggle -->
-<button id="menu-btn" class="md:hidden text-primary">
-<span class="material-symbols-outlined text-[32px]">menu</span>
-</button>
-<!-- Mobile Menu Overlay -->
-<div id="mobile-menu" class="fixed inset-0 z-[100] hidden bg-cream-bg flex flex-col justify-center items-center gap-8">
-<button id="close-menu" class="absolute top-6 right-6 text-primary">
-<span class="material-symbols-outlined text-[32px]">close</span>
-</button>
-<a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="index.html">בית</a>
-<a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="about.html">קצת עלי</a>
-<a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="kids.html">תינוקות וילדים</a>
-<a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="shinsendo.html">שין-סן-דו</a>
-<a class="font-headline-md text-headline-md text-primary font-semibold" href="recipes.html">מתכונים</a>
-<a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="stretches.html">מתיחות</a>
-<a class="flex items-center gap-2 px-6 py-3 bg-primary text-white font-label-caps text-label-caps rounded-full mt-4" href="tel:054-444-2103">
-<span class="material-symbols-outlined text-[18px]">phone</span>054-444-2103
-</a>
-</div>
-</nav>
+<header class="fixed top-0 z-50 w-full bg-cream-bg/95 backdrop-blur-md border-b border-outline-variant/40">
+    <nav class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 w-full max-w-container-max mx-auto">
+        <div class="hidden md:flex gap-8 items-center">
+            <a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="index.html">בית</a>
+            <a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="about.html">קצת עלי</a>
+            <a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="kids.html">תינוקות וילדים</a>
+            <a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="shinsendo.html">שין-סן-דו</a>
+            <a class="nav-item font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1" href="recipes.html">מתכונים</a>
+            <a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="stretches.html">מתיחות</a>
+        </div>
+        <a class="hidden md:flex items-center gap-2 px-6 py-2.5 bg-primary text-white font-label-caps text-label-caps rounded-full hover:bg-soft-clay transition-all duration-300" href="tel:054-444-2103">
+            <span class="material-symbols-outlined text-[18px]">phone</span>054-444-2103
+        </a>
+        <button id="menu-btn" class="md:hidden text-primary p-2">
+            <span class="material-symbols-outlined text-[32px]">menu</span>
+        </button>
+        <div id="mobile-menu" class="fixed inset-0 z-[100] hidden bg-cream-bg flex flex-col justify-center items-center gap-7">
+            <button id="close-menu" class="absolute top-6 right-6 text-primary p-2">
+                <span class="material-symbols-outlined text-[32px]">close</span>
+            </button>
+            <a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="index.html">בית</a>
+            <a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="about.html">קצת עלי</a>
+            <a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="kids.html">תינוקות וילדים</a>
+            <a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="shinsendo.html">שין-סן-דו</a>
+            <a class="font-headline-md text-headline-md text-primary font-semibold" href="recipes.html">מתכונים</a>
+            <a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="stretches.html">מתיחות</a>
+            <a class="flex items-center gap-2 px-6 py-3 bg-primary text-white font-label-caps text-label-caps rounded-full mt-2" href="tel:054-444-2103">
+                <span class="material-symbols-outlined text-[18px]">phone</span>054-444-2103
+            </a>
+        </div>
+    </nav>
 </header>
+
 <main class="pt-20">
+    <!-- Page Header (Tightened) -->
+    <section class="bg-surface py-10 md:py-14 border-b border-outline-variant/30">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center space-y-2">
+            <h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary">מתכונים ותזונה מבריאה</h1>
+            <p class="font-body-lg text-body-lg text-secondary max-w-xl mx-auto">מתכונים קלים, בריאים ומאוזנים לפי עקרונות הרפואה הסינית</p>
+        </div>
+    </section>
 
-<!-- Page Header -->
-<section class="bg-surface py-16 md:py-24">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center space-y-4">
-<h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary">מתכונים ותזונה מבריאה</h1>
-<p class="font-body-lg text-body-lg text-secondary max-w-xl mx-auto">מתכונים קלים, בריאים ומאוזנים לפי עקרונות הרפואה הסינית</p>
-</div>
-</section>
+    <!-- Content Section -->
+    <section class="py-10 md:py-14 bg-cream-bg">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop space-y-8">
+            <div class="max-w-2xl mx-auto text-center space-y-2">
+                <h2 class="font-headline-lg text-headline-lg text-primary">המטבח כבית מרקחת טבעי</h2>
+                <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                    ברפואה הסינית, לתזונה תפקיד מרכזי בחיזוק האנרגיה (צ'י), הקלה על מערכת העיכול, הרגעת הנפש ותמיכה במערכת החיסונית.
+                </p>
+                <p class="font-body-md text-[15px] text-soft-clay font-medium pt-1">
+                    לחצו על כל מתכון לצפייה בהוראות ההכנה המלאות וסגולותיו הרפואיות
+                </p>
+            </div>
 
-<!-- Content Section -->
-<section class="py-section-gap bg-cream-bg">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop space-y-12">
+            <!-- Categories Tabs -->
+            <div class="flex flex-wrap justify-center gap-2 md:gap-3 py-2">
+                <button class="category-tab active px-5 py-2 rounded-full border border-outline-variant text-[15px] font-semibold transition-all hover:border-primary" data-category="all">
+                    הכל (6)
+                </button>
+                <button class="category-tab px-5 py-2 rounded-full border border-outline-variant bg-surface text-ink-text text-[15px] font-semibold transition-all hover:border-primary" data-category="meals">
+                    ארוחות ועיקריות
+                </button>
+                <button class="category-tab px-5 py-2 rounded-full border border-outline-variant bg-surface text-ink-text text-[15px] font-semibold transition-all hover:border-primary" data-category="breakfast">
+                    בוקר ומאפים
+                </button>
+                <button class="category-tab px-5 py-2 rounded-full border border-outline-variant bg-surface text-ink-text text-[15px] font-semibold transition-all hover:border-primary" data-category="cleansing">
+                    ניקוי וחיזוק
+                </button>
+                <button class="category-tab px-5 py-2 rounded-full border border-outline-variant bg-surface text-ink-text text-[15px] font-semibold transition-all hover:border-primary" data-category="guides">
+                    מדריכים וטיפים
+                </button>
+            </div>
 
-<div class="max-w-3xl mx-auto text-center space-y-4">
-<h2 class="font-headline-lg text-headline-lg text-primary">האוכל ככלי לריפוי</h2>
-<p class="font-body-md text-body-md text-secondary leading-relaxed">
-ברפואה הסינית, המטבח הוא בית המרקחת הראשון שלנו. תזונה נכונה מסייעת בחיזוק האנרגיה (צ'י), שיפור העיכול, הרגעת הנפש וחיזוק המערכת החיסונית.
-</p>
-</div>
+            <!-- Recipes Grid (Clickable Cards) -->
+            <div id="recipes-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                
+                <!-- Recipe 1: קיצ'רי -->
+                <div class="recipe-card group bg-surface p-7 rounded-2xl organic-shadow space-y-4 flex flex-col justify-between cursor-pointer border border-transparent hover:border-primary/40 hover:-translate-y-1 transition-all" data-category="meals" data-id="1">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="inline-block px-3 py-1 bg-sage-muted/15 text-primary rounded-full font-label-caps text-[13px] font-medium">איורוודה ורפואה סינית</span>
+                            <span class="material-symbols-outlined text-soft-clay group-hover:translate-x-[-2px] transition-transform text-[20px]">open_in_new</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-primary mb-2">קיצ'רי (Kitchari)</h3>
+                        <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                            מאכל הדגל של ניקוי הרעלים והאיזון. שילוב מושלם של אורז בסמטי ומש צהוב עם תבלינים מחממים. קל במיוחד לעיכול ומחזק את הטחול והקיבה.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-outline-variant/60 flex items-center justify-between">
+                        <span class="font-body-md text-[14px] text-secondary">זמן הכנה: 35 דקות</span>
+                        <span class="font-label-caps text-soft-clay font-bold text-[14px] group-hover:underline">קרא מתכון מלא ←</span>
+                    </div>
+                </div>
 
-<!-- Recipes Grid -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-<!-- Recipe 1 -->
-<div class="bg-surface p-8 rounded-2xl organic-shadow space-y-4 flex flex-col justify-between">
-<div>
-<span class="inline-block px-3 py-1 bg-sage-muted/10 text-tertiary rounded-full font-label-caps text-[12px] mb-4">איורוודה ורפואה סינית</span>
-<h3 class="font-headline-md text-headline-md text-primary mb-2">קיצ'רי (Kitchari)</h3>
-<p class="font-body-md text-body-md text-secondary leading-relaxed">
-מאכל הדגל של ניקוי הרעלים והאיזון. שילוב מושלם של אורז בסמטי ומש (Mung Dal) המבושלים עם תבלינים מחממים. הוא קל ביותר לעיכול ומזין מאוד.
-</p>
-</div>
-<div class="pt-4 border-t border-outline-variant space-y-2">
-<p class="font-body-md text-body-md text-primary font-semibold">רכיבים עיקריים:</p>
-<p class="font-body-md text-body-md text-secondary">אורז בסמטי, שעועית מש צהובה קלופה, ג'ינג'ר, כורכום, כמון, כוסברה יבשה, גהי (חמאה מזוקקת) או שמן קוקוס.</p>
-</div>
-</div>
+                <!-- Recipe 2: קרפ כוסמת ירוקה -->
+                <div class="recipe-card group bg-surface p-7 rounded-2xl organic-shadow space-y-4 flex flex-col justify-between cursor-pointer border border-transparent hover:border-primary/40 hover:-translate-y-1 transition-all" data-category="breakfast" data-id="2">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="inline-block px-3 py-1 bg-sage-muted/15 text-primary rounded-full font-label-caps text-[13px] font-medium">ללא גלוטן | מזין</span>
+                            <span class="material-symbols-outlined text-soft-clay group-hover:translate-x-[-2px] transition-transform text-[20px]">open_in_new</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-primary mb-2">קרפ כוסמת ירוקה</h3>
+                        <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                            קרפ פריך, עשיר בחלבון צמחי ומינרלים, עשוי מכוסמת ירוקה בלבד שהושרתה ונטחנה. תחליף נפלא ומהיר ללחם, קל לעיכול ונטול שמרים.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-outline-variant/60 flex items-center justify-between">
+                        <span class="font-body-md text-[14px] text-secondary">זמן הכנה: 15 דקות</span>
+                        <span class="font-label-caps text-soft-clay font-bold text-[14px] group-hover:underline">קרא מתכון מלא ←</span>
+                    </div>
+                </div>
 
-<!-- Recipe 2 -->
-<div class="bg-surface p-8 rounded-2xl organic-shadow space-y-4 flex flex-col justify-between">
-<div>
-<span class="inline-block px-3 py-1 bg-sage-muted/10 text-tertiary rounded-full font-label-caps text-[12px] mb-4">ללא גלוטן | מזין</span>
-<h3 class="font-headline-md text-headline-md text-primary mb-2">קרפ כוסמת ירוקה</h3>
-<p class="font-body-md text-body-md text-secondary leading-relaxed">
-קרפ פריך, עשיר בחלבון ומינרלים, עשוי מכוסמת ירוקה שהושרתה ונטחנה. תחליף נפלא, בריא ומהיר ללחם ללא שמרי גלוטן.
-</p>
-</div>
-<div class="pt-4 border-t border-outline-variant space-y-2">
-<p class="font-body-md text-body-md text-primary font-semibold">רכיבים עיקריים:</p>
-<p class="font-body-md text-body-md text-secondary">כוסמת ירוקה (מושרה ללילה), מים, קורט מלח, ותוספות לבחירה (תרד, זרעי צ'יה, שום שמיר).</p>
-</div>
-</div>
+                <!-- Recipe 3: דוסה -->
+                <div class="recipe-card group bg-surface p-7 rounded-2xl organic-shadow space-y-4 flex flex-col justify-between cursor-pointer border border-transparent hover:border-primary/40 hover:-translate-y-1 transition-all" data-category="meals" data-id="3">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="inline-block px-3 py-1 bg-sage-muted/15 text-primary rounded-full font-label-caps text-[13px] font-medium">פרוביוטיקה טבעית</span>
+                            <span class="material-symbols-outlined text-soft-clay group-hover:translate-x-[-2px] transition-transform text-[20px]">open_in_new</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-primary mb-2">דוסה (Dosa)</h3>
+                        <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                            קרפ דרום-הודי מסורתי המבוסס על התססה טבעית של אורז ועדשים שחורות. ההתססה מייצרת פרוביוטיקה טבעית המעולה לחיידקי המעיים ומקילה על העיכול.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-outline-variant/60 flex items-center justify-between">
+                        <span class="font-body-md text-[14px] text-secondary">התססה: לילה | הכנה: 15 דק'</span>
+                        <span class="font-label-caps text-soft-clay font-bold text-[14px] group-hover:underline">קרא מתכון מלא ←</span>
+                    </div>
+                </div>
 
-<!-- Recipe 3 -->
-<div class="bg-surface p-8 rounded-2xl organic-shadow space-y-4 flex flex-col justify-between">
-<div>
-<span class="inline-block px-3 py-1 bg-sage-muted/10 text-tertiary rounded-full font-label-caps text-[12px] mb-4">פרוביוטיקה טבעית</span>
-<h3 class="font-headline-md text-headline-md text-primary mb-2">דוסה (Dosa)</h3>
-<p class="font-body-md text-body-md text-secondary leading-relaxed">
-קרפ דרום-הודי מסורתי המבוסס על התססה של אורז ועדשים. התהליך מייצר פרוביוטיקה טבעית המעולה למיקרוביום של המעיים ומקילה על העיכול.
-</p>
-</div>
-<div class="pt-4 border-t border-outline-variant space-y-2">
-<p class="font-body-md text-body-md text-primary font-semibold">רכיבים עיקריים:</p>
-<p class="font-body-md text-body-md text-secondary">אורז, עדשים שחורות קלופות (Urad Dal), מים (מושרים, נטחנים ועוברים התססה של כ-12 שעות).</p>
-</div>
-</div>
+                <!-- Recipe 4: דייסת כוח חמה -->
+                <div class="recipe-card group bg-surface p-7 rounded-2xl organic-shadow space-y-4 flex flex-col justify-between cursor-pointer border border-transparent hover:border-primary/40 hover:-translate-y-1 transition-all" data-category="breakfast" data-id="4">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="inline-block px-3 py-1 bg-sage-muted/15 text-primary rounded-full font-label-caps text-[13px] font-medium">בוקר מחמם ומחזק</span>
+                            <span class="material-symbols-outlined text-soft-clay group-hover:translate-x-[-2px] transition-transform text-[20px]">open_in_new</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-primary mb-2">דייסת כוח חמה</h3>
+                        <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                            ארוחת בוקר מושלמת לחורף ולעונות מעבר. החום והתבלינים מחממים את אלמנט האדמה בגוף (טחול וקיבה) ומעניקים שובע יציב ואנרגיה מתמשכת לכל היום.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-outline-variant/60 flex items-center justify-between">
+                        <span class="font-body-md text-[14px] text-secondary">זמן הכנה: 10 דקות</span>
+                        <span class="font-label-caps text-soft-clay font-bold text-[14px] group-hover:underline">קרא מתכון מלא ←</span>
+                    </div>
+                </div>
 
-<!-- Recipe 4 -->
-<div class="bg-surface p-8 rounded-2xl organic-shadow space-y-4 flex flex-col justify-between">
-<div>
-<span class="inline-block px-3 py-1 bg-sage-muted/10 text-tertiary rounded-full font-label-caps text-[12px] mb-4">בוקר מחמם ומחזק</span>
-<h3 class="font-headline-md text-headline-md text-primary mb-2">דייסת כוח חמה</h3>
-<p class="font-body-md text-body-md text-secondary leading-relaxed">
-ארוחת בוקר מושלמת במיוחד לחורף ולעונות מעבר. הדייסה החמה מחממת את הטחול והקיבה ומעניקה אנרגיה יציבה וארוכת טווח לאורך כל היום.
-</p>
-</div>
-<div class="pt-4 border-t border-outline-variant space-y-2">
-<p class="font-body-md text-body-md text-primary font-semibold">רכיבים עיקריים:</p>
-<p class="font-body-md text-body-md text-secondary">פתיתי שיבולת שועל או דוחן, חלב שקדים/אורז, קינמון, הל, זרעי דלעת, חמוציות ללא סוכר, תמר ומעט סילאן טבעי.</p>
-</div>
-</div>
+                <!-- Recipe 5: פסטו כוסברה בריא -->
+                <div class="recipe-card group bg-surface p-7 rounded-2xl organic-shadow space-y-4 flex flex-col justify-between cursor-pointer border border-transparent hover:border-primary/40 hover:-translate-y-1 transition-all" data-category="cleansing" data-id="5">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="inline-block px-3 py-1 bg-sage-muted/15 text-primary rounded-full font-label-caps text-[13px] font-medium">ניקוי רעלים מהיר</span>
+                            <span class="material-symbols-outlined text-soft-clay group-hover:translate-x-[-2px] transition-transform text-[20px]">open_in_new</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-primary mb-2">פסטו כוסברה בריא</h3>
+                        <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                            כוסברה היא אחד הצמחים היעילים ביותר לפינוי מתכות כבדות ורעלים מהגוף ולתמיכה בתפקודי הכבד. ממרח עשיר, ירוק וטעים שמשדרג כל מנה.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-outline-variant/60 flex items-center justify-between">
+                        <span class="font-body-md text-[14px] text-secondary">זמן הכנה: 5 דקות</span>
+                        <span class="font-label-caps text-soft-clay font-bold text-[14px] group-hover:underline">קרא מתכון מלא ←</span>
+                    </div>
+                </div>
 
-<!-- Recipe 5 -->
-<div class="bg-surface p-8 rounded-2xl organic-shadow space-y-4 flex flex-col justify-between">
-<div>
-<span class="inline-block px-3 py-1 bg-sage-muted/10 text-tertiary rounded-full font-label-caps text-[12px] mb-4">ניקוי רעלים מהיר</span>
-<h3 class="font-headline-md text-headline-md text-primary mb-2">פסטו כוסברה בריא</h3>
-<p class="font-body-md text-body-md text-secondary leading-relaxed">
-כוסברה היא אחד מצמחי המאכל החזקים ביותר לניקוי ופינוי מתכות כבדות ורעלים מהגוף. פסטו עשיר וטעים שמשדרג כל מנה.
-</p>
-</div>
-<div class="pt-4 border-t border-outline-variant space-y-2">
-<p class="font-body-md text-body-md text-primary font-semibold">רכיבים עיקריים:</p>
-<p class="font-body-md text-body-md text-secondary">צרור כוסברה טרייה, שום, זרעי דלעת או מלך, שמן זית איכותי בכבישה קרה, מיץ לימון ומלח ים אטלנטי.</p>
-</div>
-</div>
+                <!-- Recipe 6: מדריך לבישול קטניות -->
+                <div class="recipe-card group bg-surface p-7 rounded-2xl organic-shadow space-y-4 flex flex-col justify-between cursor-pointer border border-transparent hover:border-primary/40 hover:-translate-y-1 transition-all" data-category="guides" data-id="6">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="inline-block px-3 py-1 bg-sage-muted/15 text-primary rounded-full font-label-caps text-[13px] font-medium">טיפים לעיכול קל</span>
+                            <span class="material-symbols-outlined text-soft-clay group-hover:translate-x-[-2px] transition-transform text-[20px]">open_in_new</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-primary mb-2">מדריך לבישול קטניות</h3>
+                        <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                            איך לבשל עדשים, חומוס ושעועית כך שלא יגרמו לתחושת גזים או כבדות? שיטות ההשריה, בישול עם אצות קומבו ותבלינים סופחי ליחה וגזים.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-outline-variant/60 flex items-center justify-between">
+                        <span class="font-body-md text-[14px] text-secondary">מדריך מעשי</span>
+                        <span class="font-label-caps text-soft-clay font-bold text-[14px] group-hover:underline">קרא מתכון מלא ←</span>
+                    </div>
+                </div>
 
-<!-- Recipe 6 -->
-<div class="bg-surface p-8 rounded-2xl organic-shadow space-y-4 flex flex-col justify-between">
-<div>
-<span class="inline-block px-3 py-1 bg-sage-muted/10 text-tertiary rounded-full font-label-caps text-[12px] mb-4">טיפים לעיכול קל</span>
-<h3 class="font-headline-md text-headline-md text-primary mb-2">מדריך לבישול קטניות</h3>
-<p class="font-body-md text-body-md text-secondary leading-relaxed">
-איך לבשל קטניות (עדשים, חומוס, שעועית) כך שלא יגרמו לגזים או כבדות בעיכול? השיטות המסורתיות להקלה משמעותית על העיכול של קטניות.
-</p>
-</div>
-<div class="pt-4 border-t border-outline-variant space-y-2">
-<p class="font-body-md text-body-md text-primary font-semibold">כללים מרכזיים:</p>
-<p class="font-body-md text-body-md text-secondary">השרה ארוכה במיוחד (12-24 שעות), החלפת מים מספר פעמים, בישול עם אצות קומבו, והוספת תבלינים סופחי גזים (כמון, הל, שומר).</p>
-</div>
-</div>
-</div>
+            </div>
+        </div>
+    </section>
 
-</div>
-</section>
+    <!-- Modal for Recipe Details -->
+    <div id="recipe-modal" class="fixed inset-0 z-[120] hidden bg-black/50 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-cream-bg rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto organic-shadow p-6 md:p-8 relative">
+            <button id="close-modal-btn" class="absolute top-5 left-5 text-primary hover:text-soft-clay p-2">
+                <span class="material-symbols-outlined text-[28px]">close</span>
+            </button>
+            <div id="modal-content" class="space-y-6 text-right">
+                <!-- Dynamically injected -->
+            </div>
+        </div>
+    </div>
 
-<!-- Call to action -->
-<section class="py-16 bg-surface">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center space-y-6">
-<h2 class="font-headline-lg text-headline-lg text-primary">מעוניינים להתייעץ או לקבוע תור?</h2>
-<div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-<a class="w-full sm:w-auto px-8 py-4 bg-primary text-white font-label-caps text-label-caps rounded-xl hover:bg-soft-clay transition-all flex items-center justify-center gap-3" href="https://wa.me/972544442103" target="_blank">
-<span class="material-symbols-outlined">chat</span>שלחו הודעה ב-WhatsApp</a>
-<a class="w-full sm:w-auto px-8 py-4 border-2 border-primary text-primary font-label-caps text-label-caps rounded-xl hover:bg-primary/5 transition-all flex items-center justify-center gap-3" href="tel:054-444-2103">
-<span class="material-symbols-outlined">phone</span>054-444-2103</a>
-</div>
-</div>
-</section>
-
+    <!-- Call to action -->
+    <section class="py-12 md:py-14 bg-surface border-t border-outline-variant/30">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center space-y-4">
+            <h2 class="font-headline-lg text-headline-lg text-primary">מעוניינים בהתאמת תזונה אישית?</h2>
+            <p class="font-body-md text-body-md text-secondary max-w-md mx-auto">במהלך הטיפול אנו מתאימים תפריט והנחיות מדויקות למבנה הגוף ולצרכים הבריאותיים שלך</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-2">
+                <a class="w-full sm:w-auto px-8 py-3.5 bg-primary text-white font-label-caps text-label-caps rounded-xl hover:bg-soft-clay transition-all flex items-center justify-center gap-2" href="https://wa.me/972544442103" target="_blank">
+                    <span class="material-symbols-outlined text-[20px]">chat</span>שלח הודעה ב-WhatsApp
+                </a>
+                <a class="w-full sm:w-auto px-8 py-3.5 border-2 border-primary text-primary font-label-caps text-label-caps rounded-xl hover:bg-primary/5 transition-all flex items-center justify-center gap-2" href="tel:054-444-2103">
+                    <span class="material-symbols-outlined text-[20px]">phone</span>054-444-2103
+                </a>
+            </div>
+        </div>
+    </section>
 </main>
-<!-- Footer -->
-<footer class="bg-surface-container pt-section-gap pb-20">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
-<div class="col-span-1 md:col-span-2 space-y-6">
-<div class="font-headline-md text-headline-md font-semibold text-primary">
-                        נריה מרק - רפואה סינית וטיפול בתנועה</div>
-<p class="font-body-md text-body-md text-secondary max-w-sm">
-                        רפואה סינית עתיקה המותאמת לעולם המודרני. טיפול שורשי בבריאות הפיזית והנפשית בשיטה מסורתית.
-                    </p>
-</div>
-<div class="space-y-6">
-<h4 class="font-label-caps text-label-caps text-primary">ניווט מהיר</h4>
-<ul class="space-y-4 font-body-md text-body-md text-on-surface-variant">
-<li class=""><a class="hover:text-primary transition-colors" href="about.html">קצת עלי</a></li>
-<li class=""><a class="hover:text-primary transition-colors" href="kids.html">תינוקות וילדים</a></li>
-<li class=""><a class="hover:text-primary transition-colors" href="shinsendo.html">שין-סן-דו</a></li>
-<li class=""><a class="hover:text-primary transition-colors" href="recipes.html">מתכונים</a></li>
-<li class=""><a class="hover:text-primary transition-colors" href="stretches.html">מתיחות</a></li>
-</ul>
-</div>
-<div class="space-y-6">
-<h4 class="font-label-caps text-label-caps text-primary">מידע</h4>
-<ul class="space-y-4 font-body-md text-body-md text-on-surface-variant">
-<li class=""><a class="hover:text-primary transition-colors" href="#">מדיניות פרטיות</a></li>
-<li class=""><a class="hover:text-primary transition-colors" href="#">תנאי שימוש</a></li>
-<li class=""><a class="hover:text-primary transition-colors" href="#">צילומים: ענבר זק</a></li>
-</ul>
-</div>
-</div>
-<div class="pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-6">
-<p class="font-label-caps text-label-caps text-on-surface-variant">
-                    © 2026 נריה מרק. כל הזכויות שמורות</p>
-<div class="flex gap-4">
-<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
-<span class="material-symbols-outlined text-[20px]">share</span>
-</a>
-<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="https://wa.me/972544442103">
-<span class="material-symbols-outlined text-[20px]">chat</span>
-</a>
-</div>
-</div>
-</div>
-</footer>
-<!-- Persistent Floating WhatsApp -->
-<a class="fixed bottom-8 right-8 z-[100] w-16 h-16 bg-primary text-white rounded-xl flex items-center justify-center organic-shadow hover:scale-110 hover:bg-soft-clay transition-all duration-300" href="https://wa.me/972544442103" target="_blank">
-<span class="material-symbols-outlined text-[32px]">chat</span>
-</a>
-<script>
-        // Mobile Menu Toggle
-        const menuBtn = document.getElementById('menu-btn');
-        const closeBtn = document.getElementById('close-menu');
-        const mobileMenu = document.getElementById('mobile-menu');
 
-        if (menuBtn && mobileMenu) {
-            menuBtn.addEventListener('click', () => {
-                menuBtn.blur();
-                mobileMenu.classList.remove('hidden');
-            });
+<!-- Footer -->
+<footer class="bg-surface-container py-12 md:py-16">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            <div class="col-span-1 md:col-span-2 space-y-4">
+                <div class="font-headline-md text-headline-md font-bold text-primary">
+                    נריה מרק - רפואה סינית וטיפול בתנועה
+                </div>
+                <p class="font-body-md text-body-md text-secondary max-w-md">
+                    רפואה סינית עתיקה המותאמת לעולם המודרני. טיפול שורשי בבריאות הפיזית והנפשית בשיטה מסורתית.
+                </p>
+                <p class="font-body-md text-[14px] text-on-surface-variant/80 pt-2 border-t border-outline-variant/50 max-w-md">
+                    * המידע והתכנים באתר נועדו להעשרה ואינם מהווים תחליף לייעוץ רפואי, אבחנה או טיפול רפואי מקצועי.
+                </p>
+            </div>
+            <div class="space-y-4">
+                <h4 class="font-label-caps text-label-caps text-primary font-bold">ניווט מהיר</h4>
+                <ul class="space-y-3 font-body-md text-body-md text-on-surface-variant">
+                    <li><a class="hover:text-primary transition-colors" href="index.html">בית</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="about.html">קצת עלי</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="kids.html">תינוקות וילדים</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="shinsendo.html">שין-סן-דו</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="recipes.html">מתכונים</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="stretches.html">מתיחות</a></li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <h4 class="font-label-caps text-label-caps text-primary font-bold">מידע ויצירת קשר</h4>
+                <ul class="space-y-3 font-body-md text-body-md text-on-surface-variant">
+                    <li><a class="hover:text-primary transition-colors flex items-center gap-2" href="tel:054-444-2103"><span class="material-symbols-outlined text-[18px]">phone</span>054-444-2103</a></li>
+                    <li><a class="hover:text-primary transition-colors flex items-center gap-2" href="https://wa.me/972544442103" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span>הודעה ב-WhatsApp</a></li>
+                    <li class="text-secondary">צילומים: ענבר זק</li>
+                </ul>
+            </div>
+        </div>
+        <div class="pt-6 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="font-label-caps text-[14px] text-on-surface-variant">
+                © 2026 נריה מרק. כל הזכויות שמורות
+            </p>
+            <div class="flex gap-3">
+                <a class="w-9 h-9 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="https://wa.me/972544442103" title="WhatsApp" target="_blank">
+                    <span class="material-symbols-outlined text-[18px]">chat</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<a class="fixed bottom-6 right-6 z-[100] w-14 h-14 bg-primary text-white rounded-xl flex items-center justify-center organic-shadow hover:scale-105 hover:bg-soft-clay transition-all duration-300" href="https://wa.me/972544442103" target="_blank" aria-label="WhatsApp">
+    <span class="material-symbols-outlined text-[30px]">chat</span>
+</a>
+
+<script>
+    // Navigation toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const closeBtn = document.getElementById('close-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+        });
+    }
+    if (closeBtn && mobileMenu) {
+        closeBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+    }
+    const mobileLinks = mobileMenu ? mobileMenu.querySelectorAll('a') : [];
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+    });
+
+    // Recipe Data Database
+    const recipesData = {
+        1: {
+            title: "קיצ'רי מסורתי (Kitchari)",
+            tag: "איורוודה ורפואה סינית",
+            prepTime: "35 דקות",
+            servings: "4 מנות",
+            benefits: "הקיצ'רי מחזק את הטחול והקיבה, מנקה עדין של מערכת העיכול ומאזן את כל סוגי הדושות והאנרגיה בגוף.",
+            ingredients: [
+                "1 כוס אורז בסמטי שטוף היטב",
+                "1/2 כוס שעועית מש צהובה חצויה (Mung Dal) מושרית שעה במים",
+                "4 כוסות מים מסוננים",
+                "1 כף גהי (חמאה מזוקקת) או שמן קוקוס",
+                "1 כפית זרעי כמון ו-1 כפית זרעי כוסברה כתושים",
+                "1 כפית שורש ג'ינג'ר טרי מגורר",
+                "1/2 כפית כורכום טהור",
+                "מלח ים אטלנטי לפי הטעם וצרור כוסברה קצוצה להגשה"
+            ],
+            instructions: [
+                "מחממים את הגהי בסיר כבד ומוסיפים את התבלינים: זרעי כמון, כוסברה וג'ינג'ר למשך כדקה עד להפצת ריח.",
+                "מוסיפים את האורז והמש המסוננים ומערבבים כדקה עם התבלינים.",
+                "מוסיפים 4 כוסות מים ואת הכורכום והמלח, ומביאים לרתיחה.",
+                "מנמיכים לאש קטנה ביותר, מכסים ומבשלים 25-30 דקות עד שהמש והאורז רכים מאוד ומתקבל מרקם דייסתי נעים.",
+                "מגישים חם עם כוסברה טרייה ומעט מיץ לימון סחוט."
+            ]
+        },
+        2: {
+            title: "קרפ כוסמת ירוקה פריך",
+            tag: "ללא גלוטן | מזין",
+            prepTime: "15 דקות (לאחר השריה)",
+            servings: "6 קרפים",
+            benefits: "כוסמת ירוקה היא בעלת אנרגיה מקררת קלות, עשירה בביופלבונואידים (רוטין) המחזקים את כלי הדם ומסייעת בהפחתת דלקות.",
+            ingredients: [
+                "1 כוס כוסמת ירוקה (לא קלויה!) מושרית במים ל-6-8 שעות",
+                "3/4 כוס מים נקיים",
+                "1/2 כפית מלח הימלאיה",
+                "תוספות אופציונליות: חופן עלי תרד טריים, זרעי צ'יה, שום שמיר או זעתר",
+                "מעט שמן זית לשימון המחבת"
+            ],
+            instructions: [
+                "שוטפים ומסננים היטב את הכוסמת הירוקה מההשריה.",
+                "מעבירים לבלנדר יחד עם 3/4 כוס מים והמלח (והתרד אם בוחרים), וטוחנים למרקם חלק במרקם של בלילת פנקייק נוזלית.",
+                "מחממים מחבת נון-סטיק איכותית עם טיפת שמן זית ומורחים בנייר סופג.",
+                "יוצקים מצקת מהבלילה ומסובבים את המחבת במהירות ליצירת קרפ דק.",
+                "מבשלים כ-2 דקות עד שהשוליים מתרוממים ומשחימים קלות, הופכים לדקה נוספת ומוציאים.",
+                "ממלאים באבוקדו, טחינה, ממרח פסטו או ירקות קלויים."
+            ]
+        },
+        3: {
+            title: "דוסה (Dosa) מותססת מסורתית",
+            tag: "פרוביוטיקה טבעית",
+            prepTime: "15 דק' (התססה של לילה)",
+            servings: "8 יחידות",
+            benefits: "תהליך התסיסה הטבעי מפרק את החומצה הפיטית, מייצר אנזימים וחיידקים ידידותיים שמזינים את המיקרוביום במעי ומקלים מאוד על העיכול.",
+            ingredients: [
+                "1 כוס אורז עגול או בסמטי",
+                "1/3 כוס עדשים שחורות קלופות (Urad Dal)",
+                "1/2 כפית זרעי חילבה (מסייעים לתסיסה)",
+                "מים להשריה ולטחינה",
+                "1 כפית מלח ים"
+            ],
+            instructions: [
+                "משרים את האורז והעדשים עם זרעי החילבה בקערות נפרדות למשך 6 שעות לפחות.",
+                "טוחנים בבלנדר חזק עם מעט מים קרים עד לקבלת בלילה אוורירית וחלקה.",
+                "מאחדים את הבלילות בקערת זכוכית, מוסיפים מלח ומערבבים ביד (חום הגוף עוזר להפעלת התסיסה).",
+                "מכסים במגבת ומניחים במקום חמים למשך 10-14 שעות עד שהבלילה תופחת ומעלה בועות קטנות עם ריח חמצמץ עדין.",
+                "יוצקים על מחבת לוהטת ומשומנת, משטחים בתנועה ספירלית מהמרכז החוצה וצולים עד לפריכות זהובה."
+            ]
+        },
+        4: {
+            title: "דייסת כוח חמה ומחממת",
+            tag: "בוקר מחמם ומחזק",
+            prepTime: "10 דקות",
+            servings: "2 מנות",
+            benefits: "מחממת את הטחול והקיבה, מונעת נפילות סוכר ומחזקת את צ'י הבוקר לפי השעון הביולוגי הסיני.",
+            ingredients: [
+                "1 כוס פתיתי שיבולת שועל עבים או דוחן שבושל מראש",
+                "2 כוסות חלב שיבולת שועל/שקדים או מים",
+                "1/2 כפית קינמון ציילוני טחון",
+                "קורט זנגביל יבש וקורט הל טחון",
+                "1 כף זרעי דלעת או פשתן טחון",
+                "2 תמרים קצוצים או כפית סילאן טבעי"
+            ],
+            instructions: [
+                "שמים בסיר קטן את שיבולת השועל והנוזלים.",
+                "מביאים לרתיחה עדינה, מוסיפים את התבלינים: קינמון, ג'ינג'ר והל.",
+                "מבשלים על אש נמוכה תוך בחישה כ-5 דקות עד להסמכה קרמית.",
+                "מעבירים לקעריות, מפזרים מעל זרעי דלעת, תמרים ומעט סילאן ומגישים חם."
+            ]
+        },
+        5: {
+            title: "פסטו כוסברה לניקוי מתכות ורעלים",
+            tag: "ניקוי רעלים מהיר",
+            prepTime: "5 דקות",
+            servings: "צנצנת קטנה",
+            benefits: "הכוסברה ידועה כקושרת מתכות כבדות ורעלים (Chelation) ומסייעת לכבד ולכיס המרה בניקוי עדין של הגוף.",
+            ingredients: [
+                "2 צרורות כוסברה טרייה, שטופה ומיובשת (כולל הגבעולים הרכים)",
+                "1/3 כוס זרעי דלעת טבעיים (עשירים באבץ)",
+                "2 שיני שום",
+                "1/3 כוס שמן זית כתית מעולה בכבישה קרה",
+                "מיץ מחצי לימון סחוט טרי",
+                "1/2 כפית מלח ים אטלנטי"
+            ],
+            instructions: [
+                "קולים קלות את זרעי הדלעת במחבת יבשה לדקה אחת (לא חובה אך מוסיף טעם וארומה).",
+                "מכניסים למעבד מזון את השום, זרעי הדלעת, עלי הכוסברה והמלח.",
+                "טוחנים בפולסים תוך כדי הזלפת שמן הזית ומיץ הלימון עד לקבלת מרקם גרגירי עשיר.",
+                "מעבירים לצנצנת זכוכית מעוקרת, מכסים בשכבה דקה של שמן זית ושומרים במקרר עד שבוע."
+            ]
+        },
+        6: {
+            title: "מדריך מעשי לבישול קטניות קלות לעיכול",
+            tag: "טיפים לעיכול קל",
+            prepTime: "מדריך יסודי",
+            servings: "לכל המשפחה",
+            benefits: "מונע תסיסה, כבדות וגזים במעיים ומאפשר ליהנות מחלבון ומינרלים מלאים בלי עומס על מערכת העיכול.",
+            ingredients: [
+                "קטניות לבחירה (מש, אזוקי, עדשים שחורות/ירוקות, חומוס)",
+                "מים מסוננים להשריה",
+                "רצועת אצת קומבו (Kombu)",
+                "תבלינים סופחי גזים: זרעי שומר, כמון, הל, זנגביל"
+            ],
+            instructions: [
+                "השריה ארוכה: משרים קטניות קטנות (עדשים, מש) 8-12 שעות, וקטניות גדולות (חומוס, שעועית) 24 שעות במקרר.",
+                "החלפת מים: מחליפים את מי ההשריה 2-3 פעמים במהלך הזמן.",
+                "בישול עם אצת קומבו: מוסיפים רצועה קטנה של אצת קומבו לסיר הבישול. האנזימים שבאצה מרככים את סיבי הקטנית ומפרקים את הסוכרים המורכבים.",
+                "קיפוי הקצף: מביאים לרתיחה ומסירים עם כף את הקצף הלבן שצף בדקות הראשונות.",
+                "תיבול מדויק: מוסיפים זרעי שומר, כמון או ג'ינג'ר לקראת סוף הבישול. מלח מוסיפים אך ורק כשהקטניות רכות לגמרי!"
+            ]
         }
-        if (closeBtn && mobileMenu) {
-            closeBtn.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        }
-        // Close menu when clicking a link
-        const mobileLinks = mobileMenu ? mobileMenu.querySelectorAll('a') : [];
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
+    };
+
+    // Category Filter Logic
+    const categoryTabs = document.querySelectorAll('.category-tab');
+    const recipeCards = document.querySelectorAll('.recipe-card');
+
+    categoryTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            categoryTabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+
+            const category = tab.getAttribute('data-category');
+            recipeCards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
             });
         });
-    </script>
-</body></html>
+    });
+
+    // Modal Details Logic
+    const modal = document.getElementById('recipe-modal');
+    const modalContent = document.getElementById('modal-content');
+    const closeModalBtn = document.getElementById('close-modal-btn');
+
+    recipeCards.forEach(card => {
+        card.addEventListener('click', () => {
+            const id = card.getAttribute('data-id');
+            const data = recipesData[id];
+            if (!data) return;
+
+            modalContent.innerHTML = `
+                <div class="space-y-2 border-b border-outline-variant/60 pb-4">
+                    <span class="inline-block px-3 py-1 bg-sage-muted/15 text-primary rounded-full font-label-caps text-[13px] font-semibold">${data.tag}</span>
+                    <h2 class="font-headline-lg text-headline-lg text-primary">${data.title}</h2>
+                    <div class="flex gap-4 font-body-md text-[15px] text-secondary">
+                        <span>⏱️ ${data.prepTime}</span>
+                        <span>🥣 ${data.servings}</span>
+                    </div>
+                </div>
+
+                <div class="bg-surface p-4 rounded-xl border-r-4 border-soft-clay">
+                    <h4 class="font-headline-md text-[18px] text-primary font-bold mb-1">סגולות בריאותיות ברפואה הסינית:</h4>
+                    <p class="font-body-md text-secondary leading-relaxed">${data.benefits}</p>
+                </div>
+
+                <div class="space-y-3">
+                    <h3 class="font-headline-md text-headline-md text-primary font-bold">מצרכים ורכיבים:</h3>
+                    <ul class="space-y-1.5 font-body-md text-secondary pr-4 list-disc">
+                        ${data.ingredients.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                </div>
+
+                <div class="space-y-3 pt-2">
+                    <h3 class="font-headline-md text-headline-md text-primary font-bold">הוראות הכנה:</h3>
+                    <ol class="space-y-2.5 font-body-md text-secondary pr-4 list-decimal">
+                        ${data.instructions.map(step => `<li class="leading-relaxed">${step}</li>`).join('')}
+                    </ol>
+                </div>
+
+                <div class="pt-4 border-t border-outline-variant/60 flex justify-end">
+                    <button id="modal-inner-close" class="px-6 py-2.5 bg-primary text-white rounded-xl font-label-caps hover:bg-soft-clay transition-all">סגור</button>
+                </div>
+            `;
+
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+
+            document.getElementById('modal-inner-close').addEventListener('click', closeModal);
+        });
+    });
+
+    function closeModal() {
+        modal.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+    }
+
+    if (closeModalBtn) {
+        closeModalBtn.addEventListener('click', closeModal);
+    }
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+    });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !modal.classList.contains('hidden')) closeModal();
+    });
+</script>
+</body>
+</html>
