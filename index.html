@@ -106,7 +106,14 @@
 <!-- TopNavBar -->
 <header class="fixed top-0 z-50 w-full bg-cream-bg/95 backdrop-blur-md border-b border-outline-variant/40">
     <nav class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 w-full max-w-container-max mx-auto">
-        <div class="hidden md:flex gap-8 items-center">
+        <a class="flex items-center gap-3 group" href="index.html">
+            <img src="Site%20Files/logo.png" alt="נריה מרק" class="h-11 w-auto object-contain">
+            <div class="flex flex-col">
+                <span class="font-headline-md text-[20px] text-primary font-bold leading-tight group-hover:text-soft-clay transition-colors">נריה מרק</span>
+                <span class="font-body-md text-[13px] text-secondary leading-none">רפואה סינית עתיקה</span>
+            </div>
+        </a>
+        <div class="hidden lg:flex gap-7 items-center">
             <a class="nav-item font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1" href="index.html">בית</a>
             <a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="about.html">קצת עלי</a>
             <a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="kids.html">תינוקות וילדים</a>
@@ -114,18 +121,22 @@
             <a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="recipes.html">מתכונים</a>
             <a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="stretches.html">מתיחות</a>
         </div>
-        <a class="hidden md:flex items-center gap-2 px-6 py-2.5 bg-primary text-white font-label-caps text-label-caps rounded-full hover:bg-soft-clay transition-all duration-300" href="tel:054-444-2103">
+        <a class="hidden md:flex items-center gap-2 px-5 py-2.5 bg-primary text-white font-label-caps text-label-caps rounded-full hover:bg-soft-clay transition-all duration-300" href="tel:054-444-2103">
             <span class="material-symbols-outlined text-[18px]">phone</span>054-444-2103
         </a>
         <!-- Mobile Menu Toggle -->
-        <button id="menu-btn" class="md:hidden text-primary p-2">
+        <button id="menu-btn" class="lg:hidden text-primary p-2" aria-label="פתח תפריט">
             <span class="material-symbols-outlined text-[32px]">menu</span>
         </button>
         <!-- Mobile Menu Overlay -->
         <div id="mobile-menu" class="fixed inset-0 z-[100] hidden bg-cream-bg flex flex-col justify-center items-center gap-7">
-            <button id="close-menu" class="absolute top-6 right-6 text-primary p-2">
+            <button id="close-menu" class="absolute top-6 right-6 text-primary p-2" aria-label="סגור תפריט">
                 <span class="material-symbols-outlined text-[32px]">close</span>
             </button>
+            <div class="flex items-center gap-3 mb-2">
+                <img src="Site%20Files/logo.png" alt="נריה מרק" class="h-14 w-auto object-contain">
+                <span class="font-headline text-2xl text-primary font-bold">נריה מרק</span>
+            </div>
             <a class="font-headline-md text-headline-md text-primary font-semibold" href="index.html">בית</a>
             <a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="about.html">קצת עלי</a>
             <a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="kids.html">תינוקות וילדים</a>
@@ -195,7 +206,7 @@
                 </div>
                 
                 <!-- Carousel Container -->
-                <div class="relative min-h-[200px] flex items-center justify-center">
+                <div class="relative min-h-[220px] flex items-center justify-center">
                     <!-- Slide 1 -->
                     <div class="carousel-slide active space-y-6 w-full">
                         <h2 class="font-headline-lg text-headline-lg text-primary">
@@ -209,17 +220,47 @@
                             <p class="font-body-md text-body-md text-on-surface-variant">דלקת בכתפיים</p>
                         </div>
                     </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-slide space-y-6 w-full">
+                        <h2 class="font-headline-lg text-headline-lg text-primary">
+                            "הילד חיכה למפגשים אצל נריה, והדלקות באוזניים חלפו"
+                        </h2>
+                        <blockquote class="font-body-lg text-body-lg leading-relaxed text-secondary italic">
+                            הגענו לנריה אחרי חודשים של דלקות אוזניים חוזרות ואנטיביוטיקה בלתי פוסקת עם בננו בן השנתיים. החשש ממחטים התפוגג ברגע - נריה קיבלה אותנו במשחק, עבדה איתו בשיטת שונישין עדינה ללא מחטים, והנחתה אותנו לגבי תזונה בבית. מאז הטיפול הדלקות לא חזרו, והוא תמיד שואל מתי הולכים שוב לנריה.
+                        </blockquote>
+                        <div class="pt-4 border-t border-outline-variant/60 inline-block px-8">
+                            <p class="font-label-caps text-label-caps text-primary font-semibold">מיכל ורועי (הורים של איתמר), כפר סבא</p>
+                            <p class="font-body-md text-body-md text-on-surface-variant">דלקות אוזניים חוזרות ונוזלים</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-slide space-y-6 w-full">
+                        <h2 class="font-headline-lg text-headline-lg text-primary">
+                            "התרגול החזיר לי את הגוף, את היציבה ואת השקט"
+                        </h2>
+                        <blockquote class="font-body-lg text-body-lg leading-relaxed text-secondary italic">
+                            כעובדת מול מחשב שעות רבות ביום, הגעתי לנריה עם כאבי צוואר ושכמות כרוניים. השילוב של דיקור עדין יחד עם שיעורי שין-סן-דו חולל פלאים. למדתי לנשום נכון, לשחרר מאמץ מיותר במהלך יום העבודה ולהרגיש שוב קלילה וחיונית.
+                        </blockquote>
+                        <div class="pt-4 border-t border-outline-variant/60 inline-block px-8">
+                            <p class="font-label-caps text-label-caps text-primary font-semibold">דנה, בת 38, תל אביב</p>
+                            <p class="font-body-md text-body-md text-on-surface-variant">כאבי צוואר ושכמות, שין-סן-דו</p>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Carousel Controls -->
                 <div id="carousel-controls" class="flex items-center justify-center gap-6 pt-4">
-                    <button id="carousel-prev" class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" aria-label="המלצה קודמת">
+                    <button id="carousel-prev" class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all cursor-pointer" aria-label="המלצה קודמת">
                         <span class="material-symbols-outlined text-[20px]">chevron_right</span>
                     </button>
                     <div id="carousel-dots" class="flex gap-2">
-                        <button class="w-3 h-3 rounded-full bg-primary transition-all dot-indicator" data-index="0" aria-label="המלצה 1"></button>
+                        <button class="w-3 h-3 rounded-full bg-primary transition-all dot-indicator cursor-pointer" data-index="0" aria-label="המלצה 1"></button>
+                        <button class="w-3 h-3 rounded-full bg-outline-variant transition-all dot-indicator cursor-pointer" data-index="1" aria-label="המלצה 2"></button>
+                        <button class="w-3 h-3 rounded-full bg-outline-variant transition-all dot-indicator cursor-pointer" data-index="2" aria-label="המלצה 3"></button>
                     </div>
-                    <button id="carousel-next" class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" aria-label="המלצה הבאה">
+                    <button id="carousel-next" class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all cursor-pointer" aria-label="המלצה הבאה">
                         <span class="material-symbols-outlined text-[20px]">chevron_left</span>
                     </button>
                 </div>

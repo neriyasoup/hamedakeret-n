@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html dir="rtl" lang="he">
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>תרגילי מתיחות ותנועה - נריה מרק - רפואה סינית עתיקה</title>
+    <title>מתיחות מרידיאנים - נריה מרק - רפואה סינית עתיקה</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -97,7 +97,14 @@
 <!-- TopNavBar -->
 <header class="fixed top-0 z-50 w-full bg-cream-bg/95 backdrop-blur-md border-b border-outline-variant/40">
     <nav class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 w-full max-w-container-max mx-auto">
-        <div class="hidden md:flex gap-8 items-center">
+        <a class="flex items-center gap-3 group" href="index.html">
+            <img src="Site%20Files/logo.png" alt="נריה מרק" class="h-11 w-auto object-contain">
+            <div class="flex flex-col">
+                <span class="font-headline-md text-[20px] text-primary font-bold leading-tight group-hover:text-soft-clay transition-colors">נריה מרק</span>
+                <span class="font-body-md text-[13px] text-secondary leading-none">רפואה סינית עתיקה</span>
+            </div>
+        </a>
+        <div class="hidden lg:flex gap-7 items-center">
             <a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="index.html">בית</a>
             <a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="about.html">קצת עלי</a>
             <a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="kids.html">תינוקות וילדים</a>
@@ -105,16 +112,22 @@
             <a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="recipes.html">מתכונים</a>
             <a class="nav-item font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1" href="stretches.html">מתיחות</a>
         </div>
-        <a class="hidden md:flex items-center gap-2 px-6 py-2.5 bg-primary text-white font-label-caps text-label-caps rounded-full hover:bg-soft-clay transition-all duration-300" href="tel:054-444-2103">
+        <a class="hidden md:flex items-center gap-2 px-5 py-2.5 bg-primary text-white font-label-caps text-label-caps rounded-full hover:bg-soft-clay transition-all duration-300" href="tel:054-444-2103">
             <span class="material-symbols-outlined text-[18px]">phone</span>054-444-2103
         </a>
-        <button id="menu-btn" class="md:hidden text-primary p-2">
+        <!-- Mobile Menu Toggle -->
+        <button id="menu-btn" class="lg:hidden text-primary p-2" aria-label="פתח תפריט">
             <span class="material-symbols-outlined text-[32px]">menu</span>
         </button>
+        <!-- Mobile Menu Overlay -->
         <div id="mobile-menu" class="fixed inset-0 z-[100] hidden bg-cream-bg flex flex-col justify-center items-center gap-7">
-            <button id="close-menu" class="absolute top-6 right-6 text-primary p-2">
+            <button id="close-menu" class="absolute top-6 right-6 text-primary p-2" aria-label="סגור תפריט">
                 <span class="material-symbols-outlined text-[32px]">close</span>
             </button>
+            <div class="flex items-center gap-3 mb-2">
+                <img src="Site%20Files/logo.png" alt="נריה מרק" class="h-14 w-auto object-contain">
+                <span class="font-headline text-2xl text-primary font-bold">נריה מרק</span>
+            </div>
             <a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="index.html">בית</a>
             <a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="about.html">קצת עלי</a>
             <a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="kids.html">תינוקות וילדים</a>
@@ -132,124 +145,135 @@
     <!-- Page Header (Tightened) -->
     <section class="bg-surface py-10 md:py-14 border-b border-outline-variant/30">
         <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center space-y-2">
-            <h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary">תרגילי תנועה ומתיחות ביתיים</h1>
-            <p class="font-body-lg text-body-lg text-secondary max-w-xl mx-auto">שחרור מתחים, הזרמת צ'י במרידיאנים וגמישות מודעת בקצב שלך</p>
+            <h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary">מתיחות מרידיאנים</h1>
+            <p class="font-body-lg text-body-lg text-secondary max-w-2xl mx-auto">סדרת מתיחות יומיומית להנעת ערוצי האנרגיה ופתיחת חסימות בגוף</p>
         </div>
     </section>
 
     <!-- Content Section -->
     <section class="py-10 md:py-14 bg-cream-bg">
         <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop space-y-10">
-            <div class="max-w-3xl mx-auto text-center space-y-3">
-                <h2 class="font-headline-lg text-headline-lg text-primary">תנועה לפי ערוצי האנרגיה</h2>
+            <!-- Intro from Neriya's original text -->
+            <div class="max-w-3xl mx-auto bg-surface p-6 md:p-8 rounded-2xl organic-shadow space-y-4 text-center">
+                <p class="font-body-lg text-body-lg text-ink-text leading-relaxed">
+                    מתיחות המרידיאנים שייכות לעולם השיאצו ומומלצות כתרגול יומי. מדובר בסדרה קצרה של מתיחות שמסייעות להניע את 12 המרידיאנים — אותם הערוצים עליהם מופיעות נקודות הדיקור — ולפתוח חסימות לאורך הערוצים.
+                </p>
                 <p class="font-body-md text-body-md text-secondary leading-relaxed">
-                    סדרת התרגילים מבוססת על שילוב ייחודי בין <strong>מתיחת ערוצי האנרגיה (מרידיאנים) ברפואה הסינית</strong> ועקרונות <strong>תנועת שין-סן-דו</strong>. התרגול אינו דורש גמישות מוקדמת, אלא קשב לנשימה והרפיה מודעת.
+                    המתיחות נעשות ללא מאמץ, אלא עם גוף רפוי ונושם שמאפשר להעמיק את המתיחה ולהיפתח. מומלץ להישאר בכל תנוחה בין דקה לשתיים ולהקפיד על נשימות עמוקות. שימו לב לא להגיע לשלב בו המתיחה מכאיבה. תיהנו!
                 </p>
             </div>
 
-            <!-- Stretches List (Neriya's authentic exercises) -->
+            <!-- Stretches Grid with Original Diagrams -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
                 
-                <!-- Exercise 1: מרידיאן הכליות ושלפוחית השתן -->
-                <div class="bg-surface p-7 md:p-8 rounded-2xl organic-shadow space-y-4 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center gap-3 mb-2">
-                            <span class="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-[16px]">1</span>
-                            <div>
-                                <h3 class="font-headline-md text-headline-md text-primary">פתיחת מרידיאן הכליות ושלפוחית השתן</h3>
-                                <span class="font-label-caps text-soft-clay text-[13px] font-semibold">אלמנט המים | גב תחתון ועמוד שדרה</span>
-                            </div>
+                <!-- 1. מתכת -->
+                <div class="bg-surface p-6 md:p-7 rounded-2xl organic-shadow space-y-4 flex flex-col justify-between border-t-4 border-primary">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-headline-md text-headline-md text-primary">אלמנט המתכת</h3>
+                            <span class="px-3 py-1 bg-sage-muted/15 text-primary text-[13px] font-semibold rounded-full font-label-caps">ריאות ומעי גס</span>
                         </div>
-                        <p class="font-body-md text-body-md text-secondary leading-relaxed mb-4">
-                            ערוץ שלפוחית השתן עובר לאורך כל הגב והחלק האחורי של הרגליים. תרגיל זה משחרר עומס וכאב מהגב התחתון ומזין את אנרגיית החיוניות והכליות.
+                        <div class="rounded-xl overflow-hidden bg-cream-bg p-3 flex items-center justify-center min-h-[180px]">
+                            <img src="Site%20Files/stretch_metal.png" alt="מתיחת אלמנט המתכת" class="max-h-[160px] object-contain">
+                        </div>
+                        <p class="font-body-md text-body-md text-ink-text leading-relaxed pt-2">
+                            עמידה ברוחב האגן, אגודלים שלובים מאחור, כיפוף הגב בנשיפה והידיים נמתחות לכיוון הרצפה. לאחר כדקה יש להחליף את שילוב האגודלים מאחורי הגב ולמתוח שוב את הידיים.
                         </p>
-                        <ul class="space-y-2 font-body-md text-body-md text-secondary list-disc pr-4">
-                            <li><strong>תנוחת מוצא:</strong> עמידה יציבה ברוחב האגן, ברכיים רכות ומשוחררות.</li>
-                            <li><strong>התנועה:</strong> בשאיפה עמוקה פתחו ידיים לצדדים, ובנשיפה רדו באיטיות קדימה חוליה אחר חוליה, כשהראש והזרועות תלויים בכובד מטה כמו מפל מים.</li>
-                            <li><strong>דגש:</strong> אין צורך להגיע לרצפה! הניחו למשקל הגוף למתוח בעדינות את אחורי הירכיים והגב, ונשמו 5 נשימות מלאות אל הגב התחתון.</li>
-                            <li>עלו לאט ובאיטיות חוליה אחר חוליה חזרה למעלה.</li>
-                        </ul>
-                    </div>
-                    <div class="pt-3 border-t border-outline-variant/50 text-[14px] text-soft-clay font-medium">
-                        💡 מומלץ במיוחד: לסובלים מכאבי גב תחתון, ישיבה ממושכת ועייפות.
                     </div>
                 </div>
 
-                <!-- Exercise 2: מרידיאן הכבד וכיס המרה -->
-                <div class="bg-surface p-7 md:p-8 rounded-2xl organic-shadow space-y-4 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center gap-3 mb-2">
-                            <span class="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-[16px]">2</span>
-                            <div>
-                                <h3 class="font-headline-md text-headline-md text-primary">שחרור צידי הגוף וערוץ הכבד</h3>
-                                <span class="font-label-caps text-soft-clay text-[13px] font-semibold">אלמנט העץ | שחרור מתחים ותקיעות רגשית</span>
-                            </div>
+                <!-- 2. אדמה -->
+                <div class="bg-surface p-6 md:p-7 rounded-2xl organic-shadow space-y-4 flex flex-col justify-between border-t-4 border-soft-clay">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-headline-md text-headline-md text-primary">אלמנט האדמה</h3>
+                            <span class="px-3 py-1 bg-sage-muted/15 text-primary text-[13px] font-semibold rounded-full font-label-caps">קיבה וטחול</span>
                         </div>
-                        <p class="font-body-md text-body-md text-secondary leading-relaxed mb-4">
-                            ערוץ כיס המרה עובר בצדי הגוף, הצוואר והראש. מתיחה צידית משחררת "תקיעות צ'י" (Qi Stagnation) המאפיינת סטרס, כעס, לחץ נפשי או כאבי ראש מתוחים.
-                        </p>
-                        <ul class="space-y-2 font-body-md text-body-md text-secondary list-disc pr-4">
-                            <li><strong>תנוחת מוצא:</strong> ישיבה מזרחית או עמידה נוחה, גב ארוך וזקוף.</li>
-                            <li><strong>התנועה:</strong> הניחו יד ימין על המזרן/ירך, והרימו את יד שמאל מעלה ובקשת הצידה ימינה. פתחו את הצלעות השמאליות כמו מניפה.</li>
-                            <li><strong>דגש:</strong> שמרו על בית החזה פתוח לפנים ולא סגור מטה. כוונו את המבט בעדינות מעלה ונשמו עמוק לתוך המרווחים בין הצלעות.</li>
-                            <li>החזיקו 20-30 שניות תוך נשימה רכה, וחזרו לצד השני.</li>
-                        </ul>
-                    </div>
-                    <div class="pt-3 border-t border-outline-variant/50 text-[14px] text-soft-clay font-medium">
-                        💡 מומלץ במיוחד: להפחתת מתח ולחץ יומיומי, שחרור שרירי הצוואר וכאבי צד.
+                        <div class="rounded-xl overflow-hidden bg-cream-bg p-3 flex items-center justify-center min-h-[180px]">
+                            <img src="Site%20Files/stretch_earth.png" alt="מתיחת אלמנט האדמה" class="max-h-[160px] object-contain">
+                        </div>
+                        <div class="font-body-md text-body-md text-ink-text leading-relaxed pt-2 space-y-1.5">
+                            <p>ישיבה יפנית, עקבים כלפי חוץ, אפשר פיסוק קל. כמה וריאציות מהפשוטה למורכבת יותר:</p>
+                            <ul class="pr-4 space-y-1 text-secondary list-disc">
+                                <li>א. הידיים ישרות מאחור והראש מוטה אחורה</li>
+                                <li>ב. המרפקים על הרצפה והראש מוטה אחורה</li>
+                                <li>ג. שכיבה על הרצפה וחיבור של הידיים מעל הראש</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Exercise 3: מרידיאן הריאות והלב -->
-                <div class="bg-surface p-7 md:p-8 rounded-2xl organic-shadow space-y-4 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center gap-3 mb-2">
-                            <span class="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-[16px]">3</span>
-                            <div>
-                                <h3 class="font-headline-md text-headline-md text-primary">פתיחת חזה ושחרור מרידיאן הריאות</h3>
-                                <span class="font-label-caps text-soft-clay text-[13px] font-semibold">אלמנט המתכת | נשימה עמוקה, שכמות ומערכת חיסון</span>
-                            </div>
+                <!-- 3. אש -->
+                <div class="bg-surface p-6 md:p-7 rounded-2xl organic-shadow space-y-4 flex flex-col justify-between border-t-4 border-primary">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-headline-md text-headline-md text-primary">אלמנט האש</h3>
+                            <span class="px-3 py-1 bg-sage-muted/15 text-primary text-[13px] font-semibold rounded-full font-label-caps">לב ומעי דק</span>
                         </div>
-                        <p class="font-body-md text-body-md text-secondary leading-relaxed mb-4">
-                            ערוץ הריאות מתחיל בבית החזה וממשיך לאורך הזרוע הפנימית עד האגודל. התרגיל פותח את הנשימה, מחזק את אנרגיית ההגנה (Wei Qi) ומשחרר עומס משכמות מכווצות.
+                        <div class="rounded-xl overflow-hidden bg-cream-bg p-3 flex items-center justify-center min-h-[180px]">
+                            <img src="Site%20Files/stretch_fire.jpg" alt="מתיחת אלמנט האש" class="max-h-[160px] object-contain">
+                        </div>
+                        <p class="font-body-md text-body-md text-ink-text leading-relaxed pt-2">
+                            ישיבת פרפר, כף אל כף וכפות הידיים אוחזות בחלקה הפנימי של כף הרגל. כיפוף הראש אל הרגליים והמרפקים נפתחים קדימה.
                         </p>
-                        <ul class="space-y-2 font-body-md text-body-md text-secondary list-disc pr-4">
-                            <li><strong>תנוחת מוצא:</strong> עמידה ישרה ונינוחה. שלבו אצבעות מאחורי הגב התחתון.</li>
-                            <li><strong>התנועה:</strong> גלגלו את הכתפיים לאחור ולמטה, יישרו בעדינות את המרפקים ומשכו את הידיים מעט הרחק מהישבן.</li>
-                            <li><strong>דגש:</strong> הרימו את עצם החזה מעלה מבלי להקשית יתר על המידה את הגב התחתון. קחו 5 נשימות עמוקות ורחבות ישירות אל החזה והכתפיים.</li>
-                            <li>שחררו את הידיים באיטיות וסובבו כתפיים 3 פעמים לאחור.</li>
-                        </ul>
-                    </div>
-                    <div class="pt-3 border-t border-outline-variant/50 text-[14px] text-soft-clay font-medium">
-                        💡 מומלץ במיוחד: לעובדים מול מחשב, קוצר נשימה, יציבה שפופה ועומס שכמות.
                     </div>
                 </div>
 
-                <!-- Exercise 4: תנוחת הילד והתכנסות היין -->
-                <div class="bg-surface p-7 md:p-8 rounded-2xl organic-shadow space-y-4 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center gap-3 mb-2">
-                            <span class="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-[16px]">4</span>
-                            <div>
-                                <h3 class="font-headline-md text-headline-md text-primary">התכנסות יין והרגעת מערכת העצבים</h3>
-                                <span class="font-label-caps text-soft-clay text-[13px] font-semibold">מנוחה עמוקה | הרפיית מפרקי הירך והנפש</span>
-                            </div>
+                <!-- 4. מים -->
+                <div class="bg-surface p-6 md:p-7 rounded-2xl organic-shadow space-y-4 flex flex-col justify-between border-t-4 border-soft-clay">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-headline-md text-headline-md text-primary">אלמנט המים</h3>
+                            <span class="px-3 py-1 bg-sage-muted/15 text-primary text-[13px] font-semibold rounded-full font-label-caps">כליות ושלפוחית שתן</span>
                         </div>
-                        <p class="font-body-md text-body-md text-secondary leading-relaxed mb-4">
-                            תנוחת סיום של רגיעה מוחלטת. מאפשרת לדם ולאנרגיה להתכנס פנימה, מרפה את שרירי האגן ומאפשרת למערכת העצבים הפארא-סימפטטית להיכנס לפעולה מרפאת.
+                        <div class="rounded-xl overflow-hidden bg-cream-bg p-3 flex items-center justify-center min-h-[180px]">
+                            <img src="Site%20Files/stretch_water.jpg" alt="מתיחת אלמנט המים" class="max-h-[160px] object-contain">
+                        </div>
+                        <p class="font-body-md text-body-md text-ink-text leading-relaxed pt-2">
+                            ישיבה שלמה ברגליים ישרות. כפות הידיים מתקרבות אל כפות הרגליים. הראש רפוי ומשוחרר קדימה.
                         </p>
-                        <ul class="space-y-2 font-body-md text-body-md text-secondary list-disc pr-4">
-                            <li><strong>תנוחת מוצא:</strong> כריעה על הברכיים, ישיבה על העקבים ופיסוק קל של הברכיים לרוחב המזרן.</li>
-                            <li><strong>התנועה:</strong> הטו את הגב לפנים והניחו את המצח על המזרן (או על כרית רכה).</li>
-                            <li><strong>דגש:</strong> שלחו את הידיים קדימה בהרפיה מלאה או הניחו אותן לצד הגוף כשאצבעות הידיים מופנות לאחור. הרפו את הלסת, העיניים והכתפיים.</li>
-                            <li>הישארו בתנוחה 2-3 דקות, ותנו לכל נשיפה לשקוע עמוק לתוך המזרן.</li>
-                        </ul>
-                    </div>
-                    <div class="pt-3 border-t border-outline-variant/50 text-[14px] text-soft-clay font-medium">
-                        💡 מומלץ במיוחד: בסוף יום עבודה עמוס, לפני השינה, ולהרגעה ממתחים ומחרדות.
                     </div>
                 </div>
 
+                <!-- 5. מרידיאן משלים (אש 2) -->
+                <div class="bg-surface p-6 md:p-7 rounded-2xl organic-shadow space-y-4 flex flex-col justify-between border-t-4 border-primary">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-headline-md text-headline-md text-primary">מרידיאנים משלימים</h3>
+                            <span class="px-3 py-1 bg-sage-muted/15 text-primary text-[13px] font-semibold rounded-full font-label-caps">מעטפת הלב ומחמם משולש</span>
+                        </div>
+                        <div class="rounded-xl overflow-hidden bg-cream-bg p-3 flex items-center justify-center min-h-[180px]">
+                            <img src="Site%20Files/stretch_fire2.jpg" alt="מתיחת מרידיאנים משלימים" class="max-h-[160px] object-contain">
+                        </div>
+                        <p class="font-body-md text-body-md text-ink-text leading-relaxed pt-2">
+                            ישיבה מזרחית וידיים צולבות מונחות על הברכיים. הגוף והראש רוכנים מטה. אם רגל ימין קדמית ועליונה, גם יד ימין תהיה עליונה. יש לחזור על המתיחה ולהפוך רגליים וידיים.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 6. עץ -->
+                <div class="bg-surface p-6 md:p-7 rounded-2xl organic-shadow space-y-4 flex flex-col justify-between border-t-4 border-soft-clay">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-headline-md text-headline-md text-primary">אלמנט העץ</h3>
+                            <span class="px-3 py-1 bg-sage-muted/15 text-primary text-[13px] font-semibold rounded-full font-label-caps">כבד וכיס מרה</span>
+                        </div>
+                        <div class="rounded-xl overflow-hidden bg-cream-bg p-3 flex items-center justify-center min-h-[180px]">
+                            <img src="Site%20Files/stretch_wood.jpg" alt="מתיחת אלמנט העץ" class="max-h-[160px] object-contain">
+                        </div>
+                        <p class="font-body-md text-body-md text-ink-text leading-relaxed pt-2">
+                            ישיבה בפיסוק גדול, גב ישר, כפות הידיים שלובות ומתהפכות כך שהכפות כלפי חוץ. הטיית צידי הגוף אל רגל אחת ופתיחת בית החזה. יש לחזור על אותו הדבר לצד השני.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Note -->
+            <div class="text-center pt-4">
+                <p class="font-body-md text-secondary">
+                    💡 ניתן למצוא מידע נוסף וסרטונים באינטרנט תחת "מתיחות מרידיאנים" (Makko-Ho Stretches).
+                </p>
             </div>
         </div>
     </section>
@@ -257,7 +281,7 @@
     <!-- Call to action -->
     <section class="py-12 md:py-14 bg-surface border-t border-outline-variant/30">
         <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center space-y-4">
-            <h2 class="font-headline-lg text-headline-lg text-primary">רוצים הדרכה אישית או שיעור תנועה?</h2>
+            <h2 class="font-headline-lg text-headline-lg text-primary">מעוניינים בשיעור תנועה או הדרכה אישית?</h2>
             <p class="font-body-md text-body-md text-secondary max-w-md mx-auto">במסגרת הטיפול או בשיעורים פרטיים בשיטת שין-סן-דו נתאים תרגילים ייעודיים בדיוק לגוף שלך</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-2">
                 <a class="w-full sm:w-auto px-8 py-3.5 bg-primary text-white font-label-caps text-label-caps rounded-xl hover:bg-soft-clay transition-all flex items-center justify-center gap-2" href="https://wa.me/972544442103" target="_blank">

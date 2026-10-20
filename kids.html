@@ -97,7 +97,14 @@
 <!-- TopNavBar -->
 <header class="fixed top-0 z-50 w-full bg-cream-bg/95 backdrop-blur-md border-b border-outline-variant/40">
     <nav class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 w-full max-w-container-max mx-auto">
-        <div class="hidden md:flex gap-8 items-center">
+        <a class="flex items-center gap-3 group" href="index.html">
+            <img src="Site%20Files/logo.png" alt="נריה מרק" class="h-11 w-auto object-contain">
+            <div class="flex flex-col">
+                <span class="font-headline-md text-[20px] text-primary font-bold leading-tight group-hover:text-soft-clay transition-colors">נריה מרק</span>
+                <span class="font-body-md text-[13px] text-secondary leading-none">רפואה סינית עתיקה</span>
+            </div>
+        </a>
+        <div class="hidden lg:flex gap-7 items-center">
             <a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="index.html">בית</a>
             <a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="about.html">קצת עלי</a>
             <a class="nav-item font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1" href="kids.html">תינוקות וילדים</a>
@@ -105,16 +112,22 @@
             <a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="recipes.html">מתכונים</a>
             <a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="stretches.html">מתיחות</a>
         </div>
-        <a class="hidden md:flex items-center gap-2 px-6 py-2.5 bg-primary text-white font-label-caps text-label-caps rounded-full hover:bg-soft-clay transition-all duration-300" href="tel:054-444-2103">
+        <a class="hidden md:flex items-center gap-2 px-5 py-2.5 bg-primary text-white font-label-caps text-label-caps rounded-full hover:bg-soft-clay transition-all duration-300" href="tel:054-444-2103">
             <span class="material-symbols-outlined text-[18px]">phone</span>054-444-2103
         </a>
-        <button id="menu-btn" class="md:hidden text-primary p-2">
+        <!-- Mobile Menu Toggle -->
+        <button id="menu-btn" class="lg:hidden text-primary p-2" aria-label="פתח תפריט">
             <span class="material-symbols-outlined text-[32px]">menu</span>
         </button>
+        <!-- Mobile Menu Overlay -->
         <div id="mobile-menu" class="fixed inset-0 z-[100] hidden bg-cream-bg flex flex-col justify-center items-center gap-7">
-            <button id="close-menu" class="absolute top-6 right-6 text-primary p-2">
+            <button id="close-menu" class="absolute top-6 right-6 text-primary p-2" aria-label="סגור תפריט">
                 <span class="material-symbols-outlined text-[32px]">close</span>
             </button>
+            <div class="flex items-center gap-3 mb-2">
+                <img src="Site%20Files/logo.png" alt="נריה מרק" class="h-14 w-auto object-contain">
+                <span class="font-headline text-2xl text-primary font-bold">נריה מרק</span>
+            </div>
             <a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="index.html">בית</a>
             <a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="about.html">קצת עלי</a>
             <a class="font-headline-md text-headline-md text-primary font-semibold" href="kids.html">תינוקות וילדים</a>
@@ -129,29 +142,29 @@
 </header>
 
 <main class="pt-20">
-    <!-- Page Header (Tightened) -->
-    <section class="bg-surface py-10 md:py-14 border-b border-outline-variant/30">
+    <!-- Header Section (Compact Spacing) -->
+    <section class="bg-surface py-8 md:py-12 border-b border-outline-variant/30">
         <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center space-y-2">
             <h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary">תינוקות וילדים</h1>
             <p class="font-body-lg text-body-lg text-secondary max-w-xl mx-auto">טיפול טבעי, רך ומותאם אישית לקטנטנים שלכם</p>
         </div>
     </section>
 
-    <!-- Warm Intro with Photo of Neriya -->
+    <!-- Warm Intro Section with Neriya's Photo -->
     <section class="py-10 md:py-14 bg-cream-bg">
         <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center">
                 <div class="md:col-span-7 space-y-5">
-                    <h2 class="font-headline-lg text-headline-lg text-primary">רפואה סינית עדינה כבר מגיל ינקות</h2>
+                    <h2 class="font-headline-lg text-headline-lg text-primary">רפואה סינית כבר בגיל צעיר?</h2>
                     <p class="font-body-lg text-body-lg text-ink-text leading-relaxed">
-                        תינוקות וילדים מתמודדים מרגע הגעתם לעולם עם כמות עצומה של גירויים, שינויים ומחלות חום ונזלות שנועדו לבנות את מערכת החיסון שלהם. כאשר הגוף הצעיר אינו חזק דיו, מחלות עלולות להיתקע או לחזור בתדירות גבוהה — והדרך לסבבים חוזרים של אנטיביוטיקה עשויה להיות מהירה.
+                        בקליניקה יש צעצועים, המפגש מתחיל במשחק בו אני בונה את האמון ואת שיתוף הפעולה של הילד.ה. בהתאם למקרה ולילד, אבחר עם ההורים את הכלים המתאימים לילד.ה, אם בדיקור, מגע, שונישין ו/או מדבקות שמשפיעות על נקודות הדיקור.
                     </p>
                     <p class="font-body-lg text-body-lg text-ink-text leading-relaxed">
-                        טיפול ברפואה סינית בילדות תומך בצמיחה בריאה ומאוזנת. ככל שנחזק את הגוף בכלים טבעיים, נאפשר לילדים להתמודד עם אתגרי הבריאות בצורה שבונה ומחזקת אותם מבפנים ולא מחלישה אותם.
+                        לא חייבים להתעקש על המחטים. בסוף המפגש, כדי לצאת בטעם טוב, הילד.ה מוזמנ.ת לבחור הפתעה.
                     </p>
-                    <div class="p-5 bg-surface-container rounded-xl border-r-4 border-primary">
+                    <div class="p-5 bg-surface-container rounded-2xl border-r-4 border-primary">
                         <p class="font-body-md text-body-md text-secondary leading-relaxed">
-                            <strong>הקליניקה מותאמת במיוחד לקטנטנים:</strong> הטיפול מתחיל תמיד במשחק, היכרות נינוחה ובניית אמון. המרחב חם, שליו ומלא בסבלנות, ללא לחץ או פחד.
+                            <strong>חלק בלתי נפרד מהטיפול</strong> הוא ההדרכה להורים איך לטפל בילדים בעצמם ולשמור על אורח חיים בריא בבית.
                         </p>
                     </div>
                 </div>
@@ -166,76 +179,116 @@
         </div>
     </section>
 
-    <!-- Main Content & FAQ (Clean layout without clutter icons) -->
-    <section class="py-10 md:py-14 bg-surface border-y border-outline-variant/30">
+    <!-- Clinic Photos Showcase (Original Wix Images) -->
+    <section class="py-8 md:py-12 bg-surface border-y border-outline-variant/30">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop space-y-6">
+            <div class="text-center">
+                <h3 class="font-headline-md text-headline-md text-primary">אווירה רגועה, משחקית ובטוחה בקליניקה</h3>
+                <p class="font-body-md text-body-md text-secondary">מרחב נעים שבו הילדים מרגישים בנוח ובטבעיות</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="rounded-2xl overflow-hidden organic-shadow aspect-[4/3] bg-surface-container">
+                    <img src="Site%20Files/kids_1.jpg" alt="מרחב הטיפול בילדים" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="rounded-2xl overflow-hidden organic-shadow aspect-[4/3] bg-surface-container">
+                    <img src="Site%20Files/kids_2.jpg" alt="משחקים ובניית אמון בקליניקה" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="rounded-2xl overflow-hidden organic-shadow aspect-[4/3] bg-surface-container">
+                    <img src="Site%20Files/kids_3.jpg" alt="טיפול עדין ומזמין לקטנטנים" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Authentic Content Grid: FAQ & Methods (Without Cluttered Icons) -->
+    <section class="py-10 md:py-14 bg-cream-bg">
         <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
             
-            <!-- Left FAQ Column -->
+            <!-- Left Column: Neriya's Authentic Q&A -->
             <div class="md:col-span-7 space-y-6">
-                <h2 class="font-headline-lg text-headline-lg text-primary">שאלות נפוצות של הורים</h2>
-                
-                <div class="p-6 bg-cream-bg rounded-2xl organic-shadow space-y-2">
+                <!-- Q1: זה כואב? -->
+                <div class="p-6 bg-surface rounded-2xl organic-shadow space-y-3 border-r-4 border-primary">
                     <h3 class="font-headline-md text-headline-md text-primary">זה כואב?</h3>
                     <p class="font-body-md text-body-md text-secondary leading-relaxed">
-                        מכיוון שמדובר בגוף קטן ועדין, הדיקור נעשה במחטים דקיקות וזעירות במיוחד. בדרך כלל נעשה שימוש ב-1 עד 3 מחטים בלבד בטיפול, והן נשארות למשך שניות ספורות עד דקות בודדות, בהתאם לגיל הילד. רוב הילדים כמעט ואינם מרגישים את הדקירה ומגיבים ברוגע רב.
+                        מכיוון שמדובר בגוף קטן ורך, הדיקור נעשה עם מחטים מאוד עדינות, בדרך כלל בין מחט לשלוש בטיפול, שנשארות למשך דקה עד כמה דקות, בהתאם לגיל.
                     </p>
                 </div>
 
-                <div class="p-6 bg-cream-bg rounded-2xl organic-shadow space-y-2">
-                    <h3 class="font-headline-md text-headline-md text-primary">ואם הילד/ה חוששים ממחטים?</h3>
+                <!-- Q2: ואם הם מפחדים מהדיקור? -->
+                <div class="p-6 bg-surface rounded-2xl organic-shadow space-y-3 border-r-4 border-soft-clay">
+                    <h3 class="font-headline-md text-headline-md text-primary">ואם הם מפחדים מהדיקור?</h3>
                     <p class="font-body-md text-body-md text-secondary leading-relaxed">
-                        ממש לא חייבים מחטים! אם הילד/ה חוששים, אנו עובדים בשיטות מגע עדינות ונפלאות כמו <strong>שונישין (Shonishin)</strong>, טווינא או מדבקות מגנטיות מיוחדות ללא שום חדירה לעור. המפגש מנוהל תמיד בקצב של הילד.
+                        ממה שאני רואה בקליניקה, הורים שמפחדים מהדיקור מעבירים את הפחד לילדים. לכן, חשוב עוד לפני ההגעה לקליניקה להיות רגועים ולתאר לתינוקות ולילדים את המפגש בצורה חיובית, כמפגש עם חברה שתעזור להם להרגיש יותר טוב.
                     </p>
                 </div>
 
-                <div class="p-6 bg-cream-bg rounded-2xl organic-shadow space-y-2">
-                    <h3 class="font-headline-md text-headline-md text-primary">מה זה שונישין (Shonishin)?</h3>
+                <!-- Q3: מה זה שונישין? -->
+                <div class="p-6 bg-surface rounded-2xl organic-shadow space-y-3 border-r-4 border-sage-muted">
+                    <h3 class="font-headline-md text-headline-md text-primary">מה זה שונישין?</h3>
                     <p class="font-body-md text-body-md text-secondary leading-relaxed">
-                        שונישין היא שיטה יפנית מסורתית ומבוססת לטיפול בתינוקות וילדים ללא דיקור כלל. הטיפול מפעיל את המרידיאנים באמצעות תנועות הברשה, שפשוף וטפיחה עדינות עם כלי מתכת מעוגלים וחלקים. התחושה מלטפת, נעימה ולפעמים מדגדגת — והילדים נהנים ממנה מאוד.
+                        שונישין הוא שיטה יפנית לטיפול בתינוקות ובילדים מבלי להשתמש במחטי הדיקור. הטיפול מבוסס על עקרונות הרפואה הסינית ומפעיל את ערוצי האנרגיה של הגוף באמצעות תנועות שפשוף או טפיחה עם עזרים קטנטנים מתכתיים. הטיפול נעים, מלטף ולפעמים מדגדג ובד"כ קל לגייס את הקטנטנים לטיפול.
+                    </p>
+                </div>
+
+                <!-- Q4: צמחי מרפא ותזונה -->
+                <div class="p-6 bg-surface rounded-2xl organic-shadow space-y-3 border-r-4 border-primary">
+                    <h3 class="font-headline-md text-headline-md text-primary">צמחי מרפא ותזונה</h3>
+                    <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                        כחלק מהדרכת ההורים, חשוב לי לשמוע על הרגלי האכילה של הילד.ה ולהתאים במידת הצורך תזונה שתתמוך בתהליך הטיפול.
+                    </p>
+                    <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                        צמחי מרפא יכולים להגיע כפורמולה (שיקוי) שתתמוך בטיפול, או בתבלינים ובהתאמות פשוטות מהמטבח הביתי.
                     </p>
                 </div>
             </div>
 
-            <!-- Right Column: Methods & Conditions -->
+            <!-- Right Column: When to come to treatment -->
             <div class="md:col-span-5 space-y-6">
-                <div class="bg-cream-bg p-6 rounded-2xl organic-shadow space-y-4">
-                    <h3 class="font-headline-md text-headline-md text-primary">איך אנחנו עובדים?</h3>
-                    <ul class="space-y-3 font-body-md text-body-md text-secondary">
-                        <li class="border-b border-outline-variant/40 pb-2">
-                            <strong class="text-primary block">דיקור ומגע עדין:</strong>
-                            שילוב מותאם של דיקור עדין, שונישין וטווינא לפעוטות וילדים.
+                <div class="bg-surface-container p-7 rounded-2xl organic-shadow space-y-4">
+                    <h3 class="font-headline-md text-headline-md text-primary">מתי מתאים לבוא לטיפול?</h3>
+                    <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                        הטיפול מתאים כמענה למגוון רחב של מצבים אקוטיים וכרוניים, וכן לחיזוק שגרתי של המערכת החיסונית:
+                    </p>
+                    <ul class="space-y-3 font-body-md text-body-md text-secondary pr-2">
+                        <li class="flex items-start gap-2.5">
+                            <span class="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></span>
+                            <span>דלקות אוזניים חוזרות, נוזלים באוזניים וירידה בשמיעה</span>
                         </li>
-                        <li class="border-b border-outline-variant/40 pb-2">
-                            <strong class="text-primary block">תזונה מותאמת וצמחי מרפא:</strong>
-                            הנחיות תזונה פשוטות ומעשיות המותאמות למצב הילד/ה, ופורמולות צמחים עדינות במידת הצורך.
+                        <li class="flex items-start gap-2.5">
+                            <span class="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></span>
+                            <span>נזלת כרונית, שיעול, ליחה וקוצר נשימה</span>
                         </li>
-                        <li>
-                            <strong class="text-primary block">הדרכת הורים מעשית:</strong>
-                            ארגז כלים שתוכלו ליישם בקלות בבית (עיסויים, נקודות מגע והרגעה) לתמיכה רציפה בילד.
+                        <li class="flex items-start gap-2.5">
+                            <span class="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></span>
+                            <span>מחלות חום תכופות וחולשה חיסונית</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <span class="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></span>
+                            <span>גזים, כאבי בטן, עצירות וקשיי עיכול אצל תינוקות וילדים</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <span class="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></span>
+                            <span>בעיות שינה, אי-שקט וקשיי הרדמות</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <span class="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></span>
+                            <span>אסתמה של העור (אטופיק דרמטיטיס) ואלרגיות עונתיות</span>
                         </li>
                     </ul>
                 </div>
 
                 <div class="bg-primary/5 p-6 rounded-2xl border border-primary/20 space-y-3">
-                    <h3 class="font-headline-md text-headline-md text-primary">במה הטיפול מסייע?</h3>
-                    <p class="font-body-md text-body-md text-secondary">
-                        הרפואה הסינית יעילה מאוד בטיפול בבעיות אקוטיות וכרוניות, וכן לחיזוק מונע (במיוחד סביב חילופי עונות):
+                    <h4 class="font-headline-md text-headline-md text-primary">הדרכה וכלים לבית</h4>
+                    <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                        בסיום כל מפגש תקבלו כלים פשוטים ליישום בבית — נקודות לחיצה, טכניקות מגע והתאמות תזונה שיעזרו לכם לתמוך בילד בזמן מחלה וביומיום.
                     </p>
-                    <ul class="space-y-1.5 font-body-md text-body-md text-secondary pr-4 list-disc">
-                        <li>דלקות אוזניים חוזרות ונוזלים באוזניים</li>
-                        <li>נזלת כרונית, שיעול וליחה</li>
-                        <li>מחלות חום תכופות וחולשה של המערכת החיסונית</li>
-                        <li>גזים, כאבי בטן, עצירות ובעיות עיכול אצל תינוקות</li>
-                        <li>בעיות שינה, אי-שקט וקשיי הרדמות</li>
-                        <li>אסתמה, קוצר נשימה ואלרגיות עונתיות</li>
-                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Call to action -->
-    <section class="py-12 md:py-14 bg-cream-bg">
+    <section class="py-12 md:py-14 bg-surface border-t border-outline-variant/30">
         <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center space-y-4">
             <h2 class="font-headline-lg text-headline-lg text-primary">רוצים להתייעץ לגבי הקטנ/ה שלכם?</h2>
             <p class="font-body-md text-body-md text-secondary max-w-md mx-auto">אשמח לשוחח, להקשיב ולהתאים את דרך הטיפול העדינה והטובה ביותר עבורכם</p>
@@ -299,7 +352,8 @@
     </div>
 </footer>
 
-<a class="fixed bottom-6 right-6 z-[100] w-14 h-14 bg-primary text-white rounded-xl flex items-center justify-center organic-shadow hover:scale-105 hover:bg-soft-clay transition-all duration-300" href="https://wa.me/972544442103" target="_blank" aria-label="WhatsApp">
+<!-- Persistent Floating WhatsApp -->
+<a class="fixed bottom-6 right-6 z-[100] w-14 h-14 bg-primary text-white rounded-xl flex items-center justify-center organic-shadow hover:scale-105 hover:bg-soft-clay transition-all duration-300" href="https://wa.me/972544442103" target="_blank" aria-label="פנייה ב-WhatsApp">
     <span class="material-symbols-outlined text-[30px]">chat</span>
 </a>
 

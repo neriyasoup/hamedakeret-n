@@ -97,7 +97,14 @@
 <!-- TopNavBar -->
 <header class="fixed top-0 z-50 w-full bg-cream-bg/95 backdrop-blur-md border-b border-outline-variant/40">
     <nav class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 w-full max-w-container-max mx-auto">
-        <div class="hidden md:flex gap-8 items-center">
+        <a class="flex items-center gap-3 group" href="index.html">
+            <img src="Site%20Files/logo.png" alt="נריה מרק" class="h-11 w-auto object-contain">
+            <div class="flex flex-col">
+                <span class="font-headline-md text-[20px] text-primary font-bold leading-tight group-hover:text-soft-clay transition-colors">נריה מרק</span>
+                <span class="font-body-md text-[13px] text-secondary leading-none">רפואה סינית עתיקה</span>
+            </div>
+        </a>
+        <div class="hidden lg:flex gap-7 items-center">
             <a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="index.html">בית</a>
             <a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="about.html">קצת עלי</a>
             <a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="kids.html">תינוקות וילדים</a>
@@ -105,16 +112,22 @@
             <a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="recipes.html">מתכונים</a>
             <a class="nav-item font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="stretches.html">מתיחות</a>
         </div>
-        <a class="hidden md:flex items-center gap-2 px-6 py-2.5 bg-primary text-white font-label-caps text-label-caps rounded-full hover:bg-soft-clay transition-all duration-300" href="tel:054-444-2103">
+        <a class="hidden md:flex items-center gap-2 px-5 py-2.5 bg-primary text-white font-label-caps text-label-caps rounded-full hover:bg-soft-clay transition-all duration-300" href="tel:054-444-2103">
             <span class="material-symbols-outlined text-[18px]">phone</span>054-444-2103
         </a>
-        <button id="menu-btn" class="md:hidden text-primary p-2">
+        <!-- Mobile Menu Toggle -->
+        <button id="menu-btn" class="lg:hidden text-primary p-2" aria-label="פתח תפריט">
             <span class="material-symbols-outlined text-[32px]">menu</span>
         </button>
+        <!-- Mobile Menu Overlay -->
         <div id="mobile-menu" class="fixed inset-0 z-[100] hidden bg-cream-bg flex flex-col justify-center items-center gap-7">
-            <button id="close-menu" class="absolute top-6 right-6 text-primary p-2">
+            <button id="close-menu" class="absolute top-6 right-6 text-primary p-2" aria-label="סגור תפריט">
                 <span class="material-symbols-outlined text-[32px]">close</span>
             </button>
+            <div class="flex items-center gap-3 mb-2">
+                <img src="Site%20Files/logo.png" alt="נריה מרק" class="h-14 w-auto object-contain">
+                <span class="font-headline text-2xl text-primary font-bold">נריה מרק</span>
+            </div>
             <a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="index.html">בית</a>
             <a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="about.html">קצת עלי</a>
             <a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="kids.html">תינוקות וילדים</a>
@@ -129,58 +142,86 @@
 </header>
 
 <main class="pt-20">
-    <!-- Page Header (Tightened) -->
-    <section class="bg-surface py-10 md:py-14 border-b border-outline-variant/30">
+    <!-- Page Header (Tightened space) -->
+    <section class="bg-surface py-8 md:py-12 border-b border-outline-variant/30">
         <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center space-y-2">
             <h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary">שין-סן-דו (Shin-Sen-Do)</h1>
             <p class="font-body-lg text-body-lg text-secondary max-w-xl mx-auto">תנועה טיפולית, חיבור וזרימה של הגוף והנפש</p>
         </div>
     </section>
 
-    <!-- Content Section -->
+    <!-- Main Content Section with Authentic Wix Image -->
     <section class="py-10 md:py-14 bg-cream-bg">
-        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center">
-            <div class="md:col-span-6 space-y-5">
-                <h2 class="font-headline-lg text-headline-lg text-primary">מהי שיטת שין-סן-דו?</h2>
-                <p class="font-body-lg text-body-lg text-ink-text leading-relaxed">
-                    שׁין סֶן דוֹ היא שיטת תנועה טיפולית ייחודית שלמדתי במכללת ווינגייט. השיטה צמחה מעולם הצ'י קונג ומושתתת על עקרונות הרפואה והפילוסופיה הסינית העתיקה.
-                </p>
-                <p class="font-body-md text-body-md text-secondary leading-relaxed">
-                    שיטת התנועה מתבססת על ההבנה כי שפת הגוף משקפת היבטים מנטליים ורגשיים עמוקים. התנועה מלווה בהקשבה מדויקת לנשימות ומסייעת למוסס חסמים רגשיים ופיזיים, לרכך את המפרקים, לשפר את היציבה ולייצר שקט פנימי אמיתי.
-                </p>
-                <p class="font-body-md text-body-md text-secondary leading-relaxed">
-                    התרגול מאמן את הגוף לעבוד מתוך הרפיה ומודעות למקומות בהם אנו מפעילים מאמץ מיותר בחיי היומיום. את השיטה ניתן להתאים לכל גיל ולכל מבנה גוף.
-                </p>
-            </div>
-
-            <div class="md:col-span-6 space-y-6">
-                <!-- Option Card 1 -->
-                <div class="bg-surface p-7 rounded-2xl organic-shadow space-y-3 border-r-4 border-primary">
-                    <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                        <span class="material-symbols-outlined text-primary text-[24px]">groups</span>
-                    </div>
-                    <h3 class="font-headline-md text-headline-md text-primary">תרגול בקבוצה ובארגונים</h3>
-                    <p class="font-body-md text-body-md text-secondary leading-relaxed">
-                        סדנאות ומפגשים מותאמים למשרדים, ארגונים וקבוצות פרטיות. התרגול הקבוצתי משרה רוגע, מפחית שחיקה ומתחים הנובעים מישיבה ממושכת מול מסכים, ומחזק את החיבור דרך נשימה ותנועה משותפת.
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center">
+                <div class="md:col-span-7 space-y-5">
+                    <h2 class="font-headline-lg text-headline-lg text-primary">מהי שיטת שין-סן-דו?</h2>
+                    <p class="font-body-lg text-body-lg text-ink-text leading-relaxed">
+                        <strong>שׁין סֶן דוֹ</strong> היא שיטת תנועה טיפולית שלמדתי במכללת ווינגייט. השיטה נולדה מהצ'י קונג ומושתתת על עקרונות הפילוסופיה הסינית.
                     </p>
+                    <p class="font-body-lg text-body-lg text-ink-text leading-relaxed">
+                        שיטת התנועה מתבססת על ההבנה כי שפת הגוף משקפת היבטים מנטליים ורגשיים של האדם. התנועה מלווה בתשומת לב לנשימות ועוזרת למוסס חסמים רגשיים ופיזיים, לרכך את המפרקים, לשפר את היציבה ולייצר חיבור וקשב לגוף.
+                    </p>
+                    <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                        התרגול מאמן את הגוף לעבוד מתוך הרפיה ומודעות למקומות בהם אנו מפעילים/ות מאמץ מיותר. את שיטת הטיפול ניתן להתאים לכל גיל וגוף.
+                    </p>
+                </div>
+                <div class="md:col-span-5 relative">
+                    <div class="relative z-10 rounded-2xl overflow-hidden organic-shadow aspect-[4/3] md:aspect-[3/4] max-w-sm mx-auto md:max-w-none">
+                        <img alt="נריה מרק - תרגול שין-סן-דו" class="w-full h-full object-cover" src="Site%20Files/shinsendo_exercise.jpg">
+                    </div>
+                    <div class="absolute -top-6 -right-6 w-48 h-48 bg-sage-muted/15 rounded-full blur-2xl -z-10"></div>
+                    <div class="absolute -bottom-6 -left-6 w-64 h-64 bg-soft-clay/15 rounded-full blur-2xl -z-10"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treatment Options (Exact from Wix) -->
+    <section class="py-10 md:py-14 bg-surface border-y border-outline-variant/30">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop space-y-8">
+            <div class="text-center">
+                <h3 class="font-headline-lg text-headline-lg text-primary">מוזמנים.ות לקבוע איתי</h3>
+                <p class="font-body-md text-body-md text-secondary">מגוון מסגרות תרגול המותאמות לקצב ולצרכים שלכם</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Option Card 1 -->
+                <div class="bg-cream-bg p-8 rounded-2xl organic-shadow space-y-4 border-r-4 border-primary flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <h4 class="font-headline-md text-headline-md text-primary">תרגול בקבוצה</h4>
+                        <p class="font-body-lg text-body-lg text-ink-text font-medium">למשרדים, למוסדות ולקבוצות פרטיות</p>
+                        <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                            סדנאות ומפגשים מרוכזים המשחררים עומסים של ישיבה ממושכת, מפחיתים מתח ולחץ ומעניקים כלים מעשיים לנשימה ויציבה נכונה בסביבת העבודה.
+                        </p>
+                    </div>
+                    <div class="pt-4">
+                        <a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary font-semibold hover:text-soft-clay transition-colors" href="https://wa.me/972544442103" target="_blank">
+                            תיאום סדנה קבוצתית <span class="material-symbols-outlined text-[16px]">arrow_back</span>
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Option Card 2 -->
-                <div class="bg-surface p-7 rounded-2xl organic-shadow space-y-3 border-r-4 border-soft-clay">
-                    <div class="w-12 h-12 bg-soft-clay/15 rounded-full flex items-center justify-center">
-                        <span class="material-symbols-outlined text-primary text-[24px]">accessibility_new</span>
+                <div class="bg-cream-bg p-8 rounded-2xl organic-shadow space-y-4 border-r-4 border-soft-clay flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <h4 class="font-headline-md text-headline-md text-primary">שיעורים פרטיים טיפוליים</h4>
+                        <p class="font-body-lg text-body-lg text-ink-text font-medium">התאמה אישית אחד על אחד</p>
+                        <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                            מפגש פרטני המותאם בדיוק למצב הגופני והרגשי שלך. מיועד להקלה על כאבים כרוניים, שחרור מפרקים, שיפור היציבה ופיתוח מודעות גופנית עמוקה.
+                        </p>
                     </div>
-                    <h3 class="font-headline-md text-headline-md text-primary">שיעורים אישיים טיפוליים</h3>
-                    <p class="font-body-md text-body-md text-secondary leading-relaxed">
-                        מפגש פרטני אחד על אחד המותאם בדיוק לצרכים הבריאותיים והפיזיים שלך. מיועד לשיקום מכאבים כרוניים, הגדלת טווח התנועה, חיזוק היציבה והשבת האיזון למערכת העצבים.
-                    </p>
+                    <div class="pt-4">
+                        <a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary font-semibold hover:text-soft-clay transition-colors" href="https://wa.me/972544442103" target="_blank">
+                            קביעת שיעור אישי <span class="material-symbols-outlined text-[16px]">arrow_back</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Call to action -->
-    <section class="py-12 md:py-14 bg-surface border-t border-outline-variant/30">
+    <section class="py-12 md:py-14 bg-cream-bg">
         <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center space-y-4">
             <h2 class="font-headline-lg text-headline-lg text-primary">מעוניינים בשיעור או בסדנה?</h2>
             <p class="font-body-md text-body-md text-secondary max-w-md mx-auto">מוזמנים ליצור קשר להתאמת שיעור אישי או סדנה קבוצתית</p>
@@ -244,7 +285,8 @@
     </div>
 </footer>
 
-<a class="fixed bottom-6 right-6 z-[100] w-14 h-14 bg-primary text-white rounded-xl flex items-center justify-center organic-shadow hover:scale-105 hover:bg-soft-clay transition-all duration-300" href="https://wa.me/972544442103" target="_blank" aria-label="WhatsApp">
+<!-- Persistent Floating WhatsApp -->
+<a class="fixed bottom-6 right-6 z-[100] w-14 h-14 bg-primary text-white rounded-xl flex items-center justify-center organic-shadow hover:scale-105 hover:bg-soft-clay transition-all duration-300" href="https://wa.me/972544442103" target="_blank" aria-label="פנייה ב-WhatsApp">
     <span class="material-symbols-outlined text-[30px]">chat</span>
 </a>
 
