@@ -40,27 +40,28 @@
         <button id="menu-btn" class="lg:hidden text-primary p-2" aria-label="פתח תפריט">
             <span class="material-symbols-outlined text-[32px]">menu</span>
         </button>
-        <!-- Mobile Menu Overlay -->
-        <div id="mobile-menu" class="fixed inset-0 z-[100] hidden bg-cream-bg flex flex-col justify-center items-center gap-7">
-            <button id="close-menu" class="absolute top-6 right-6 text-primary p-2" aria-label="סגור תפריט">
-                <span class="material-symbols-outlined text-[32px]">close</span>
-            </button>
-            <div class="flex items-center gap-3 mb-2">
-                <img src="Site%20Files/logo.svg" alt="נריה מרק" class="h-14 w-auto object-contain">
-                <span class="font-headline text-2xl text-primary font-bold">נריה מרק</span>
-            </div>
-            <a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="index.html">בית</a>
-            <a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="about.html">קצת עלי</a>
-            <a class="font-headline-md text-headline-md text-primary font-semibold" href="kids.html">תינוקות וילדים</a>
-            <a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="shinsendo.html">שין-סן-דו</a>
-            <a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="recipes.html">מתכונים</a>
-            <a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="stretches.html">מתיחות</a>
-            <a class="flex items-center gap-2 px-6 py-3 bg-primary text-white font-label-caps text-label-caps rounded-full mt-2" href="tel:054-444-2103">
-                <span class="material-symbols-outlined text-[18px]">phone</span>054-444-2103
-            </a>
-        </div>
     </nav>
 </header>
+
+<!-- Mobile Menu Overlay (outside the header so it covers the whole screen) -->
+<div id="mobile-menu" class="fixed inset-0 z-[110] hidden bg-cream-bg overflow-y-auto flex flex-col justify-center items-center gap-7">
+    <button id="close-menu" class="absolute top-6 right-6 text-primary p-2" aria-label="סגור תפריט">
+        <span class="material-symbols-outlined text-[32px]">close</span>
+    </button>
+    <div class="flex items-center gap-3 mb-2">
+        <img src="Site%20Files/logo.svg" alt="נריה מרק" class="h-14 w-auto object-contain">
+        <span class="font-headline text-2xl text-primary font-bold">נריה מרק</span>
+    </div>
+    <a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="index.html">בית</a>
+    <a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="about.html">קצת עלי</a>
+    <a class="font-headline-md text-headline-md text-primary font-semibold" href="kids.html">תינוקות וילדים</a>
+    <a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="shinsendo.html">שין-סן-דו</a>
+    <a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="recipes.html">מתכונים</a>
+    <a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="stretches.html">מתיחות</a>
+    <a class="flex items-center gap-2 px-6 py-3 bg-primary text-white font-label-caps text-label-caps rounded-full mt-2" href="tel:054-444-2103">
+        <span class="material-symbols-outlined text-[18px]">phone</span>054-444-2103
+    </a>
+</div>
 
 <main class="pt-20">
     <!-- Header Section (Compact Spacing) -->
@@ -286,17 +287,20 @@
     if (menuBtn && mobileMenu) {
         menuBtn.addEventListener('click', () => {
             mobileMenu.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
         });
     }
     if (closeBtn && mobileMenu) {
         closeBtn.addEventListener('click', () => {
             mobileMenu.classList.add('hidden');
+            document.body.classList.remove('overflow-hidden');
         });
     }
     const mobileLinks = mobileMenu ? mobileMenu.querySelectorAll('a') : [];
     mobileLinks.forEach(link => {
         link.addEventListener('click', () => {
             mobileMenu.classList.add('hidden');
+            document.body.classList.remove('overflow-hidden');
         });
     });
 </script>
