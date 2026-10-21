@@ -1,0 +1,51 @@
+/* Shared styles for every page. Colors match theme.js. */
+body {
+    background-color: #FFF8F0;
+    color: #3A2620;
+    font-family: 'Assistant', sans-serif;
+    font-size: 17px;
+}
+h1, h2, h3, .font-headline {
+    font-family: 'Frank Ruhl Libre', serif;
+}
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+.organic-shadow {
+    box-shadow: 0 12px 40px -12px rgba(154, 59, 38, 0.18);
+}
+
+/* Nav underline on hover */
+.nav-item::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #9A3B26, #E2A453);
+    transition: width .3s;
+}
+.nav-item:hover::after {
+    width: 100%;
+}
+
+/* Warm color strip along the top of the header */
+header.fixed::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #9A3B26, #C0583A, #E2A453, #C0583A, #9A3B26);
+}
+
+/* Soft saffron and coral glow behind the first section of every page */
+main > section:first-child {
+    background-image:
+        radial-gradient(ellipse at 90% 0%, rgba(226, 164, 83, 0.22), transparent 55%),
+        radial-gradient(ellipse at 5% 100%, rgba(192, 88, 58, 0.14), transparent 50%);
+}
+
+/* Warm gradient line above the footer */
+footer {
+    border-top: 3px solid transparent;
+    border-image: linear-gradient(90deg, #E2A453, #C0583A, #9A3B26) 1;
+}

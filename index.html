@@ -10,87 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700&family=Frank+Ruhl+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#713323",
-                        "soft-clay": "#B67B6B",
-                        "sage-muted": "#A3A98E",
-                        "cream-bg": "#FDFBF7",
-                        "surface": "#fbf9f4",
-                        "surface-container": "#f0eee9",
-                        "surface-container-high": "#eae8e3",
-                        "ink-text": "#2D2926",
-                        "secondary": "#5a4d3f",
-                        "on-surface-variant": "#53433f",
-                        "outline-variant": "#d9c1bc"
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.375rem",
-                        "lg": "0.75rem",
-                        "xl": "1rem",
-                        "2xl": "1.25rem",
-                        "3xl": "1.75rem",
-                        "full": "9999px"
-                    },
-                    spacing: {
-                        "gutter": "24px",
-                        "margin-desktop": "64px",
-                        "container-max": "1140px",
-                        "margin-mobile": "20px"
-                    },
-                    fontFamily: {
-                        "headline-xl": ["'Frank Ruhl Libre'", "serif"],
-                        "headline-lg": ["'Frank Ruhl Libre'", "serif"],
-                        "headline-md": ["'Frank Ruhl Libre'", "serif"],
-                        "body-lg": ["'Assistant'", "sans-serif"],
-                        "body-md": ["'Assistant'", "sans-serif"],
-                        "label-caps": ["'Assistant'", "sans-serif"],
-                        "headline-xl-mobile": ["'Frank Ruhl Libre'", "serif"]
-                    },
-                    fontSize: {
-                        "headline-xl": ["52px", {"lineHeight": "1.15", "letterSpacing": "-0.01em", "fontWeight": "700"}],
-                        "headline-lg": ["36px", {"lineHeight": "1.25", "fontWeight": "600"}],
-                        "headline-md": ["26px", {"lineHeight": "1.35", "fontWeight": "600"}],
-                        "body-lg": ["20px", {"lineHeight": "1.65", "fontWeight": "400"}],
-                        "body-md": ["17px", {"lineHeight": "1.65", "fontWeight": "400"}],
-                        "label-caps": ["16px", {"lineHeight": "1.3", "fontWeight": "600"}],
-                        "headline-xl-mobile": ["38px", {"lineHeight": "1.2", "fontWeight": "700"}]
-                    }
-                }
-            }
-        };
-    </script>
+    <script src="theme.js"></script>
+    <link rel="stylesheet" href="theme.css">
     <style>
-        body {
-            background-color: #FDFBF7;
-            color: #2D2926;
-            font-family: 'Assistant', sans-serif;
-            font-size: 17px;
-        }
-        h1, h2, h3, .font-headline {
-            font-family: 'Frank Ruhl Libre', serif;
-        }
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .organic-shadow {
-            box-shadow: 0 10px 40px -10px rgba(113, 51, 35, 0.08);
-        }
-        .nav-item::after {
-            content: '';
-            display: block;
-            width: 0;
-            height: 2px;
-            background: #713323;
-            transition: width .3s;
-        }
-        .nav-item:hover::after {
-            width: 100%;
-        }
         .carousel-slide {
             display: none;
             opacity: 0;
@@ -163,26 +85,26 @@
                 </div>
                 <div class="space-y-4 max-w-lg">
                     <div class="flex items-start gap-4">
-                        <span class="h-px w-8 bg-sage-muted mt-3"></span>
+                        <span class="h-0.5 w-8 rounded-full bg-primary mt-3"></span>
                         <p class="font-body-lg text-body-lg text-secondary">
                             מטפלת מוסמכת (Dip.Ac) ברפואה סינית עתיקה משנת 2014.
                         </p>
                     </div>
                     <div class="flex items-start gap-4">
-                        <span class="h-px w-8 bg-sage-muted mt-3"></span>
+                        <span class="h-0.5 w-8 rounded-full bg-soft-clay mt-3"></span>
                         <p class="font-body-lg text-body-lg text-secondary">
                             מתמחה בטיפול בילדים ובמבוגרים, תוך שימת דגש על איזון וזרימה טבעית של הגוף והנפש.
                         </p>
                     </div>
                     <div class="flex items-start gap-4">
-                        <span class="h-px w-8 bg-sage-muted mt-3"></span>
+                        <span class="h-0.5 w-8 rounded-full bg-saffron mt-3"></span>
                         <p class="font-body-lg text-body-lg text-secondary">
                             מורה ליוגה ולתנועה טיפולית בשיטת "שין-סן-דו".
                         </p>
                     </div>
                 </div>
                 <div class="pt-4">
-                    <a class="group inline-flex items-center gap-3 ps-6 pe-1.5 py-1.5 bg-primary text-cream-bg rounded-full font-body-md text-[17px] font-semibold tracking-wide ring-1 ring-primary/15 ring-offset-4 ring-offset-cream-bg shadow-[0_8px_24px_-10px_rgba(113,51,35,0.5)] hover:bg-soft-clay hover:ring-soft-clay/30 hover:-translate-y-0.5 transition-all duration-300" href="https://wa.me/972544442103" target="_blank" aria-label="צרו קשר ב-WhatsApp">
+                    <a class="group inline-flex items-center gap-3 ps-6 pe-1.5 py-1.5 bg-primary text-cream-bg rounded-full font-body-md text-[17px] font-semibold tracking-wide ring-1 ring-primary/15 ring-offset-4 ring-offset-cream-bg shadow-[0_8px_24px_-10px_rgba(154,59,38,0.55)] hover:bg-soft-clay hover:ring-soft-clay/30 hover:-translate-y-0.5 transition-all duration-300" href="https://wa.me/972544442103" target="_blank" aria-label="צרו קשר ב-WhatsApp">
                         צרו קשר
                         <span class="w-9 h-9 rounded-full bg-white/15 flex items-center justify-center transition-transform duration-300 group-hover:-translate-x-0.5">
                             <span class="material-symbols-outlined text-[19px]" style="font-variation-settings: 'FILL' 0, 'wght' 300;">chat</span>
@@ -295,8 +217,8 @@
                 <!-- Card 2: נווה שלום | واحة السلام -->
                 <div class="group bg-surface-container p-8 rounded-2xl organic-shadow transition-all hover:-translate-y-1 flex flex-col justify-between">
                     <div>
-                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                            <span class="material-symbols-outlined text-primary text-[24px]">location_on</span>
+                        <div class="w-12 h-12 bg-saffron/25 rounded-full flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-saffron-deep text-[24px]">location_on</span>
                         </div>
                         <h3 class="font-headline-md text-headline-md text-primary mb-3">נווה שלום | واحة السلام</h3>
                         <p class="font-body-md text-body-md text-secondary mb-6">קליניקה בנווה שלום</p>
@@ -309,8 +231,8 @@
                 <!-- Card 3: כפר סבא -->
                 <div class="group bg-surface-container p-8 rounded-2xl organic-shadow transition-all hover:-translate-y-1 flex flex-col justify-between">
                     <div>
-                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                            <span class="material-symbols-outlined text-primary text-[24px]">location_on</span>
+                        <div class="w-12 h-12 bg-soft-clay/15 rounded-full flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-soft-clay text-[24px]">location_on</span>
                         </div>
                         <h3 class="font-headline-md text-headline-md text-primary mb-3">כפר סבא</h3>
                         <p class="font-body-md text-body-md text-secondary mb-6">"מרפאת עידנים", הצומת 9</p>
@@ -326,7 +248,10 @@
     <!-- Contact/CTA Section -->
     <section class="py-12 md:py-16 relative overflow-hidden">
         <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
-            <div class="bg-primary py-16 px-8 rounded-3xl text-center text-white organic-shadow">
+            <div class="relative overflow-hidden bg-gradient-to-br from-primary via-terracotta to-soft-clay py-16 px-8 rounded-3xl text-center text-white organic-shadow">
+                <div class="absolute -top-16 -left-16 w-64 h-64 rounded-full bg-saffron/35 blur-3xl pointer-events-none"></div>
+                <div class="absolute -bottom-20 -right-10 w-72 h-72 rounded-full bg-apricot/20 blur-3xl pointer-events-none"></div>
+                <div class="relative">
                 <h2 class="font-headline-lg text-headline-lg mb-4 text-white">להתייעצות ולקביעת תור</h2>
                 <p class="font-body-lg text-body-lg text-cream-bg/90 mb-8 max-w-lg mx-auto">מוזמנים ליצור קשר ישיר לכל שאלה, התייעצות או תיאום מועד לטיפול</p>
                 <div class="flex flex-col md:flex-row gap-5 justify-center items-center">
@@ -338,6 +263,7 @@
                         <span class="material-symbols-outlined">chat</span>
                         שלח הודעה ב-WhatsApp
                     </a>
+                </div>
                 </div>
             </div>
         </div>

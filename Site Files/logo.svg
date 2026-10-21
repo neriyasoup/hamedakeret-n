@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="נריה מרק">
   <!-- Brush-stroke circle (enso): thick at the lower left, tapering toward the opening at the top right -->
-  <path d="M46.78 14.38 A23 23 0 1 0 54.22 26.05 A1.2 1.2 0 0 0 51.85 25.88 A19 19 0 1 1 45.71 16.25 A1 1 0 0 0 46.78 14.38 Z" fill="#713323"/>
+  <path d="M46.78 14.38 A23 23 0 1 0 54.22 26.05 A1.2 1.2 0 0 0 51.85 25.88 A19 19 0 1 1 45.71 16.25 A1 1 0 0 0 46.78 14.38 Z" fill="#9A3B26"/>
   <!-- Leaf -->
-  <path d="M30.5 43 C22.5 37.5 23 26 36.5 20.5 C39.5 30 37 38.5 30.5 43 Z" fill="#8A9070"/>
-  <path d="M31.3 40.5 Q33.3 32 35.6 24.5" fill="none" stroke="#FDFBF7" stroke-width="0.8" stroke-linecap="round" opacity="0.7"/>
+  <path d="M30.5 43 C22.5 37.5 23 26 36.5 20.5 C39.5 30 37 38.5 30.5 43 Z" fill="#E2A453"/>
+  <path d="M31.3 40.5 Q33.3 32 35.6 24.5" fill="none" stroke="#FFF8F0" stroke-width="0.8" stroke-linecap="round" opacity="0.7"/>
 </svg>
