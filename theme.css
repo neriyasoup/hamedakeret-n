@@ -1,8 +1,8 @@
 /* Shared styles for every page. Colors match theme.js.
-   Look: white, airy, thin lines, flat surfaces, warm sand colour bands. */
+   Look: white, airy, thin lines, flat surfaces, slate-blue colour bands, charcoal text. */
 body {
     background-color: #FFFFFF;
-    color: #2E2622;
+    color: #2F3337;
     font-family: 'Assistant', sans-serif;
     font-size: 17px;
 }
@@ -16,7 +16,7 @@ h1, h2, h3, h4, .font-headline {
 /* Flat surfaces: a thin line instead of soft shadows */
 .organic-shadow {
     box-shadow: none;
-    border: 1px solid #E3D6C9;
+    border: 1px solid #DDE3E8;
 }
 /* The old blurred colour glows don't fit the flat style */
 .blur-2xl, .blur-3xl {
@@ -26,29 +26,29 @@ h1, h2, h3, h4, .font-headline {
 /* ---------- Header ---------- */
 header.fixed {
     background: #FFFFFF;
-    border-bottom: 1px solid #E3D6C9;
+    border-bottom: 1px solid #DDE3E8;
     backdrop-filter: none;
 }
 .nav-item {
-    color: #6A5A50;
+    color: #5E656B;
     font-weight: 400;
     letter-spacing: 0.06em;
     padding-bottom: 2px;
     border-bottom: 0;
 }
 .nav-item:hover {
-    color: #2E2622;
+    color: #2F3337;
 }
 /* The current page's link */
 .nav-item.border-b-2 {
-    color: #B48A72;
+    color: #7F98AC;
 }
 .nav-item::after {
     content: '';
     display: block;
     width: 0;
     height: 1px;
-    background: #B48A72;
+    background: #7F98AC;
     transition: width .3s;
 }
 .nav-item:hover::after {
@@ -57,15 +57,15 @@ header.fixed {
 /* Phone number: thin outlined box, like "Schedule session" in the reference */
 header a[href^="tel:"] {
     background: transparent;
-    color: #2E2622;
-    border: 1px solid #6A5A50;
+    color: #2F3337;
+    border: 1px solid #5E656B;
     border-radius: 0;
     font-weight: 400;
     letter-spacing: 0.08em;
     padding: 0.55rem 1.1rem;
 }
 header a[href^="tel:"]:hover {
-    background: #2E2622;
+    background: #2F3337;
     color: #FFFFFF;
 }
 
@@ -79,17 +79,17 @@ header a[href^="tel:"]:hover {
 }
 #mobile-menu a[href^="tel:"] {
     background: transparent;
-    color: #2E2622;
-    border: 1px solid #6A5A50;
+    color: #2F3337;
+    border: 1px solid #5E656B;
     border-radius: 0;
     font-weight: 400;
     letter-spacing: 0.08em;
 }
 
 /* ---------- Page title band (inner pages) ---------- */
-/* The first section of each inner page becomes a sand colour band with white text */
+/* The first section of each inner page becomes a slate-blue colour band with white text */
 main > section:first-child:not(.hero) {
-    background: #B48A72;
+    background: #7F98AC;
     border: 0;
 }
 main > section:first-child:not(.hero) h1 {
@@ -111,5 +111,5 @@ main > section:first-child:not(.hero) p {
 
 /* ---------- Footer ---------- */
 footer {
-    border-top: 1px solid #E3D6C9;
+    border-top: 1px solid #DDE3E8;
 }

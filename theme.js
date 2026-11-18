@@ -4,23 +4,24 @@ tailwind.config = {
     theme: {
         extend: {
             colors: {
-                // Calm, airy palette: white, warm sand, soft brown
-                "primary": "#5E4335",               // soft brown (headings, buttons)
-                "soft-clay": "#946450",             // warm brown (hovers, links)
-                "terracotta": "#7A5545",            // darker partner for primary
-                "sand": "#B48A72",                  // colour bands under photos and page titles
-                "saffron": "#C9A58E",               // light sand accent
-                "saffron-deep": "#8E6A52",          // sand dark enough for icons
-                "apricot": "#EADBCD",               // soft warm fill
-                "sage-muted": "#C9A58E",            // legacy name, now light sand (accent lines)
+                // Reference palette: white, charcoal grey, soft slate blue
+                // (older names like "sand" and "saffron" are kept so the pages don't need edits)
+                "primary": "#3E4C59",               // dark slate (headings, buttons)
+                "soft-clay": "#5C7486",             // slate blue (hovers, links)
+                "terracotta": "#33414D",            // darker partner for primary
+                "sand": "#7F98AC",                  // slate-blue colour bands under photos and page titles
+                "saffron": "#A7BBCB",               // light slate-blue accent
+                "saffron-deep": "#5C7486",          // slate blue dark enough for icons
+                "apricot": "#DCE5EC",               // soft blue-grey fill
+                "sage-muted": "#A7BBCB",            // legacy name, now light slate blue (accent lines)
                 "cream-bg": "#FFFFFF",              // page background
-                "surface": "#F7F2EC",               // alternate section background
-                "surface-container": "#EFE6DC",     // cards, footer
-                "surface-container-high": "#E6D8CA",
-                "ink-text": "#2E2622",              // main text
-                "secondary": "#54463E",             // body text
-                "on-surface-variant": "#6A5A50",    // muted text
-                "outline-variant": "#E3D6C9"        // thin lines and borders
+                "surface": "#F4F6F8",               // alternate section background
+                "surface-container": "#EAEFF3",     // cards, footer
+                "surface-container-high": "#DCE5EC",
+                "ink-text": "#2F3337",              // main text (charcoal)
+                "secondary": "#4B5258",             // body text
+                "on-surface-variant": "#5E656B",    // muted text
+                "outline-variant": "#DDE3E8"        // thin lines and borders
             },
             borderRadius: {
                 // Nearly square corners, like the reference design
