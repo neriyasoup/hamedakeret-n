@@ -75,50 +75,34 @@
 </div>
 
 <main class="pt-20">
-    <!-- Hero Section -->
-    <section class="relative overflow-hidden py-10 md:py-16 flex items-center bg-cream-bg">
-        <div class="max-w-container-max mx-auto w-full px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center">
-            <div class="md:col-span-6 order-2 md:order-1 space-y-6">
-                <div>
-                    <h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary leading-tight">
-                        נריה מרק
-                    </h1>
-                </div>
-                <div class="space-y-4 max-w-lg">
-                    <div class="flex items-start gap-4">
-                        <span class="h-0.5 w-8 rounded-full bg-primary mt-3"></span>
-                        <p class="font-body-lg text-body-lg text-secondary">
-                            מטפלת מוסמכת (Dip.Ac) ברפואה סינית עתיקה משנת 2014.
-                        </p>
-                    </div>
-                    <div class="flex items-start gap-4">
-                        <span class="h-0.5 w-8 rounded-full bg-soft-clay mt-3"></span>
-                        <p class="font-body-lg text-body-lg text-secondary">
-                            מתמחה בילדים ובמבוגרים.
-                        </p>
-                    </div>
-                    <div class="flex items-start gap-4">
-                        <span class="h-0.5 w-8 rounded-full bg-saffron mt-3"></span>
-                        <p class="font-body-lg text-body-lg text-secondary">
-                            מורה ליוגה ולתנועה טיפולית בשיטת "שין-סן-דו".
-                        </p>
-                    </div>
-                </div>
-                <div class="pt-4">
-                    <a class="group inline-flex items-center gap-3 ps-6 pe-1.5 py-1.5 bg-primary text-cream-bg rounded-full font-body-md text-[17px] font-semibold tracking-wide ring-1 ring-primary/15 ring-offset-4 ring-offset-cream-bg shadow-[0_8px_24px_-10px_rgba(154,59,38,0.55)] hover:bg-soft-clay hover:ring-soft-clay/30 hover:-translate-y-0.5 transition-all duration-300" href="https://wa.me/972544442103" target="_blank" aria-label="צרו קשר ב-WhatsApp">
-                        צרו קשר
-                        <span class="w-9 h-9 rounded-full bg-white/15 flex items-center justify-center transition-transform duration-300 group-hover:-translate-x-0.5">
-                            <span class="material-symbols-outlined text-[19px]" style="font-variation-settings: 'FILL' 0, 'wght' 300;">chat</span>
-                        </span>
-                    </a>
+    <!-- Hero: full-width photo with the white logo and name over it -->
+    <section class="hero relative overflow-hidden h-[62vh] min-h-[420px] md:h-[78vh] md:min-h-[520px] max-h-[760px]">
+        <img alt="נריה מרק - תנועה טיפולית בשיטת שין-סן-דו" class="absolute inset-0 w-full h-full object-cover object-[35%_center]" src="Site%20Files/shinsendo_exercise.jpg">
+        <!-- Soft dark shade on the right side so the white text stays readable -->
+        <div class="absolute inset-0 bg-gradient-to-t from-[#2E2622]/55 via-[#2E2622]/10 to-transparent"></div>
+        <div class="relative h-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex items-end pb-10 md:pb-16">
+            <div class="flex items-center gap-4 md:gap-7 text-white">
+                <img src="Site%20Files/logo-white.svg" alt="" class="hero-mark w-20 h-20 md:w-36 md:h-36 shrink-0">
+                <div class="hero-text">
+                    <h1 class="font-headline-xl text-[52px] md:text-[96px] leading-none font-bold tracking-wide">נריה מרק</h1>
+                    <p class="mt-2 md:mt-4 text-[17px] md:text-[28px] font-light tracking-[0.35em]">רפואה סינית עתיקה</p>
                 </div>
             </div>
-            <div class="md:col-span-6 order-1 md:order-2 relative">
-                <div class="relative z-10 rounded-2xl overflow-hidden organic-shadow aspect-[0.75] max-w-md mx-auto md:max-w-none">
-                    <img alt="נריה מרק - טיפול ברפואה סינית עתיקה" class="w-full h-full object-cover" src="Site%20Files/home.jpg">
-                </div>
-                <div class="absolute -top-10 -right-10 w-56 h-56 bg-sage-muted/15 rounded-full blur-3xl -z-10"></div>
-                <div class="absolute -bottom-10 -left-10 w-72 h-72 bg-soft-clay/15 rounded-full blur-3xl -z-10"></div>
+        </div>
+    </section>
+
+    <!-- Sand colour band under the photo -->
+    <section class="bg-sand text-white">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-9 md:py-11 text-center space-y-2">
+            <p class="text-[20px] md:text-[26px] font-semibold leading-snug">מטפלת מוסמכת (Dip.Ac) ברפואה סינית עתיקה משנת 2014</p>
+            <p class="text-[18px] md:text-[22px] font-normal leading-snug">
+                <span class="block md:inline">מתמחה בילדים ובמבוגרים</span><span class="hidden md:inline mx-2 opacity-80">•</span><span class="block md:inline">מורה ליוגה ולתנועה טיפולית בשיטת "שין-סן-דו"</span>
+            </p>
+            <div class="pt-5">
+                <a class="inline-flex items-center gap-2 px-7 py-2.5 border border-white text-white text-[16px] tracking-[0.08em] hover:bg-white hover:text-ink-text transition-colors duration-300" href="https://wa.me/972544442103" target="_blank" aria-label="צרו קשר ב-WhatsApp">
+                    <span class="material-symbols-outlined text-[19px]">chat</span>
+                    צרו קשר
+                </a>
             </div>
         </div>
     </section>
@@ -332,10 +316,10 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
                 <!-- Card 1: תל אביב -->
-                <div class="group bg-surface-container p-8 rounded-2xl organic-shadow transition-all hover:-translate-y-1 flex flex-col justify-between">
+                <div class="group bg-white p-8 border border-outline-variant hover:border-saffron transition-colors flex flex-col justify-between">
                     <div>
-                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                            <span class="material-symbols-outlined text-primary text-[24px]">location_on</span>
+                        <div class="w-12 h-12 border border-saffron rounded-full flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-saffron-deep text-[24px]">location_on</span>
                         </div>
                         <h3 class="font-headline-md text-headline-md text-primary mb-3">תל אביב</h3>
                         <p class="font-body-md text-body-md text-secondary mb-6">"בית מרפא", לבונטין 12, קומה 3</p>
@@ -346,9 +330,9 @@
                 </div>
 
                 <!-- Card 2: נווה שלום | واحة السلام -->
-                <div class="group bg-surface-container p-8 rounded-2xl organic-shadow transition-all hover:-translate-y-1 flex flex-col justify-between">
+                <div class="group bg-white p-8 border border-outline-variant hover:border-saffron transition-colors flex flex-col justify-between">
                     <div>
-                        <div class="w-12 h-12 bg-saffron/25 rounded-full flex items-center justify-center mb-6">
+                        <div class="w-12 h-12 border border-saffron rounded-full flex items-center justify-center mb-6">
                             <span class="material-symbols-outlined text-saffron-deep text-[24px]">location_on</span>
                         </div>
                         <h3 class="font-headline-md text-headline-md text-primary mb-3">נווה שלום | واحة السلام</h3>
@@ -359,10 +343,10 @@
                 </div>
 
                 <!-- Card 3: כפר סבא -->
-                <div class="group bg-surface-container p-8 rounded-2xl organic-shadow transition-all hover:-translate-y-1 flex flex-col justify-between">
+                <div class="group bg-white p-8 border border-outline-variant hover:border-saffron transition-colors flex flex-col justify-between">
                     <div>
-                        <div class="w-12 h-12 bg-soft-clay/15 rounded-full flex items-center justify-center mb-6">
-                            <span class="material-symbols-outlined text-soft-clay text-[24px]">location_on</span>
+                        <div class="w-12 h-12 border border-saffron rounded-full flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-saffron-deep text-[24px]">location_on</span>
                         </div>
                         <h3 class="font-headline-md text-headline-md text-primary mb-3">כפר סבא</h3>
                         <p class="font-body-md text-body-md text-secondary mb-6">"מרפאת עידנים", הצומת 9</p>
@@ -376,24 +360,18 @@
     </section>
 
     <!-- Contact/CTA Section -->
-    <section class="py-12 md:py-16 relative overflow-hidden">
-        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
-            <div class="relative overflow-hidden bg-gradient-to-br from-primary via-terracotta to-soft-clay py-16 px-8 rounded-3xl text-center text-white organic-shadow">
-                <div class="absolute -top-16 -left-16 w-64 h-64 rounded-full bg-saffron/35 blur-3xl pointer-events-none"></div>
-                <div class="absolute -bottom-20 -right-10 w-72 h-72 rounded-full bg-apricot/20 blur-3xl pointer-events-none"></div>
-                <div class="relative">
-                <h2 class="font-headline-lg text-headline-lg mb-8 text-white">להתייעצות ולקביעת תור</h2>
-                <div class="flex flex-col md:flex-row gap-5 justify-center items-center">
-                    <a class="w-full md:w-auto px-10 py-4 bg-white text-primary font-headline-md text-headline-md rounded-xl hover:bg-cream-bg transition-colors flex items-center justify-center gap-3" href="tel:054-444-2103">
-                        <span class="material-symbols-outlined">call</span>
-                        054-444-2103
-                    </a>
-                    <a class="w-full md:w-auto px-10 py-4 border-2 border-white/60 text-white font-headline-md text-headline-md rounded-xl hover:bg-white/10 transition-colors flex items-center justify-center gap-3" href="https://wa.me/972544442103" target="_blank">
-                        <span class="material-symbols-outlined">chat</span>
-                        שלח הודעה ב-WhatsApp
-                    </a>
-                </div>
-                </div>
+    <section class="py-14 md:py-20 bg-surface border-t border-outline-variant">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+            <h2 class="font-headline-lg text-headline-lg mb-8 text-primary">להתייעצות ולקביעת תור</h2>
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+                <a class="w-full md:w-auto px-9 py-3.5 bg-primary text-white text-[18px] tracking-[0.06em] hover:bg-ink-text transition-colors flex items-center justify-center gap-3" href="tel:054-444-2103">
+                    <span class="material-symbols-outlined">call</span>
+                    054-444-2103
+                </a>
+                <a class="w-full md:w-auto px-9 py-3.5 border border-primary text-primary text-[18px] tracking-[0.06em] hover:bg-primary hover:text-white transition-colors flex items-center justify-center gap-3" href="https://wa.me/972544442103" target="_blank">
+                    <span class="material-symbols-outlined">chat</span>
+                    שלח הודעה ב-WhatsApp
+                </a>
             </div>
         </div>
     </section>

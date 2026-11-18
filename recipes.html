@@ -74,183 +74,63 @@
     <!-- Page Header (Tightened) -->
     <section class="bg-surface py-10 md:py-14 border-b border-outline-variant/30">
         <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center space-y-2">
-            <h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary">מתכונים ותזונה מבריאה</h1>
-            <p class="font-body-lg text-body-lg text-secondary max-w-xl mx-auto">מתכונים ביתיים, פשוטים ומאוזנים בראי הרפואה הסינית</p>
+            <h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary">מתכונים</h1>
         </div>
     </section>
 
     <!-- Content Section -->
     <section class="py-10 md:py-14 bg-cream-bg">
         <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop space-y-8">
-            <div class="max-w-2xl mx-auto text-center space-y-2">
-                <p class="font-body-lg text-body-lg text-ink-text leading-relaxed">
-                    ברפואה הסינית, המטבח הוא מקור הריפוי הראשון שלנו. שילוב מדויק של דגנים, קטניות, זרעים ותבלינים מחזק את האנרגיה (צ'י), מקל על העיכול ומאזן את הגוף.
-                </p>
-                <p class="font-body-md text-[15px] text-soft-clay font-medium pt-1">
-                    לחצו על כל מתכון לצפייה בהוראות ההכנה המלאות, רשימת המצרכים והטיפים של נריה
-                </p>
-            </div>
-
-            <!-- Categories Tabs -->
-            <div class="flex flex-wrap justify-center gap-2 md:gap-3 py-2">
-                <button class="category-tab active px-5 py-2 rounded-full border border-outline-variant text-[15px] font-semibold transition-all hover:border-primary" data-category="all">
-                    הכל (7)
-                </button>
-                <button class="category-tab px-5 py-2 rounded-full border border-outline-variant bg-surface text-ink-text text-[15px] font-semibold transition-all hover:border-primary" data-category="meals">
-                    ארוחות ועיקריות
-                </button>
-                <button class="category-tab px-5 py-2 rounded-full border border-outline-variant bg-surface text-ink-text text-[15px] font-semibold transition-all hover:border-primary" data-category="breakfast">
-                    בוקר ומאפים
-                </button>
-                <button class="category-tab px-5 py-2 rounded-full border border-outline-variant bg-surface text-ink-text text-[15px] font-semibold transition-all hover:border-primary" data-category="spreads">
-                    ממרחים וניקוי
-                </button>
-                <button class="category-tab px-5 py-2 rounded-full border border-outline-variant bg-surface text-ink-text text-[15px] font-semibold transition-all hover:border-primary" data-category="guides">
-                    מדריכים וטיפים
-                </button>
-            </div>
-
-            <!-- Recipes Grid (Clickable Cards with Real Images) -->
+            <!-- Recipes Grid: image + name, click opens the full recipe (same order as the old site) -->
             <div id="recipes-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                 
-                <!-- Recipe 1: קיצ'רי -->
-                <div class="recipe-card group bg-surface rounded-2xl organic-shadow overflow-hidden flex flex-col justify-between cursor-pointer border border-transparent hover:border-primary/40 hover:-translate-y-1 transition-all" data-category="meals" data-id="1">
-                    <div class="h-48 overflow-hidden bg-cream-bg relative">
-                        <img src="Site%20Files/recipe_kitchari.jpg" alt="קיצ'רי" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                        <span class="absolute top-3 right-3 px-3 py-1 bg-surface/90 backdrop-blur text-primary rounded-full font-label-caps text-[12px] font-semibold">ארוחות ועיקריות</span>
-                    </div>
-                    <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
-                        <div>
-                            <h3 class="font-headline-md text-headline-md text-primary mb-2">קיצ'רי</h3>
-                            <p class="font-body-md text-body-md text-secondary leading-relaxed">
-                                מנה עיראקית, ארוחה הכי פשוטה להכנה: אורז ועדשים כתומות עם תבלינים ובצל מטוגן. מנה מנחמת ומחממת שילדים זוללים.
-                            </p>
-                        </div>
-                        <div class="pt-3 border-t border-outline-variant/60 flex items-center justify-between text-soft-clay font-semibold text-[14px]">
-                            <span>מתאים לקור ולחות</span>
-                            <span class="group-hover:translate-x-[-3px] transition-transform flex items-center gap-1">קרא מתכון ←</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Recipe 2: קרפ כוסמת -->
-                <div class="recipe-card group bg-surface rounded-2xl organic-shadow overflow-hidden flex flex-col justify-between cursor-pointer border border-transparent hover:border-primary/40 hover:-translate-y-1 transition-all" data-category="breakfast" data-id="2">
-                    <div class="h-48 overflow-hidden bg-cream-bg relative">
-                        <img src="Site%20Files/recipe_buckwheat.jpg" alt="קרפ כוסמת ירוקה" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                        <span class="absolute top-3 right-3 px-3 py-1 bg-surface/90 backdrop-blur text-primary rounded-full font-label-caps text-[12px] font-semibold">בוקר ומאפים</span>
-                    </div>
-                    <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
-                        <div>
-                            <h3 class="font-headline-md text-headline-md text-primary mb-2">קרפ כוסמת</h3>
-                            <p class="font-body-md text-body-md text-secondary leading-relaxed">
-                                הנוסח המלוח של קרפ צרפתי קלאסי מכוסמת ירוקה עדינה. תחליף מצוין ללחם לנמנעים מגלוטן, עשיר בחלבון וקל לעיכול.
-                            </p>
-                        </div>
-                        <div class="pt-3 border-t border-outline-variant/60 flex items-center justify-between text-soft-clay font-semibold text-[14px]">
-                            <span>ללא גלוטן | מותסס</span>
-                            <span class="group-hover:translate-x-[-3px] transition-transform flex items-center gap-1">קרא מתכון ←</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Recipe 3: דוסה -->
-                <div class="recipe-card group bg-surface rounded-2xl organic-shadow overflow-hidden flex flex-col justify-between cursor-pointer border border-transparent hover:border-primary/40 hover:-translate-y-1 transition-all" data-category="meals" data-id="3">
-                    <div class="h-48 overflow-hidden bg-cream-bg relative">
+                <div class="recipe-card group bg-surface rounded-2xl organic-shadow overflow-hidden cursor-pointer border border-transparent hover:border-primary/40 hover:-translate-y-1 transition-all" data-id="3" role="button" tabindex="0">
+                    <div class="h-48 overflow-hidden bg-cream-bg">
                         <img src="Site%20Files/recipe_dosa.jpeg" alt="דוסה" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                        <span class="absolute top-3 right-3 px-3 py-1 bg-surface/90 backdrop-blur text-primary rounded-full font-label-caps text-[12px] font-semibold">ארוחות ועיקריות</span>
                     </div>
-                    <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
-                        <div>
-                            <h3 class="font-headline-md text-headline-md text-primary mb-2">דוסה (Dosa)</h3>
-                            <p class="font-body-md text-body-md text-secondary leading-relaxed">
-                                מאכל דרום-הודי מסורתי מאורז ועדשים מושרות ומותססות. ארוחה מזינה עם חלבון מלא, פרוביוטיקה טבעית והמון אפשרויות לגיוון.
-                            </p>
-                        </div>
-                        <div class="pt-3 border-t border-outline-variant/60 flex items-center justify-between text-soft-clay font-semibold text-[14px]">
-                            <span>חלבון מלא ופרוביוטיקה</span>
-                            <span class="group-hover:translate-x-[-3px] transition-transform flex items-center gap-1">קרא מתכון ←</span>
-                        </div>
-                    </div>
+                    <h3 class="p-6 font-headline-md text-headline-md text-primary">דוסה</h3>
                 </div>
 
-                <!-- Recipe 4: דייסת דגנים (דייסת כוח) -->
-                <div class="recipe-card group bg-surface rounded-2xl organic-shadow overflow-hidden flex flex-col justify-between cursor-pointer border border-transparent hover:border-primary/40 hover:-translate-y-1 transition-all" data-category="breakfast" data-id="4">
-                    <div class="h-48 overflow-hidden bg-cream-bg relative">
-                        <img src="Site%20Files/recipe_porridge.jpeg" alt="דייסת דגנים" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                        <span class="absolute top-3 right-3 px-3 py-1 bg-surface/90 backdrop-blur text-primary rounded-full font-label-caps text-[12px] font-semibold">בוקר ומאפים</span>
+                <div class="recipe-card group bg-surface rounded-2xl organic-shadow overflow-hidden cursor-pointer border border-transparent hover:border-primary/40 hover:-translate-y-1 transition-all" data-id="1" role="button" tabindex="0">
+                    <div class="h-48 overflow-hidden bg-cream-bg">
+                        <img src="Site%20Files/recipe_kitchari.jpg" alt="קיצ'רי" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                     </div>
-                    <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
-                        <div>
-                            <h3 class="font-headline-md text-headline-md text-primary mb-2">דייסת דגנים (דוחן ואורז)</h3>
-                            <p class="font-body-md text-body-md text-secondary leading-relaxed">
-                                מנוזלים? ליחה? יציאות רכות? הדוחן מחזק ומשקם את מערכת העיכול, מייבש ליחה עודפת ומאזן את הלחות בגוף.
-                            </p>
-                        </div>
-                        <div class="pt-3 border-t border-outline-variant/60 flex items-center justify-between text-soft-clay font-semibold text-[14px]">
-                            <span>ייבוש ליחה וחיזוק טחול</span>
-                            <span class="group-hover:translate-x-[-3px] transition-transform flex items-center gap-1">קרא מתכון ←</span>
-                        </div>
-                    </div>
+                    <h3 class="p-6 font-headline-md text-headline-md text-primary">קיצ'רי</h3>
                 </div>
 
-                <!-- Recipe 5: פסטו כוסברה -->
-                <div class="recipe-card group bg-surface rounded-2xl organic-shadow overflow-hidden flex flex-col justify-between cursor-pointer border border-transparent hover:border-primary/40 hover:-translate-y-1 transition-all" data-category="spreads" data-id="5">
-                    <div class="h-48 overflow-hidden bg-cream-bg relative">
-                        <img src="Site%20Files/recipe_pesto.jpeg" alt="פסטו כוסברה" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                        <span class="absolute top-3 right-3 px-3 py-1 bg-surface/90 backdrop-blur text-primary rounded-full font-label-caps text-[12px] font-semibold">ממרחים וניקוי</span>
+                <div class="recipe-card group bg-surface rounded-2xl organic-shadow overflow-hidden cursor-pointer border border-transparent hover:border-primary/40 hover:-translate-y-1 transition-all" data-id="2" role="button" tabindex="0">
+                    <div class="h-48 overflow-hidden bg-cream-bg">
+                        <img src="Site%20Files/recipe_buckwheat.jpg" alt="קרפ כוסמת" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                     </div>
-                    <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
-                        <div>
-                            <h3 class="font-headline-md text-headline-md text-primary mb-2">פסטו כוסברה</h3>
-                            <p class="font-body-md text-body-md text-secondary leading-relaxed">
-                                5 דקות עבודה ויש צנצנת מפנקת, מזינה וטעימה לכמה ימים. כוסברה טרייה, שמן זית, זרעים קלויים ולימון ששומר על הירוק הרענן.
-                            </p>
-                        </div>
-                        <div class="pt-3 border-t border-outline-variant/60 flex items-center justify-between text-soft-clay font-semibold text-[14px]">
-                            <span>5 דקות עבודה | ניקוי כבד</span>
-                            <span class="group-hover:translate-x-[-3px] transition-transform flex items-center gap-1">קרא מתכון ←</span>
-                        </div>
-                    </div>
+                    <h3 class="p-6 font-headline-md text-headline-md text-primary">קרפ כוסמת</h3>
                 </div>
 
-                <!-- Recipe 6: חגיגת טחינה -->
-                <div class="recipe-card group bg-surface rounded-2xl organic-shadow overflow-hidden flex flex-col justify-between cursor-pointer border border-transparent hover:border-primary/40 hover:-translate-y-1 transition-all" data-category="spreads" data-id="6">
-                    <div class="h-48 overflow-hidden bg-cream-bg relative">
+                <div class="recipe-card group bg-surface rounded-2xl organic-shadow overflow-hidden cursor-pointer border border-transparent hover:border-primary/40 hover:-translate-y-1 transition-all" data-id="6" role="button" tabindex="0">
+                    <div class="h-48 overflow-hidden bg-cream-bg">
                         <img src="Site%20Files/recipe_tahini.jpeg" alt="חגיגת טחינה" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                        <span class="absolute top-3 right-3 px-3 py-1 bg-surface/90 backdrop-blur text-primary rounded-full font-label-caps text-[12px] font-semibold">ממרחים וניקוי</span>
                     </div>
-                    <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
-                        <div>
-                            <h3 class="font-headline-md text-headline-md text-primary mb-2">חגיגת טחינה</h3>
-                            <p class="font-body-md text-body-md text-secondary leading-relaxed">
-                                זרעי שומשום מחזקים דם וצ'י. 4 גרסאות צבעוניות וקלות לעיכול: טחינה ירוקה, טחינה ורודה, טחינה קיצית וטחיגורט עם טיפים מעשיים.
-                            </p>
-                        </div>
-                        <div class="pt-3 border-t border-outline-variant/60 flex items-center justify-between text-soft-clay font-semibold text-[14px]">
-                            <span>חיזוק דם וצ'י | 4 גרסאות</span>
-                            <span class="group-hover:translate-x-[-3px] transition-transform flex items-center gap-1">קרא מתכון ←</span>
-                        </div>
-                    </div>
+                    <h3 class="p-6 font-headline-md text-headline-md text-primary">חגיגת טחינה</h3>
                 </div>
 
-                <!-- Recipe 7: מדריך בישול קטניות -->
-                <div class="recipe-card group bg-surface rounded-2xl organic-shadow overflow-hidden flex flex-col justify-between cursor-pointer border border-transparent hover:border-primary/40 hover:-translate-y-1 transition-all" data-category="guides" data-id="7">
-                    <div class="h-48 overflow-hidden bg-cream-bg relative">
-                        <img src="Site%20Files/recipe_legumes.jpeg" alt="מדריך בישול קטניות" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                        <span class="absolute top-3 right-3 px-3 py-1 bg-surface/90 backdrop-blur text-primary rounded-full font-label-caps text-[12px] font-semibold">מדריכים וטיפים</span>
+                <div class="recipe-card group bg-surface rounded-2xl organic-shadow overflow-hidden cursor-pointer border border-transparent hover:border-primary/40 hover:-translate-y-1 transition-all" data-id="4" role="button" tabindex="0">
+                    <div class="h-48 overflow-hidden bg-cream-bg">
+                        <img src="Site%20Files/recipe_porridge.jpeg" alt="דייסת דגנים" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                     </div>
-                    <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
-                        <div>
-                            <h3 class="font-headline-md text-headline-md text-primary mb-2">מדריך לבישול קטניות</h3>
-                            <p class="font-body-md text-body-md text-secondary leading-relaxed">
-                                איך לבשל קטניות בלי גזים וכבדות? שיטות ההשריה, הנבטה ביתית קלה (דוגמה עם חומוס), ובישול עם אצת קומבו להקלה על העיכול.
-                            </p>
-                        </div>
-                        <div class="pt-3 border-t border-outline-variant/60 flex items-center justify-between text-soft-clay font-semibold text-[14px]">
-                            <span>הנבטה, אצת קומבו ועיכול קל</span>
-                            <span class="group-hover:translate-x-[-3px] transition-transform flex items-center gap-1">קרא מתכון ←</span>
-                        </div>
+                    <h3 class="p-6 font-headline-md text-headline-md text-primary">דייסת דגנים</h3>
+                </div>
+
+                <div class="recipe-card group bg-surface rounded-2xl organic-shadow overflow-hidden cursor-pointer border border-transparent hover:border-primary/40 hover:-translate-y-1 transition-all" data-id="5" role="button" tabindex="0">
+                    <div class="h-48 overflow-hidden bg-cream-bg">
+                        <img src="Site%20Files/recipe_pesto.jpeg" alt="פסטו כוסברה" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                     </div>
+                    <h3 class="p-6 font-headline-md text-headline-md text-primary">פסטו כוסברה</h3>
+                </div>
+
+                <div class="recipe-card group bg-surface rounded-2xl organic-shadow overflow-hidden cursor-pointer border border-transparent hover:border-primary/40 hover:-translate-y-1 transition-all" data-id="7" role="button" tabindex="0">
+                    <div class="h-48 overflow-hidden bg-cream-bg">
+                        <img src="Site%20Files/recipe_legumes.jpeg" alt="קטניות" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <h3 class="p-6 font-headline-md text-headline-md text-primary">קטניות</h3>
                 </div>
 
             </div>
@@ -272,8 +152,7 @@
     <!-- Call to action -->
     <section class="py-12 md:py-14 bg-surface border-t border-outline-variant/30">
         <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center space-y-4">
-            <h2 class="font-headline-lg text-headline-lg text-primary">מעוניינים בהתאמת תזונה אישית?</h2>
-            <p class="font-body-md text-body-md text-secondary max-w-md mx-auto">במהלך הטיפול אנו מתאימים תפריט והנחיות מדויקות למבנה הגוף ולצרכים הבריאותיים שלך</p>
+            <h2 class="font-headline-lg text-headline-lg text-primary">להתייעצות ולקביעת תור</h2>
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-2">
                 <a class="w-full sm:w-auto px-8 py-3.5 bg-primary text-white font-label-caps text-label-caps rounded-xl hover:bg-soft-clay transition-all flex items-center justify-center gap-2" href="https://wa.me/972544442103" target="_blank">
                     <span class="material-symbols-outlined text-[20px]">chat</span>שלח הודעה ב-WhatsApp
@@ -350,212 +229,237 @@
         });
     });
 
-    // Neriya's Authentic Recipe Database from Wix site
+    // Recipes, word for word from the old Wix site (one page per recipe there).
+    // Each recipe is a list of blocks shown in order:
+    //   { p: "paragraph" }, { h: "small heading" }, { ul: [...] } bullet list,
+    //   { ol: [...] } numbered steps, { link: "https://..." }
     const recipesData = {
         1: {
             title: "קיצ'רי",
-            tag: "מנה עיראקית מאזנת",
             image: "Site Files/recipe_kitchari.jpg",
-            story: "מנה עיראקית, ארוחה הכי פשוטה להכנה: אורז ועדשים כתומות עם תבלינים. המנה המקורית היא עם שום מטוגן, אצלנו בבית השום הפך לבצל מטוגן והילדים זוללים.",
-            benefits: "בראי התזונה הסינית: המנה מתאימה במצבים של קור ולחות. יציאות רכות, שלשולים, ליחה ונזלות, חולשה וחוסר אנרגיה. במצבים של איבוד נוזלים וחולשה גדולה מומלץ לבשל עם יותר מים.",
-            ingredients: [
-                "¾ כוס אורז בסמטי",
-                "¼ כוס עדשים כתומות",
-                "בצל או שום",
-                "שמן זית איכותי",
-                "מלח, כורכום, קינמון, בהרט",
-                "תוספת מומלצת להעשרת המנה: גזר חתוך דק"
-            ],
-            instructions: [
-                "להשרות אורז ועדשים 20-30 דקות (לא הספקתם? לא נורא).",
-                "לבשל את האורז והעדשים עם 2 כוסות מים, מעט כורכום ומלח.",
-                "בינתיים לטגן בצל או שום בשכבה נאה של שמן זית ולהוסיף קינמון וקצת בהרט.",
-                "להוסיף לאורז, לכבות את האש אחרי 10-15 דקות ולהשאיר כמה דקות מכוסה."
+            blocks: [
+                { p: "מנה עיראקית, ארוחה הכי פשוטה להכנה, אורז ועדשים כתומות עם תבלינים." },
+                { p: "המנה המקורית היא עם שום מטוגן, אצלנו בבית השום הפך לבצל מטוגן והילדים זוללים." },
+                { ul: ["¾ כוס אורז בסמטי", "¼ כוס עדשים כתומות", "בצל/שום", "שמן זית", "מלח, כורכום, קינמון, בהרט"] },
+                { h: "אופן ההכנה:" },
+                { ol: [
+                    "להשרות אורז ועדשים 20-30 דקות (לא הספקתם? לא נורא).",
+                    "לבשל את האורז והעדשים עם 2 כוסות מים, מעט כורכום ומלח",
+                    "בינתיים לטגן בצל או שום בשכבה נאה של שמן זית ולהוסיף קינמון וקצת בהרט."
+                ] },
+                { p: "להוסיף לאורז, לכבות את האש אחרי 10-15 דקות ולהשאיר כמה דקות מכוסה." },
+                { p: "להעשרת המנה אפשר להוסיף לתבשיל גזר חתוך דק" },
+                { h: "בראי התזונה הסינית:" },
+                { p: "המנה מתאימה במצבים של קור ולחות. יציאות רכות, שלשולים, ליחה ונזלות, חולשה וחוסר אנרגיה." },
+                { p: "במצבים של איבוד נוזלים וחולשה גדולה מומלץ לבשל עם יותר מים." },
+                { p: "בתאבון!" }
             ]
         },
         2: {
             title: "קרפ כוסמת",
-            tag: "ללא גלוטן | תחליף ללחם",
             image: "Site Files/recipe_buckwheat.jpg",
-            story: "הפתיע אותי לגלות שהנוסח המלוח של קרפ צרפתי קלאסי עשוי מכוסמת ירוקה. למה הפתיע? כי קרפ זה טעים... וכוסמת? מסתבר שגם יכולה להיות טעימה! לכוסמת הירוקה טעם עדין בהרבה מהכוסמת הקלויה. קרפ כוסמת יכול להוות תחליף מצוין ללחם: מתאים לנמנעים מגלוטן, למי שרוצה להפחית בלחם או פשוט לגוון את הארוחה.",
-            benefits: "כוסמת ירוקה עשירה בביופלבונואידים (רוטין), תומכת בכלי הדם, קלה מאוד לעיכול ובעלת אנרגיה מאוזנת שאינה מכבידה.",
-            ingredients: [
-                "3 כוסות כוסמת ירוקה (אופציה נוספת היא שילוב של כוסמת עם קינואה)",
-                "1-2 כפיות מלח (לפי הטעם)",
-                "מים להשריה ולטחינה"
-            ],
-            instructions: [
-                "לשטוף את הכוסמת היטב ולהשרות במים למשך 8 שעות.",
-                "להעביר לבלנדר עם מי ההשרייה כאשר המים מכסים כס\"מ מעל תוכן הבלילה. להוסיף מלח ולטחון עד למרקם חלק בלי גרגירים, נוזלי יותר מבלילה של פנקייק.",
-                "שלב ההתססה: בעקרון הבלילה כבר מוכנה, אבל מומלץ להשאיר אותה להתססה מחוץ למקרר, מכוסה במגבת למשך כ-8-12 שעות לפני השימוש.",
-                "לחמם מחבת טובה על אש גבוהה, לשמן קלות, לצקת מהבלילה במצקת, להפוך כאשר משחים קלות ולהגיש לצד ממרחים או ירקות."
+            blocks: [
+                { p: "הפתיע אותי לגלות שהנוסח המלוח של קרפ צרפתי קלאסי עשוי מכוסמת ירוקה. למה הפתיע? כי קרפ זה טעים… וכוסמת? מסתבר שגם יכולה להיות טעימה. לכוסמת הירוקה טעם עדין יותר מהכוסמת הקלויה." },
+                { p: "קרפ כוסמת יכול להוות תחליף מצוין ללחם. הקרפ מתאים לנמנעים מגלוטן, למי שרוצה להפחית בלחם או פשוט לגוון את הארוחה." },
+                { h: "מצרכים:" },
+                { ul: ["3 כוסות כוסמת ירוקה (אופציה נוספת היא שילוב של כוסמת עם קינואה)", "1-2 כפיות מלח (לפי הטעם)", "מים"] },
+                { h: "אופן ההכנה:" },
+                { ol: [
+                    "לשטוף את הכוסמת היטב ולהשרות במים למשך 8 שעות",
+                    "להעביר לבלנדר עם מי ההשרייה כאשר המים מכסים כס\"מ מעל תוכן הבלילה. להוסיף מלח ולטחון עד למרקם חלק בלי גרגירים, נוזלי יותר מבלילה של פנקייק.",
+                    "שלב ההתססה: בעקרון הבלילה כבר מוכנה, אבל מומלץ להשאיר אותה להתססה מחוץ למקרר, מכוסה במגבת למשך כ-8-12 שעות לפני השימוש.",
+                    "לחמם מחבת טובה על אש גבוהה (אמור לעבוד בלי שמן על מחבת לוהטת). לשפוך בלילה ועם גב המצקת אפשר לפתוח אותה בתנועה ספירלית מבפנים החוצה. להפוך לאחר הופעת בועות ולהגיש לצד ממרחים, ירקות, ביצה, תבשיל…",
+                    "את הבלילה שנשארה יש לשמור במקרר מכוסה במגבת"
+                ] },
+                { h: "רעיונות לגיוון:" },
+                { ul: [
+                    "זעתר: לפזר זעתר על הבלילה בזמן ההכנה לפני ההיפוך",
+                    "שום: לטחון את הבלילה עם שן שום",
+                    "סלק: לטחון את הבלילה עם חתיכת סלק מבושל שצובע אותה בורוד",
+                    "גהי: להמיס מעט גהי על הקרפ מיד עם הוצאתו מהמחבת"
+                ] },
+                { p: "בראי הרפואה הסינית, הכוסמת הירוקה היא בעלת איכות קרה ומייבשת ולכן תתאים לטיפוסי חום ולחות. באבחנה נכונה היא תוכל לסייע בהורדת כולסטרול, במחלות כלי דם, בטיפול בסוכרת ועוד." },
+                { p: "מאמר מעניין ומעמיק של אייל שפרינגר על הכוסמת, על ההבדל בין הכוסמת הירוקה לבין הקלויה, למי היא מתאימה ועל שימושים שונים בה:" },
+                { link: "https://www.healing-arts.co.il/buckwheat/" },
+                { p: "לבריאות!" }
             ]
         },
         3: {
-            title: "דוסה (Dosa)",
-            tag: "דרום הודו | פרוביוטיקה מותססת",
+            title: "דוסה",
             image: "Site Files/recipe_dosa.jpeg",
-            story: "דוסה היא מאכל שמגיע מדרום הודו. היא נראית כמו פנקייק, קרפ או טורטייה, ומורכבת מאורז ומקטניות מושרות ומותססות. הבלילה תמיד אצלי במקרר מוכנה להכנה, ובין רגע מתארגנת לה ארוחה מזינה וטעימה עם חלבון מלא — כמו לאכול מג'דרה בצורת פנקייק!",
-            benefits: "תהליך ההתססה מייצר פרוביוטיקה טבעית, מפרק את החומצה הפיטית ומאפשר עיכול קל וספיגת מינרלים מקסימלית.",
-            ingredients: [
-                "2 כוסות אורז לבן עגול (או אחר)",
-                "כוס אורז מלא",
-                "כוס דוחן",
-                "כוס עדשי אורד-דאל (אם אין בחנויות טבע, אפשר עדשים צהובות או כתומות)",
-                "½ כפית זרעי חילבה",
-                "2 כפיות מלח (עדיף הימלאיה או אטלנטי)",
-                "* הכמות גדולה ומספיקה לכמה ימים. מומלץ למתחילים להכין חצי כמות."
-            ],
-            instructions: [
-                "לשטוף היטב ולהשרות את הדגנים, העדשים וזרעי החילבה למשך 12 שעות.",
-                "להעביר לבלנדר עם המים המושרים (כס\"מ מים מעל תוכן הכד), להוסיף מלח ולטחון עד לקבלת מרקם חלק בלי גרגירים (חשוב מאוד!).",
-                "לכסות במגבת ולהניח מחוץ למקרר להתססה למשך 12 שעות. הבלילה מוכנה לשימוש או לשמירה במקרר.",
-                "לחמם מחבת על אש גבוהה. עם גב המצקת אפשר להגדיל את הדוסה בתנועה ספירלית מבפנים החוצה. לאחר הופעת בועות להפוך לצד שני.",
-                "רעיונות לגיוון של נריה: מנקיש (לפזר זעתר על הבלילה לפני ההיפוך), שומדוסה (לטחון עם שן שום), ורודוסה (לטחון עם חתיכת סלק מבושל), או להמיס מעט גהי על הדוסה מיד בהוצאתה מהמחבת."
+            blocks: [
+                { p: "דוסה היא מאכל שמגיע מדרום הודו. היא נראית כמו פנקייק, קרפ או טורטייה, ומורכבת מאורז ומקטניות מושרות ומותססות. הבלילה תמיד אצלי במקרר מוכנה להכנה, ובין רגע מתארגנת לה ארוחה מזינה וטעימה עם חלבון מלא, כמו לאכול מג'דרה בצורת פנקייק." },
+                { p: "למתכון גרסאות שונות והרבה מקום למשחק. הגרסה הקלאסית מורכבת מאורז לבן עגול ומעדשי אורד-דאל. יחס של 3/4 אורז ו-1/4 עדשים עובד נפלא." },
+                { p: "לכל דגן יש את הסגולות שלו ואת ההתאמות לפי התזונה ברפואה הסינית ואפשר לשחק עם הסוגים והמינון בהתאם." },
+                { h: "הגרסה שלי מורכבת מ:" },
+                { ul: [
+                    "2 כוסות אורז לבן עגול (או אחר)",
+                    "כוס אורז מלא",
+                    "כוס דוחן",
+                    "כוס עדשי אורד-דאל (אם אין בחנויות טבע אז אפשר עדשים צהובות או כתומות)",
+                    "חצי כפית זרעי חילבה",
+                    "2 כפיות מלח (עדיף הימלאיה או אטלנטי)"
+                ] },
+                { p: "הכמות גדולה ומספיקה לכמה ימים. ממליצה למתחילים להכין חצי כמות." },
+                { h: "אופן ההכנה:" },
+                { ol: [
+                    "לשטוף היטב ולהשרות את הדגנים, העדשים וזרעי החילבה למשך 12 שעות",
+                    "להעביר לבלנדר עם המים המושרים (כס\"מ מים מעל תוכן הכד), להוסיף מלח ולטחון עד לקבלת מרקם חלק בלי גרגירים (חשוב מאוד!).",
+                    "לכסות במגבת ולהניח מחוץ למקרר להתססה למשך 12 שעות. הבלילה מוכנה לשימוש או לשמירה במקרר מכוסה במגבת",
+                    "לחמם מחבת על אש גבוהה. אם המחבת טובה, אפשר ללא שמן להכין בעובי הרצוי. (דק דומה יותר לקרפ, עבה דומה יותר לפנקייק או למאכל ההודי הנקרא אוטאפאם אותו אין צורך להפוך לצד שני). עם גב המצקת אפשר להגדיל את הדוסה בתנועה ספירלית מבפנים החוצה. לאחר הופעת בועות ניתן להפוך ולהגיש לצד ממרח, מרק, חביתה, ירקות..."
+                ] },
+                { h: "רעיונות לגיוון:" },
+                { ul: [
+                    "מנקיש: לפזר זעתר על הבלילה בזמן ההכנה לפני ההיפוך",
+                    "שומדוסה: לטחון את הבלילה עם שן שום",
+                    "ורודוסה: לטחון את הבלילה עם חתיכת סלק מבושל שצובע אותה בורוד",
+                    "גהי: להמיס מעט גהי על הדוסה מיד עם הוצאתה מהמחבת"
+                ] }
             ]
         },
         4: {
-            title: "דייסת דגנים (דוחן ואורז)",
-            tag: "ייבוש ליחה | חיזוק הטחול",
+            title: "דייסת דגנים",
             image: "Site Files/recipe_porridge.jpeg",
-            story: "מנוזלים? ליחה? יציאות רכות? מערכת עיכול חלשה? מכירים ילדים כאלו? הכירו את הדוחן. הדגן מחזק ומשקם את מערכת העיכול, מסייע בייבוש ליחה עודפת ומאזן את הלחות בגוף. לא קל 'למכור' דגן עם שם כמו דוחן, אבל באמת שמדובר במזון מרפא, עשיר בסידן ובברזל.",
-            benefits: "חיזוק אלמנט האדמה בגוף, שיקום ריריות הקיבה והמעיים וייבוש נזלות כרוניות וליחה בקרב ילדים ומבוגרים.",
-            ingredients: [
-                "½ כוס דוחן",
-                "½ כוס אורז בסמטי",
-                "6 כוסות מים",
-                "נגיעת מלח",
-                "תוספות לפי הטעם: קינמון, הל טחון, תפוח/אגס/תאנה, ממרח שקדים, קוקוס"
-            ],
-            instructions: [
-                "לשטוף את הדוחן והאורז הבסמטי.",
-                "לבשל בסיר עם 6 כוסות מים ומעט מלח על אש נמוכה עד לקבלת מרקם קרמי ורך.",
-                "להוסיף קינמון והל לפי הטעם.",
-                "להגיש חם בתוספת פירות עונתיים (תפוח/אגס), כפית ממרח שקדים טבעי או פתיתי קוקוס."
+            blocks: [
+                { p: "מנוזלים? ליחה? יציאות רכות? מע' עיכול חלשה? מכירים ילדים כאלו? הכירו את הדוחן." },
+                { p: "הדגן מחזק ומשקם את מערכת העיכול, מסייע בייבוש ליחה עודפת ומאזן את הלחות בגוף." },
+                { p: "לא קל למכור דגן עם שם כמו דוחן אבל באמת שמדובר במזון מרפא, עשיר בסידן, ברזל ועוד אז שווה לנסות." },
+                { p: "את הדוחן אפשר לבשל כמו אורז לצד תבשילי ירקות, או כתחליף בורגול בסלט טאבולה, אפשר לשלב בדוסה אפשר לקלות, לטחון לקמח ולהוסיף למאפים, קציצות או חביתות, להכנת קוסקוס או פשוט להכין ממנו דייסת דגנים." },
+                { h: "מצרכים:" },
+                { ul: ["חצי כוס דוחן", "חצי כוס אורז בסמטי", "6 כוסות מים", "נגיעת מלח"] },
+                { h: "תוספות לפי הטעם:" },
+                { ul: [
+                    "קינמון",
+                    "הל טחון",
+                    "תפוח/ אגס/ תאנה / אוכמניות",
+                    "צימוקים, גוג'י ברי, אוכמניות מיובשות",
+                    "כפית ממרח שקדים",
+                    "שבבי קוקוס",
+                    "כף פודינג צ'ייה (כף זרעי צ'ייה מושרים בחצי כוס חלב צמחי). לא להפריז אם יש נטיה ליציאות רכות."
+                ] },
+                { h: "הכנה:" },
+                { ol: [
+                    "מומלץ להשרות את הדוחן והאורז כחצי שעה לפני הבישול. לא חובה.",
+                    "לשטוף ולסנן",
+                    "לקלות לרגע קל",
+                    "להוסיף מים, קצת מלח, קינמון, פירות מיובשים, תפוח/אגס",
+                    "לכסות, להרתיח ולהקטין את האש עד למרקם רך"
+                ] },
+                { p: "אני מבשלת את הדייסה בסיר לחץ ותוך 15-20 דקות היא מוכנה והכמות מספיקה ונשמרת במקרר ליומיים הקרובים." },
+                { p: "לתינוקות ולילדים יותר בררנים אפשר לטחון את הדייסה עם בלנדר מוט כך שהצימוקים והפירות מתפרקים וממתיקים את הדייסה בצורה אחידה." },
+                { p: "בהגשה להוסיף לפי הטעם ממרח שקדים, קוקוס, אוכמניות/תאנה, פודינג צ'ייה" }
             ]
         },
         5: {
             title: "פסטו כוסברה",
-            tag: "5 דקות עבודה | ניקוי כבד",
             image: "Site Files/recipe_pesto.jpeg",
-            story: "5 דקות עבודה והופ — יש לנו צנצנת מפנקת, מזינה וטעימה לכמה ימים!",
-            benefits: "הכוסברה ידועה כצמח מטהר שמסייע בפינוי מתכות כבדות ורעלים, תומכת בזרימת הצ'י של הכבד ומשפרת את התיאבון.",
-            ingredients: [
-                "צרור כוסברה שטופה ויבשה",
-                "חופן זרעי חמניות ו/או אגוזי מלך ו/או צנובר",
-                "שמן זית (כמות עד שהמרקם מספיק עסיסי לטעמכם)",
-                "נגיעת מלח",
-                "שפריץ לימון (לשמור על הירוק הרענן)",
-                "תוספות לפי הטעם: זרעי כוסברה טחונים, שן שום"
-            ],
-            instructions: [
-                "את הזרעים ו/או האגוזים לקלות לרגע קל על אש קטנה כדי לפתוח את הטעם.",
-                "לטחון את כל המרכיבים יחד בבלנדר מוט או במעבד מזון.",
-                "לטעום, לתקן טעמים, ולשמור בצנצנת במקרר."
+            blocks: [
+                { p: "5 דקות עבודה והופ יש לנו צנצנת מפנקת, מזינה וטעימה לכמה ימים:" },
+                { ul: [
+                    "צרור כוסברה שטופה ויבשה",
+                    "חופן זרעי חמניות ו/או אגוזי מלך ו/או צנובר",
+                    "שמן זית (כמות עד שהמרקם מספיק עסיסי לטעמכם.ן)",
+                    "נגיעת מלח",
+                    "שפריץ לימון (לשמור על הירוק הרענן)",
+                    "תוספות לפי הטעם: זרעי כוסברה טחונים, שן שום"
+                ] },
+                { ol: [
+                    "את הזרעים ו/או האגוזים לקלות לרגע קל על אש קטנה כדי לפתוח את הטעם.",
+                    "לטחון את כל המרכיבים יחד בבלנדר מוט או בבלנדר",
+                    "לטעום, לתקן טעמים,",
+                    "לשמור בצנצנת במקרר."
+                ] },
+                { p: "בתאבון!" }
             ]
         },
         6: {
             title: "חגיגת טחינה",
-            tag: "חיזוק דם וצ'י | 4 גרסאות",
             image: "Site Files/recipe_tahini.jpeg",
-            story: "בתזונה הסינית, זרעים נחשבים כמקור מאוד עשיר ומלא בפוטנציאל לחיים. זרעי שומשום נחשבים כמחזקי דם וצ'י ולכן יעשירו את הדם ויתנו אנרגיה.",
-            benefits: "4 טיפים של נריה: 1. ככל שהטחינה מדוללת היא קלה יותר לעיכול. 2. שילוב ירקות הופך אותה לקלילה. 3. שילוב טחינה מלאה עם לבנה מסייע להתרגל בהדרגה לטחינה מלאה. 4. מומלץ לבחור טחינה דלת נתרן.",
-            ingredients: [
-                "טחינה מלאה + טחינה לבנה",
-                "לימון ומים לפי העין והלשון",
-                "גרסאות לשדרוג: פטרוזיליה ושום (טחינה ירוקה), סלק מבושל (טחינה ורודה), מלפפון וסלרי (טחינה קיצית), יוגורט (טחיגורט)"
-            ],
-            instructions: [
-                "ממליצה לעבוד לפי העין, ההרגשה והלשון ולערבב את המרכיבים בבלנדר מוט ישר לתוך כלי מתאים עם מכסה (חוסך כלי לשטיפה!).",
-                "טחינה ירוקה: לטחון טחינה, פטרוזיליה, שן שום, לימון ומים.",
-                "טחינה ורודה: לטחון טחינה, חתיכת סלק מבושל, לימון ומים.",
-                "טחינה קיצית: לטחון טחינה עם מלפפון, סלרי, לימון ומעט מים (המלפפון מיימי).",
-                "טחיגורט: לערבב טחינה עם יוגורט ומעט מים.",
-                "שימו לב: השמן והדביקות של הטחינה הם בעלי איכות של לחות. לא כדאי להפריז בכמויות למי שסובלים מעודף לחות או כבדות בעיכול."
+            blocks: [
+                { p: "בתזונה הסינית, זרעים נחשבים כמקור מאוד עשיר, מלא בפוטנציאל לחיים." },
+                { p: "זרעי שומשום נחשבים כמחזקי דם וצ'י ולכן יעשירו את הדם ויתנו אנרגיה." },
+                { p: "טיפ 1: ככל שהטחינה יותר מדוללת היא פחות כבדה וסמיכה ולכן קלה יותר לעיכול ולספיגה." },
+                { p: "טיפ 2: שילוב של ירקות שונים יהפוך את הטחינה לממרח פחות כבד ויותר מזין" },
+                { p: "טיפ 3: אין מה להשוות בין הערכים התזונתיים של טחינה מלאה לעומת הלבנה, בכמות הסידן, הברזל ועוד. כדי להתרגל לטעם של הטחינה המלאה אני מציעה לערבב בין שני הסוגים ובהדרגה להעלות את כמות המלאה. מלכת הטחינות היא הטחינה המלאה המונבטת (גם המחיר בהתאם)." },
+                { p: "טיפ 4: עדיף לחפש טחינה עם כמות נתרן נמוכה ולהוסיף מלח לפי הטעם." },
+                { h: "ועכשיו לחגיגה:" },
+                { p: "לא מדדתי בכוסות כי זה מלכלך כוסות… כיף להכין כמות שתספיק לעוד יום- יומיים במקרר. ממליצה לעבוד לפי העין, ההרגשה והלשון ולערבב את המרכיבים בבלנדר מוט ישר לתוך כלי מתאים עם מכסה ולחסוך עוד כלי לשטיפה:" },
+                { h: "טחינה ירוקה:" },
+                { ul: ["טחינה מלאה + טחינה לבנה", "חופן פטרוזיליה (או קצוצה או לטחון הכל יחד)", "שן שום", "לימון", "מים"] },
+                { h: "טחינה ורודה:" },
+                { ul: ["טחינה מלאה + טחינה לבנה", "חתיכת סלק מבושל", "לימון", "מים"] },
+                { h: "טחינה קיצית:" },
+                { ul: ["טחינה מלאה + טחינה לבנה", "מלפפון", "סלרי", "לימון", "קצת מים (המלפפון מיימי)"] },
+                { h: "טחיגורט:" },
+                { ul: ["טחינה מלאה + טחינה לבנה", "יוגורט", "קצת מים"] },
+                { p: "השמן והדביקיות של הטחינה הם בעלי איכות של לחות. עודף לחות פוגע בספיגה ובעיכול ולכן לא כדאי להפריז בכמויות, במיוחד למי שסובלים מעודף לחות כמו אקנה, הזעות יתר, תחושת כבדות ועייפות, עיכול רך ועוד." },
+                { p: "לבריאות!" }
             ]
         },
         7: {
-            title: "מדריך לבישול קטניות",
-            tag: "עיכול קל | הנבטה ואצת קומבו",
+            title: "קטניות",
             image: "Site Files/recipe_legumes.jpeg",
-            story: "החיסרון בקטניות הוא שלא תמיד קל לעכל אותן והן עלולות לייצר גזים ונפיחות. אבל יש איך לעזור! השרייה, הנבטה, התססה (כמו בדוסה), הוספה של אצת קומבו לבישול ובישול ארוך הן דרכים יעילות לפירוק הגזים ולהקלה על העיכול. וחוץ מזה — כדאי לאכול במידה.",
-            benefits: "הנבטה ואצת קומבו מרככות את הסיבים, מעשירות את הקטנית במינרלים ומפרקות את הסוכרים הגורמים לנפיחות.",
-            ingredients: [
-                "קטניות (חומוס, עדשים, שעועית, מש)",
-                "מים מסוננים להשריה",
-                "אצת קומבו (חתיכה קטנה לבישול)",
-                "מגבת מטבח נקייה ומסננת (להנבטה)"
-            ],
-            instructions: [
-                "השרייה: עדשים מספיק להשרות שעה-שעתיים. קטניות קשות (חומוס, שעועית) עדיף להשרות 8-24 שעות.",
-                "דוגמה להנבטה של חומוס: משרים קילו חומוס 8-24 שעות. מניחים מגבת מטבח על מסננת, מעבירים את החומוס מעל, עוטפים במגבת ומכניסים למקרר מעל צלחת. מרטיבים את המגבת פעם ביום עד שהחומוס נובט (בד\"כ כ-3 ימים).",
-                "בישול: מבשלים בסיר לחץ עם חתיכת אצת קומבו עד שמוכן. האצה מרככת ומקלה על העיכול.",
-                "אחסון: כשמתקרר, מעבירים לקופסאות או שקיות במנות קטנות במקפיא.",
-                "רעיונות של נריה: ממרח חומוס ביתי טחון עם טחינה ולימון, גרגרי חומוס מתובלים כמון ושמן זית, תוספת לסלט ירקות או תבשיל בורגול וחומוס."
+            blocks: [
+                { p: "הקטניות הן זרעים שגדלים בתוך תרמילים." },
+                { p: "הן עשירות בעיקר בחלבון וגם בברזל, ויטמינים, סיבים ועוד. לפי התזונה הסינית הן מחזקות בעיקר את הכליות, שמשוייכות, בין היתר, למאגרי הגוף, לעוגן שלנו, לכח הרצון, ההשרדות והתשוקה לחיות." },
+                { p: "קטניות לדוגמא הן: עדשים (בכל הצבעים), שעועית (למיניהן), חומוס, אפונה, פול, פולי סויה, מאש..." },
+                { h: "למה לצרוך אותן?" },
+                { p: "הן טעימות ובריאות, קל לעבוד אתן ולהכין מהן מגוון מאכלים, הן זולות, הגידול שלהן (יחסית לחלבון מן החי) פחות פוגע בסביבה ויכול אפילו להעשיר את האדמה." },
+                { h: "אבל קשה לי לעכל אותן:(" },
+                { p: "החסרון בקטניות הוא שלא תמיד קל לעכל אותן והן עלולות לייצר גזים ונפיחות. אבל יש איך לעזור." },
+                { p: "השרייה, הנבטה, התססה (כמו למשל- דוסה), הוספה של אצת קומבו לבישול ובישול ארוך הן דרכים יעילות לפירוק הגזים ולהקלה על העיכול." },
+                { p: "חוץ מזה, כדאי לאכול במידה." },
+                { h: "הנבטה ובישול הקטניות:" },
+                { p: "עדשים אפשר להשרות שעה - שעתיים לפני הבישול. קטניות קשות וגדולות יותר, עדיף להשרות למשך 8-24 שעות וצעד נוסף הוא הנבטה. ההנבטה מעשירה את הערכים התזונתיים ומקלה על העיכול." },
+                { h: "דוגמא להנבטה ובישול של חומוס:" },
+                { ol: [
+                    "משרה במים לפחות קילו חומוס למשך 8-24 שעות",
+                    "מניחה מגבת מטבח על מסננת, מעבירה את החומוס למסננת (מעל המגבת), עוטפת את החומוס במגבת, שוטפת ומכניסה למקרר מעל צלחת. את המגבת אני מרטיבה פעם ביום, עד שהחומוס נובט (בד\"כ כ-3 ימים).",
+                    "מבשלת בסיר לחץ עם חתיכת אצת קומבו עד שמוכן. האצה עוזרת לריכוך הקטניות, מעשירה אותן במינרלים ומקלה על העיכול.",
+                    "כשמתקרר, מעבירה לקופסאות/שקיות במנות קטנות זמינות לשימוש."
+                ] },
+                { h: "מה להכין עם זה?" },
+                { ul: [
+                    "ממרח חומוס: לחמם בסיר ולטחון עם טחינה, לימון, מלח, שמן זית, אפשר שום וכמון",
+                    "גרגרי חומוס: לתבל בקצת שמן זית, מלח לימון וכמון",
+                    "תוספת לסלט ירקות",
+                    "תבשיל בורגול וחומוס (יש לא מעט מתכונים ברשת....)",
+                    "ועוד ועוד."
+                ] },
+                { p: "לבריאות!" }
             ]
         }
     };
 
-    // Category Filter Logic
-    const categoryTabs = document.querySelectorAll('.category-tab');
+    // Recipe pop-up
     const recipeCards = document.querySelectorAll('.recipe-card');
-
-    categoryTabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            categoryTabs.forEach(t => t.classList.remove('active'));
-            tab.classList.add('active');
-
-            const category = tab.getAttribute('data-category');
-            recipeCards.forEach(card => {
-                if (category === 'all' || card.getAttribute('data-category') === category) {
-                    card.style.display = 'flex';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        });
-    });
-
-    // Modal Details Logic
     const modal = document.getElementById('recipe-modal');
     const modalContent = document.getElementById('modal-content');
     const closeModalBtn = document.getElementById('close-modal-btn');
 
-    recipeCards.forEach(card => {
-        card.addEventListener('click', () => {
-            const id = card.getAttribute('data-id');
-            const data = recipesData[id];
-            if (!data) return;
+    function renderBlock(b) {
+        if (b.h) return `<h3 class="font-headline-md text-[20px] text-primary font-bold pt-2">${b.h}</h3>`;
+        if (b.p) return `<p class="font-body-md text-secondary leading-relaxed">${b.p}</p>`;
+        if (b.ul) return `<ul class="space-y-1.5 font-body-md text-secondary pr-5 list-disc">${b.ul.map(i => `<li>${i}</li>`).join('')}</ul>`;
+        if (b.ol) return `<ol class="space-y-2 font-body-md text-secondary pr-5 list-decimal">${b.ol.map(i => `<li class="leading-relaxed">${i}</li>`).join('')}</ol>`;
+        if (b.link) return `<p class="font-body-md"><a class="text-primary underline underline-offset-4 break-all" href="${b.link}" target="_blank" rel="noopener" dir="ltr">${b.link}</a></p>`;
+        return '';
+    }
 
-            modalContent.innerHTML = `
+    function openRecipe(card) {
+        const data = recipesData[card.getAttribute('data-id')];
+        if (!data) return;
+
+        modalContent.innerHTML = `
                 <div class="space-y-3 border-b border-outline-variant/60 pb-4">
                     <div class="h-52 w-full rounded-xl overflow-hidden bg-cream-bg">
                         <img src="${data.image}" alt="${data.title}" class="w-full h-full object-cover">
                     </div>
-                    <div class="space-y-1 pt-2">
-                        <span class="inline-block px-3 py-1 bg-sage-muted/15 text-primary rounded-full font-label-caps text-[13px] font-semibold">${data.tag}</span>
-                        <h2 class="font-headline-lg text-headline-lg text-primary">${data.title}</h2>
-                        <p class="font-body-md text-secondary leading-relaxed pt-1">${data.story}</p>
-                    </div>
-                </div>
-
-                <div class="bg-surface p-4 rounded-xl border-r-4 border-soft-clay">
-                    <h4 class="font-headline-md text-[18px] text-primary font-bold mb-1">בראי התזונה הסינית והבריאות:</h4>
-                    <p class="font-body-md text-secondary leading-relaxed">${data.benefits}</p>
+                    <h2 class="font-headline-lg text-headline-lg text-primary pt-2">${data.title}</h2>
                 </div>
 
                 <div class="space-y-3">
-                    <h3 class="font-headline-md text-headline-md text-primary font-bold">מצרכים:</h3>
-                    <ul class="space-y-1.5 font-body-md text-secondary pr-4 list-disc">
-                        ${data.ingredients.map(item => `<li>${item}</li>`).join('')}
-                    </ul>
-                </div>
-
-                <div class="space-y-3 pt-2">
-                    <h3 class="font-headline-md text-headline-md text-primary font-bold">אופן ההכנה:</h3>
-                    <ol class="space-y-2 font-body-md text-secondary pr-4 list-decimal">
-                        ${data.instructions.map(step => `<li class="leading-relaxed">${step}</li>`).join('')}
-                    </ol>
+                    ${data.blocks.map(renderBlock).join('')}
                 </div>
 
                 <div class="pt-4 border-t border-outline-variant/60 flex justify-end">
@@ -563,10 +467,16 @@
                 </div>
             `;
 
-            modal.classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
 
-            document.getElementById('modal-inner-close').addEventListener('click', closeModal);
+        document.getElementById('modal-inner-close').addEventListener('click', closeModal);
+    }
+
+    recipeCards.forEach(card => {
+        card.addEventListener('click', () => openRecipe(card));
+        card.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openRecipe(card); }
         });
     });
 
