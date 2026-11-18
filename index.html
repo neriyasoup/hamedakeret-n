@@ -126,13 +126,17 @@
     <!-- Testimonial Section (Carousel) -->
     <section class="bg-surface py-12 md:py-16 border-y border-outline-variant/30">
         <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-            <div class="max-w-3xl mx-auto text-center space-y-6">
+            <div class="max-w-4xl mx-auto text-center space-y-6">
                 <div class="flex justify-center">
                     <span class="material-symbols-outlined text-sage-muted text-[36px]">format_quote</span>
                 </div>
-                
-                <!-- Carousel Container -->
-                <div class="relative min-h-[220px] flex items-center justify-center">
+
+                <!-- Carousel: arrows on both sides of the testimonial -->
+                <div class="flex items-center gap-1.5 md:gap-6">
+                    <button id="carousel-prev" class="shrink-0 w-8 h-8 md:w-11 md:h-11 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all cursor-pointer" aria-label="המלצה קודמת">
+                        <span class="material-symbols-outlined text-[18px] md:text-[22px]">chevron_right</span>
+                    </button>
+                <div class="relative min-h-[220px] flex-1 min-w-0 flex items-center justify-center">
                     <!-- Testimonials from the original Wix site -->
                     <div class="carousel-slide active space-y-6 w-full">
                         <h2 class="font-headline-lg text-headline-lg text-primary">
@@ -312,16 +316,8 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Carousel Controls -->
-                <div id="carousel-controls" class="flex items-center justify-center gap-6 pt-4">
-                    <button id="carousel-prev" class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all cursor-pointer" aria-label="המלצה קודמת">
-                        <span class="material-symbols-outlined text-[20px]">chevron_right</span>
-                    </button>
-                    <!-- Dots are created by the script below, one per slide -->
-                    <div id="carousel-dots" class="flex flex-wrap justify-center gap-1.5 max-w-[260px]"></div>
-                    <button id="carousel-next" class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all cursor-pointer" aria-label="המלצה הבאה">
-                        <span class="material-symbols-outlined text-[20px]">chevron_left</span>
+                    <button id="carousel-next" class="shrink-0 w-8 h-8 md:w-11 md:h-11 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all cursor-pointer" aria-label="המלצה הבאה">
+                        <span class="material-symbols-outlined text-[18px] md:text-[22px]">chevron_left</span>
                     </button>
                 </div>
             </div>
@@ -470,15 +466,6 @@
 
     // Testimonials Carousel Logic
     const slides = document.querySelectorAll('.carousel-slide');
-    const dotsBox = document.getElementById('carousel-dots');
-    slides.forEach((_, i) => {
-        const d = document.createElement('button');
-        d.className = 'w-2.5 h-2.5 rounded-full transition-all dot-indicator cursor-pointer ' + (i === 0 ? 'bg-primary' : 'bg-outline-variant');
-        d.dataset.index = i;
-        d.setAttribute('aria-label', 'המלצה ' + (i + 1));
-        dotsBox.appendChild(d);
-    });
-    const dots = document.querySelectorAll('.dot-indicator');
     const prevBtn = document.getElementById('carousel-prev');
     const nextBtn = document.getElementById('carousel-next');
     let currentSlide = 0;
@@ -495,16 +482,6 @@
                 slide.classList.remove('active');
             }
         });
-
-        dots.forEach((dot, i) => {
-            if (i === currentSlide) {
-                dot.classList.remove('bg-outline-variant');
-                dot.classList.add('bg-primary');
-            } else {
-                dot.classList.remove('bg-primary');
-                dot.classList.add('bg-outline-variant');
-            }
-        });
     }
 
     if (prevBtn && nextBtn) {
@@ -512,16 +489,10 @@
         nextBtn.addEventListener('click', () => showSlide(currentSlide + 1));
     }
 
-    dots.forEach(dot => {
-        dot.addEventListener('click', (e) => {
-            const idx = parseInt(e.target.getAttribute('data-index'));
-            showSlide(idx);
-        });
-    });
-
     // Auto rotate every 7 seconds
     if (slides.length < 2) {
-        document.getElementById('carousel-controls').style.display = 'none';
+        prevBtn.style.visibility = 'hidden';
+        nextBtn.style.visibility = 'hidden';
     } else {
         setInterval(() => showSlide(currentSlide + 1), 7000);
     }
