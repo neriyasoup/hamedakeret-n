@@ -54,9 +54,14 @@
         <section class="space-y-5">
             <h2 class="text-[24px] font-semibold text-primary">פרטים אישיים</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                <label class="block space-y-1.5 sm:col-span-2">
-                    <span>שם מלא של המטופל/ת *</span>
-                    <input class="field" type="text" name="full_name" required autocomplete="name">
+                <!-- No name attribute: the script joins them into full_name on submit -->
+                <label class="block space-y-1.5">
+                    <span>שם פרטי של המטופל/ת *</span>
+                    <input class="field" type="text" id="hf-first" required autocomplete="given-name">
+                </label>
+                <label class="block space-y-1.5">
+                    <span>שם משפחה *</span>
+                    <input class="field" type="text" id="hf-last" required autocomplete="family-name">
                 </label>
                 <label class="block space-y-1.5">
                     <span>תעודת זהות</span>
@@ -240,6 +245,8 @@
         }
 
         var data = new URLSearchParams(new FormData(form));
+        // The sheet keeps one "שם מלא" column, built from the two name boxes
+        data.set('full_name', (document.getElementById('hf-first').value.trim() + ' ' + document.getElementById('hf-last').value.trim()).trim());
         data.set('is_minor', minor.checked ? 'כן' : 'לא');
 
         submitBtn.disabled = true;
