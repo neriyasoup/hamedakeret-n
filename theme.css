@@ -155,13 +155,3 @@ footer.bg-surface-container a.underline {
 footer.bg-surface-container a.underline:hover {
     text-decoration-color: #F8D7DF;
 }
-/* Floating WhatsApp button: a thin light ring so it stays visible over the dark footer */
-a.fixed[href*="wa.me"] {
-    box-shadow: 0 0 0 1px rgba(248, 215, 223, 0.7), 0 6px 18px -6px rgba(19, 38, 45, 0.45);
-}
-/* On phones, leave room under the footer so the floating WhatsApp button doesn't cover its last line */
-@media (max-width: 767px) {
-    footer.bg-surface-container {
-        padding-bottom: 6.5rem;
-    }
-}
