@@ -13,20 +13,26 @@
     <script src="theme.js"></script>
     <link rel="stylesheet" href="theme.css">
     <style>
-        /* Testimonials fade out, then the next one fades in (timing in the script below) */
-        .carousel-slide {
-            display: none;
-            opacity: 0;
-            transition: opacity 0.7s ease-in-out;
+        /* All testimonials sit in the same grid cell, so the area is always as tall as the
+           longest one and nothing around it moves. Only the text fades out, then the next fades in
+           (timing in the script below). */
+        .carousel-stack {
+            display: grid;
+            align-items: center;
         }
-        .carousel-slide.active {
-            display: block;
+        .carousel-slide {
+            grid-area: 1 / 1;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.7s ease-in-out, visibility 0s linear 0.7s;
         }
         .carousel-slide.visible {
             opacity: 1;
+            visibility: visible;
+            transition: opacity 0.7s ease-in-out, visibility 0s;
         }
         @media (prefers-reduced-motion: reduce) {
-            .carousel-slide { transition: none; }
+            .carousel-slide, .carousel-slide.visible { transition: none; }
         }
     </style>
 </head>
@@ -123,7 +129,7 @@
                     <button id="carousel-prev" class="shrink-0 w-8 h-8 md:w-11 md:h-11 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all cursor-pointer" aria-label="המלצה קודמת">
                         <span class="material-symbols-outlined text-[18px] md:text-[22px]">chevron_right</span>
                     </button>
-                <div class="relative min-h-[220px] flex-1 min-w-0 flex items-center justify-center">
+                <div class="carousel-stack relative flex-1 min-w-0">
                     <!-- Testimonials from the original Wix site -->
                     <div class="carousel-slide active space-y-6 w-full">
                         <h2 class="font-headline-lg text-headline-lg text-primary">
@@ -467,9 +473,7 @@
         slides.forEach(slide => slide.classList.remove('visible'));
         fadeTimer = setTimeout(() => {
             slides.forEach((slide, i) => slide.classList.toggle('active', i === currentSlide));
-            const next = slides[currentSlide];
-            void next.offsetWidth; // make the browser register display:block, so the fade-in runs
-            next.classList.add('visible');
+            slides[currentSlide].classList.add('visible');
         }, FADE_MS);
     }
 
