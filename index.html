@@ -13,14 +13,20 @@
     <script src="theme.js"></script>
     <link rel="stylesheet" href="theme.css">
     <style>
+        /* Testimonials fade out, then the next one fades in (timing in the script below) */
         .carousel-slide {
             display: none;
             opacity: 0;
-            transition: opacity 0.4s ease-in-out;
+            transition: opacity 0.7s ease-in-out;
         }
         .carousel-slide.active {
             display: block;
+        }
+        .carousel-slide.visible {
             opacity: 1;
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .carousel-slide { transition: none; }
         }
     </style>
 </head>
@@ -444,33 +450,44 @@
     const slides = document.querySelectorAll('.carousel-slide');
     const prevBtn = document.getElementById('carousel-prev');
     const nextBtn = document.getElementById('carousel-next');
+    const FADE_MS = 700;        // must match the CSS transition above
+    const ROTATE_MS = 8000;     // time each testimonial stays on screen
     let currentSlide = 0;
+    let fadeTimer = null;
+    let rotateTimer = null;
 
+    // Fade the current testimonial out, then swap and fade the next one in
     function showSlide(index) {
         if (index < 0) index = slides.length - 1;
         if (index >= slides.length) index = 0;
+        if (index === currentSlide) return;
         currentSlide = index;
 
-        slides.forEach((slide, i) => {
-            if (i === currentSlide) {
-                slide.classList.add('active');
-            } else {
-                slide.classList.remove('active');
-            }
-        });
+        clearTimeout(fadeTimer);
+        slides.forEach(slide => slide.classList.remove('visible'));
+        fadeTimer = setTimeout(() => {
+            slides.forEach((slide, i) => slide.classList.toggle('active', i === currentSlide));
+            const next = slides[currentSlide];
+            void next.offsetWidth; // make the browser register display:block, so the fade-in runs
+            next.classList.add('visible');
+        }, FADE_MS);
     }
 
-    if (prevBtn && nextBtn) {
-        prevBtn.addEventListener('click', () => showSlide(currentSlide - 1));
-        nextBtn.addEventListener('click', () => showSlide(currentSlide + 1));
+    function startRotation() {
+        clearInterval(rotateTimer);
+        rotateTimer = setInterval(() => showSlide(currentSlide + 1), ROTATE_MS);
     }
 
-    // Auto rotate every 7 seconds
+    if (slides.length) slides[0].classList.add('visible');
+
     if (slides.length < 2) {
         prevBtn.style.visibility = 'hidden';
         nextBtn.style.visibility = 'hidden';
     } else {
-        setInterval(() => showSlide(currentSlide + 1), 7000);
+        // Clicking an arrow restarts the 8-second count, so the next testimonial doesn't jump in early
+        prevBtn.addEventListener('click', () => { showSlide(currentSlide - 1); startRotation(); });
+        nextBtn.addEventListener('click', () => { showSlide(currentSlide + 1); startRotation(); });
+        startRotation();
     }
 </script>
 </body>
