@@ -4,24 +4,31 @@ tailwind.config = {
     theme: {
         extend: {
             colors: {
-                // Reference palette: white, charcoal grey, soft slate blue
-                // (older names like "sand" and "saffron" are kept so the pages don't need edits)
-                "primary": "#3E4C59",               // dark slate (headings, buttons)
-                "soft-clay": "#5C7486",             // slate blue (hovers, links)
-                "terracotta": "#33414D",            // darker partner for primary
-                "sand": "#7F98AC",                  // slate-blue colour bands under photos and page titles
-                "saffron": "#A7BBCB",               // light slate-blue accent
-                "saffron-deep": "#5C7486",          // slate blue dark enough for icons
-                "apricot": "#DCE5EC",               // soft blue-grey fill
-                "sage-muted": "#A7BBCB",            // legacy name, now light slate blue (accent lines)
+                // Pastel palette: mint, pale lime, peach, light coral, coral.
+                // The pastels are too light for text, so text stays dark; the pastels
+                // go into gradients (see theme.css), tints and accents.
+                "mint": "#A8E6CF",
+                "lime": "#DCEDC1",
+                "peach": "#FFD3B6",
+                "coral-light": "#FFAAA5",
+                "coral": "#FF8B94",
+                // Roles (older names like "sand" and "saffron" are kept so the pages don't need edits)
+                "primary": "#2F4F4A",               // deep green (headings, buttons)
+                "soft-clay": "#C2414D",             // deep coral (links, hovers, current page)
+                "terracotta": "#24403C",            // darker partner for primary
+                "sand": "#FFD3B6",                  // colour bands (drawn as a pastel gradient in theme.css)
+                "saffron": "#FFAAA5",               // light coral accent (lines, small dots)
+                "saffron-deep": "#D65A64",          // coral dark enough for icons
+                "apricot": "#FFD3B6",               // peach fill
+                "sage-muted": "#A8E6CF",            // legacy name, now mint
                 "cream-bg": "#FFFFFF",              // page background
-                "surface": "#F4F6F8",               // alternate section background
-                "surface-container": "#EAEFF3",     // cards, footer
-                "surface-container-high": "#DCE5EC",
-                "ink-text": "#2F3337",              // main text (charcoal)
-                "secondary": "#4B5258",             // body text
-                "on-surface-variant": "#5E656B",    // muted text
-                "outline-variant": "#DDE3E8"        // thin lines and borders
+                "surface": "#F6FBF8",               // alternate section background (mint whisper)
+                "surface-container": "#FFF5EF",     // footer (peach whisper)
+                "surface-container-high": "#FFE9DD",
+                "ink-text": "#2B3533",              // main text
+                "secondary": "#44504D",             // body text
+                "on-surface-variant": "#5A6562",    // muted text
+                "outline-variant": "#ECE4DD"        // thin lines and borders
             },
             borderRadius: {
                 // Nearly square corners, like the reference design

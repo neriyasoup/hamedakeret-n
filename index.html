@@ -79,7 +79,7 @@
     <section class="hero relative overflow-hidden h-[62vh] min-h-[420px] md:h-[78vh] md:min-h-[520px] max-h-[760px]">
         <img alt="נריה מרק - תנועה טיפולית בשיטת שין-סן-דו" class="absolute inset-0 w-full h-full object-cover object-[35%_center]" src="Site%20Files/shinsendo_exercise.jpg">
         <!-- Soft dark shade on the right side so the white text stays readable -->
-        <div class="absolute inset-0 bg-gradient-to-t from-[#2F3337]/55 via-[#2F3337]/10 to-transparent"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#1F3330]/55 via-[#1F3330]/10 to-transparent"></div>
         <div class="relative h-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex items-end pb-10 md:pb-16">
             <div class="flex items-center gap-4 md:gap-7 text-white">
                 <img src="Site%20Files/logo-white.svg" alt="" class="hero-mark w-20 h-20 md:w-36 md:h-36 shrink-0">
@@ -91,15 +91,15 @@
         </div>
     </section>
 
-    <!-- Sand colour band under the photo -->
-    <section class="bg-sand text-white">
+    <!-- Pastel gradient band under the photo -->
+    <section class="bg-sand band-gradient text-ink-text">
         <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-9 md:py-11 text-center space-y-2">
             <p class="text-[20px] md:text-[26px] font-semibold leading-snug">מטפלת מוסמכת (Dip.Ac) ברפואה סינית עתיקה משנת 2014</p>
             <p class="text-[18px] md:text-[22px] font-normal leading-snug">
                 <span class="block md:inline">מתמחה בילדים ובמבוגרים</span><span class="hidden md:inline mx-2 opacity-80">•</span><span class="block md:inline">מורה ליוגה ולתנועה טיפולית בשיטת "שין-סן-דו"</span>
             </p>
             <div class="pt-5">
-                <a class="inline-flex items-center gap-2 px-7 py-2.5 border border-white text-white text-[16px] tracking-[0.08em] hover:bg-white hover:text-ink-text transition-colors duration-300" href="https://wa.me/972544442103" target="_blank" aria-label="צרו קשר ב-WhatsApp">
+                <a class="inline-flex items-center gap-2 px-7 py-2.5 border border-ink-text text-ink-text text-[16px] tracking-[0.08em] hover:bg-primary hover:border-primary hover:text-white transition-colors duration-300" href="https://wa.me/972544442103" target="_blank" aria-label="צרו קשר ב-WhatsApp">
                     <span class="material-symbols-outlined text-[19px]">chat</span>
                     צרו קשר
                 </a>
@@ -314,11 +314,12 @@
             <div class="text-center">
                 <h2 class="font-headline-lg text-headline-lg text-primary">הקליניקות</h2>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+            <!-- Three columns split by thin lines, no frames -->
+            <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x md:divide-x-reverse divide-outline-variant">
                 <!-- Card 1: תל אביב -->
-                <div class="group bg-white p-8 border border-outline-variant hover:border-saffron transition-colors flex flex-col justify-between">
+                <div class="group py-8 md:py-4 md:px-10 flex flex-col justify-between items-center text-center">
                     <div>
-                        <div class="w-12 h-12 border border-saffron rounded-full flex items-center justify-center mb-6">
+                        <div class="w-12 h-12 mx-auto rounded-full flex items-center justify-center mb-4 bg-gradient-to-br from-mint/60 to-coral-light/60">
                             <span class="material-symbols-outlined text-saffron-deep text-[24px]">location_on</span>
                         </div>
                         <h3 class="font-headline-md text-headline-md text-primary mb-3">תל אביב</h3>
@@ -330,9 +331,9 @@
                 </div>
 
                 <!-- Card 2: נווה שלום | واحة السلام -->
-                <div class="group bg-white p-8 border border-outline-variant hover:border-saffron transition-colors flex flex-col justify-between">
+                <div class="group py-8 md:py-4 md:px-10 flex flex-col justify-between items-center text-center">
                     <div>
-                        <div class="w-12 h-12 border border-saffron rounded-full flex items-center justify-center mb-6">
+                        <div class="w-12 h-12 mx-auto rounded-full flex items-center justify-center mb-4 bg-gradient-to-br from-mint/60 to-coral-light/60">
                             <span class="material-symbols-outlined text-saffron-deep text-[24px]">location_on</span>
                         </div>
                         <h3 class="font-headline-md text-headline-md text-primary mb-3">נווה שלום | واحة السلام</h3>
@@ -343,9 +344,9 @@
                 </div>
 
                 <!-- Card 3: כפר סבא -->
-                <div class="group bg-white p-8 border border-outline-variant hover:border-saffron transition-colors flex flex-col justify-between">
+                <div class="group py-8 md:py-4 md:px-10 flex flex-col justify-between items-center text-center">
                     <div>
-                        <div class="w-12 h-12 border border-saffron rounded-full flex items-center justify-center mb-6">
+                        <div class="w-12 h-12 mx-auto rounded-full flex items-center justify-center mb-4 bg-gradient-to-br from-mint/60 to-coral-light/60">
                             <span class="material-symbols-outlined text-saffron-deep text-[24px]">location_on</span>
                         </div>
                         <h3 class="font-headline-md text-headline-md text-primary mb-3">כפר סבא</h3>

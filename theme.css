@@ -1,8 +1,9 @@
 /* Shared styles for every page. Colors match theme.js.
-   Look: white, airy, thin lines, flat surfaces, slate-blue colour bands, charcoal text. */
+   Look: white and airy, pastel gradients (mint → lime → peach → coral),
+   dark readable text, few boxes: text sits on the page, separated by space and thin lines. */
 body {
     background-color: #FFFFFF;
-    color: #2F3337;
+    color: #2B3533;
     font-family: 'Assistant', sans-serif;
     font-size: 17px;
 }
@@ -13,65 +14,88 @@ h1, h2, h3, h4, .font-headline {
     font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
 }
 
-/* Flat surfaces: a thin line instead of soft shadows */
+/* No card shadows or frames; photos stand on their own */
 .organic-shadow {
     box-shadow: none;
-    border: 1px solid #DDE3E8;
 }
-/* The old blurred colour glows don't fit the flat style */
+/* The old blurred colour glows are replaced by the gradients below */
 .blur-2xl, .blur-3xl {
     display: none;
+}
+
+/* ---------- Pastel gradients ---------- */
+/* Full palette, for the band under the home photo */
+.band-gradient {
+    background-image: linear-gradient(90deg, #A8E6CF 0%, #DCEDC1 30%, #FFD3B6 62%, #FFAAA5 86%, #FF8B94 100%);
+}
+/* Alternate sections: a barely-there wash from mint to peach */
+section.bg-surface {
+    background-image: linear-gradient(180deg, #F2FAF6 0%, #FFF8F3 100%);
+}
+/* Footer: peach to light coral wash */
+footer.bg-surface-container {
+    background-image: linear-gradient(180deg, #FFF6F0 0%, #FFEDEA 100%);
 }
 
 /* ---------- Header ---------- */
 header.fixed {
     background: #FFFFFF;
-    border-bottom: 1px solid #DDE3E8;
+    border-bottom: 1px solid #ECE4DD;
     backdrop-filter: none;
 }
+/* Thin pastel line along the bottom of the header */
+header.fixed::after {
+    content: '';
+    position: absolute;
+    left: 0; right: 0; bottom: -1px;
+    height: 2px;
+    background: linear-gradient(90deg, #A8E6CF, #DCEDC1, #FFD3B6, #FFAAA5, #FF8B94);
+    opacity: 0.8;
+}
 .nav-item {
-    color: #5E656B;
+    color: #5A6562;
     font-weight: 400;
     letter-spacing: 0.06em;
     padding-bottom: 2px;
     border-bottom: 0;
 }
 .nav-item:hover {
-    color: #2F3337;
+    color: #2B3533;
 }
 /* The current page's link */
 .nav-item.border-b-2 {
-    color: #7F98AC;
+    color: #C2414D;
 }
 .nav-item::after {
     content: '';
     display: block;
     width: 0;
     height: 1px;
-    background: #7F98AC;
+    background: linear-gradient(90deg, #A8E6CF, #FF8B94);
     transition: width .3s;
 }
 .nav-item:hover::after {
     width: 100%;
 }
-/* Phone number: thin outlined box, like "Schedule session" in the reference */
+/* Phone number: thin outlined box */
 header a[href^="tel:"] {
     background: transparent;
-    color: #2F3337;
-    border: 1px solid #5E656B;
+    color: #2B3533;
+    border: 1px solid #5A6562;
     border-radius: 0;
     font-weight: 400;
     letter-spacing: 0.08em;
     padding: 0.55rem 1.1rem;
 }
 header a[href^="tel:"]:hover {
-    background: #2F3337;
+    background: #2F4F4A;
+    border-color: #2F4F4A;
     color: #FFFFFF;
 }
 
 /* ---------- Mobile menu ---------- */
 #mobile-menu {
-    background: #FFFFFF;
+    background: linear-gradient(180deg, #FFFFFF 55%, #F2FAF6 80%, #FFF1EC 100%);
 }
 #mobile-menu a.font-headline-md {
     font-weight: 400;
@@ -79,26 +103,27 @@ header a[href^="tel:"]:hover {
 }
 #mobile-menu a[href^="tel:"] {
     background: transparent;
-    color: #2F3337;
-    border: 1px solid #5E656B;
+    color: #2B3533;
+    border: 1px solid #5A6562;
     border-radius: 0;
     font-weight: 400;
     letter-spacing: 0.08em;
 }
 
 /* ---------- Page title band (inner pages) ---------- */
-/* The first section of each inner page becomes a slate-blue colour band with white text */
+/* The first section of each inner page: a soft pastel gradient with dark title text */
 main > section:first-child:not(.hero) {
-    background: #7F98AC;
+    background-color: #FFE4D2;
+    background-image: linear-gradient(90deg, #C9F0E0 0%, #E8F3D6 35%, #FFE1CD 70%, #FFCDCA 100%);
     border: 0;
 }
 main > section:first-child:not(.hero) h1 {
-    color: #FFFFFF;
+    color: #2B3533;
     font-weight: 600;
     letter-spacing: 0.02em;
 }
 main > section:first-child:not(.hero) p {
-    color: rgba(255, 255, 255, 0.92);
+    color: #44504D;
 }
 
 /* ---------- Home hero ---------- */
@@ -111,5 +136,5 @@ main > section:first-child:not(.hero) p {
 
 /* ---------- Footer ---------- */
 footer {
-    border-top: 1px solid #DDE3E8;
+    border-top: 1px solid #ECE4DD;
 }
