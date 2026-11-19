@@ -39,6 +39,16 @@ header.fixed {
     background: #FFFFFF;
     border-bottom: 1px solid #EEDDE2;
     backdrop-filter: none;
+    transition: transform .35s ease;
+}
+/* Hidden while scrolling down (header.js); the extra px also hides the gradient line under it */
+header.fixed.header-hidden {
+    transform: translateY(calc(-100% - 4px));
+}
+@media (prefers-reduced-motion: reduce) {
+    header.fixed {
+        transition: none;
+    }
 }
 /* Thin line along the bottom of the header: blush → rose → raspberry → teal */
 header.fixed::after {
