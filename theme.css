@@ -131,6 +131,33 @@ main > section:first-child:not(.hero) p {
     text-shadow: 0 2px 18px rgba(0, 0, 0, 0.28);
 }
 
+/* ---------- Recipe cards: the name sits on a blush strip joined to the photo ---------- */
+.recipe-caption {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin: 0;
+    padding: 0.8rem 1.1rem;
+    background-image: linear-gradient(90deg, #FBE6EB 0%, #F6CDD6 100%);
+    border-top: 2px solid #E9878F;
+    transition: background-image .3s, color .3s;
+}
+/* A small arrow (pointing left, the reading direction) shows the card opens */
+.recipe-caption::after {
+    content: '\2190';
+    color: #C9505A;
+    font-size: 1.1em;
+    transition: transform .3s;
+}
+.recipe-card:hover .recipe-caption,
+.recipe-card:focus-visible .recipe-caption {
+    background-image: linear-gradient(90deg, #F6CDD6 0%, #F0B3BC 100%);
+}
+.recipe-card:hover .recipe-caption::after {
+    transform: translateX(-4px);
+}
+
 /* ---------- Footer: deep teal to near-black, light text ---------- */
 footer.bg-surface-container {
     background-color: #13262D;
