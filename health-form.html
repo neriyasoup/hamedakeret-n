@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- This page is only reached by a direct link: keep it out of search engines -->
+    <meta name="robots" content="noindex, nofollow">
+    <title>הצהרת בריאות - נריה מרק</title>
+    <link rel="icon" type="image/svg+xml" href="Site%20Files/logo.svg">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script src="theme.js"></script>
+    <link rel="stylesheet" href="theme.css">
+    <style>
+        .field { width: 100%; border-color: #D9D0C8; border-radius: 2px; font-size: 17px; }
+        .field:focus { border-color: #2F4F4A; box-shadow: 0 0 0 3px rgba(168, 230, 207, 0.6); }
+        .q-row + .q-row { border-top: 1px solid #ECE4DD; }
+        input[type="radio"], input[type="checkbox"] { color: #2F4F4A; border-color: #9AA5A2; }
+        input[type="radio"]:focus, input[type="checkbox"]:focus { box-shadow: 0 0 0 3px rgba(168, 230, 207, 0.6); }
+    </style>
+</head>
+<body class="bg-cream-bg text-ink-text">
+
+<!-- Simple header: logo only, no site navigation -->
+<header class="border-b border-outline-variant relative">
+    <div class="max-w-2xl mx-auto px-margin-mobile py-5 flex items-center gap-3">
+        <img src="Site%20Files/logo.svg" alt="" class="h-11 w-11">
+        <div class="flex flex-col">
+            <span class="text-[20px] text-primary font-bold leading-tight">נריה מרק</span>
+            <span class="text-[13px] text-secondary leading-none">רפואה סינית עתיקה</span>
+        </div>
+    </div>
+    <div class="absolute inset-x-0 -bottom-px h-0.5 band-gradient opacity-80"></div>
+</header>
+
+<main class="max-w-2xl mx-auto px-margin-mobile py-10 md:py-14">
+    <div class="space-y-3 mb-10">
+        <h1 class="text-[34px] md:text-[40px] font-semibold text-primary leading-tight">הצהרת בריאות</h1>
+        <p class="text-body-lg text-secondary leading-relaxed">
+            לפני הטיפול הראשון, אנא מלא/י את הטופס. המידע נשמר בסודיות ומשמש רק להתאמת הטיפול ולשמירה על בטיחותו
+            (<a class="text-soft-clay underline underline-offset-4" href="privacy.html" target="_blank">מדיניות פרטיות</a>).
+        </p>
+        <p class="text-[15px] text-on-surface-variant">שדות המסומנים ב-* הם שדות חובה.</p>
+    </div>
+
+    <form id="health-form" class="space-y-12" novalidate>
+        <!-- Hidden field people never fill; bots usually do -->
+        <input type="text" name="website" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <!-- ===== Personal details ===== -->
+        <section class="space-y-5">
+            <h2 class="text-[24px] font-semibold text-primary">פרטים אישיים</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <label class="block space-y-1.5 sm:col-span-2">
+                    <span>שם מלא של המטופל/ת *</span>
+                    <input class="field" type="text" name="full_name" required autocomplete="name">
+                </label>
+                <label class="block space-y-1.5">
+                    <span>תעודת זהות</span>
+                    <input class="field" type="text" name="id_number" inputmode="numeric" maxlength="9">
+                </label>
+                <label class="block space-y-1.5">
+                    <span>תאריך לידה *</span>
+                    <input class="field" type="date" name="birth_date" required>
+                </label>
+                <label class="block space-y-1.5">
+                    <span>טלפון *</span>
+                    <input class="field" type="tel" name="phone" required autocomplete="tel" dir="ltr">
+                </label>
+                <label class="block space-y-1.5">
+                    <span>מייל</span>
+                    <input class="field" type="email" name="email" autocomplete="email" dir="ltr">
+                </label>
+            </div>
+
+            <label class="flex items-center gap-3 pt-2">
+                <input type="checkbox" id="is-minor" class="w-5 h-5 rounded-sm">
+                <span>המטופל/ת מתחת לגיל 18</span>
+            </label>
+            <div id="parent-fields" class="hidden grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <label class="block space-y-1.5">
+                    <span>שם ההורה / האפוטרופוס הממלא/ת *</span>
+                    <input class="field" type="text" name="parent_name">
+                </label>
+                <label class="block space-y-1.5">
+                    <span>טלפון ההורה *</span>
+                    <input class="field" type="tel" name="parent_phone" dir="ltr">
+                </label>
+            </div>
+        </section>
+
+        <!-- ===== Reason ===== -->
+        <section class="space-y-5">
+            <h2 class="text-[24px] font-semibold text-primary">סיבת הפנייה</h2>
+            <label class="block space-y-1.5">
+                <span>מה הביא אותך לטיפול? *</span>
+                <textarea class="field" name="reason" rows="3" required></textarea>
+            </label>
+            <label class="block space-y-1.5">
+                <span>תרופות, תוספי תזונה או צמחי מרפא שנלקחים כיום</span>
+                <textarea class="field" name="medications" rows="2"></textarea>
+            </label>
+        </section>
+
+        <!-- ===== Health questions (rows are built by the script below) ===== -->
+        <section class="space-y-3">
+            <h2 class="text-[24px] font-semibold text-primary">שאלות בריאות</h2>
+            <p class="text-secondary">אם התשובה היא "כן", אפשר להוסיף פרטים בשדה שייפתח.</p>
+            <div id="questions"></div>
+            <label class="block space-y-1.5 pt-4">
+                <span>מידע רפואי נוסף שחשוב שאדע</span>
+                <textarea class="field" name="other_info" rows="3"></textarea>
+            </label>
+        </section>
+
+        <!-- ===== Declaration ===== -->
+        <section class="space-y-5">
+            <h2 class="text-[24px] font-semibold text-primary">הצהרה והסכמה</h2>
+            <div class="space-y-4">
+                <label class="flex items-start gap-3">
+                    <input type="checkbox" name="decl_truth" value="כן" required class="w-5 h-5 mt-1 rounded-sm shrink-0">
+                    <span>אני מצהיר/ה שהמידע שמסרתי נכון ומלא, ואעדכן את המטפלת על כל שינוי במצב הבריאותי. *</span>
+                </label>
+                <label class="flex items-start gap-3">
+                    <input type="checkbox" name="decl_complementary" value="כן" required class="w-5 h-5 mt-1 rounded-sm shrink-0">
+                    <span>ידוע לי שרפואה סינית היא רפואה משלימה ואינה באה במקום אבחון וטיפול רפואי, ושעליי להמשיך במעקב הרפואי הרגיל. *</span>
+                </label>
+                <label class="flex items-start gap-3">
+                    <input type="checkbox" name="decl_effects" value="כן" required class="w-5 h-5 mt-1 rounded-sm shrink-0">
+                    <span>הוסבר לי שהטיפול עשוי לכלול דיקור, כוסות רוח, מגע, צמחי מרפא והמלצות תזונה, ושייתכנו תופעות חולפות כמו כאב קל או שטף דם קטן במקום הדיקור, סימנים אדמדמים מכוסות רוח, עייפות או סחרחורת קלה. אני מסכים/ה לקבל טיפול. *</span>
+                </label>
+                <label class="flex items-start gap-3">
+                    <input type="checkbox" name="decl_privacy" value="כן" required class="w-5 h-5 mt-1 rounded-sm shrink-0">
+                    <span>קראתי את <a class="text-soft-clay underline underline-offset-4" href="privacy.html" target="_blank">מדיניות הפרטיות</a> ואני מסכים/ה לשמירת המידע לצורך הטיפול. *</span>
+                </label>
+            </div>
+            <label class="block space-y-1.5 pt-2">
+                <span>חתימה: שם מלא של החותם/ת *</span>
+                <input class="field" type="text" name="signature_name" required>
+                <span class="block text-[14px] text-on-surface-variant">הקלדת השם מהווה חתימה על ההצהרה. התאריך נרשם אוטומטית.</span>
+            </label>
+        </section>
+
+        <div class="space-y-4">
+            <p id="form-error" class="hidden text-soft-clay font-semibold" role="alert"></p>
+            <button id="submit-btn" type="submit" class="w-full sm:w-auto px-10 py-3.5 bg-primary text-white text-[18px] tracking-[0.06em] hover:bg-soft-clay transition-colors disabled:opacity-60">
+                שליחת ההצהרה
+            </button>
+        </div>
+    </form>
+
+    <!-- Shown after a successful send -->
+    <div id="form-done" class="hidden text-center space-y-4 py-10">
+        <span class="material-symbols-outlined text-[48px] text-primary">check_circle</span>
+        <h2 class="text-[28px] font-semibold text-primary">תודה, הצהרת הבריאות התקבלה</h2>
+        <p class="text-body-lg text-secondary">נתראה בטיפול. לשאלות: <a class="text-soft-clay underline underline-offset-4" href="tel:054-444-2103">054-444-2103</a></p>
+    </div>
+</main>
+
+<script>
+    // Address of the Google Apps Script web app that writes to the Google Sheet.
+    // Filled in after the one-time setup in Neriya's Google account.
+    var SCRIPT_URL = '';
+
+    // Yes/no health questions: [field name, question]. Must match QUESTIONS in Code.gs.
+    var QUESTIONS = [
+        ['q_medical_care', 'האם את/ה נמצא/ת כיום במעקב או בטיפול רפואי?'],
+        ['q_blood_thinners', 'האם את/ה נוטל/ת תרופות לדילול דם, או סובל/ת מבעיה בקרישת הדם?'],
+        ['q_pacemaker', 'האם יש לך קוצב לב או מכשיר רפואי אלקטרוני מושתל?'],
+        ['q_heart', 'מחלת לב, או לחץ דם גבוה או נמוך?'],
+        ['q_diabetes', 'סוכרת?'],
+        ['q_epilepsy', 'אפילפסיה, פרכוסים או התעלפויות?'],
+        ['q_infectious', 'מחלה זיהומית (כמו צהבת או HIV)?'],
+        ['q_cancer', 'מחלה אונקולוגית, כעת או בעבר?'],
+        ['q_pregnancy', 'הריון, או אפשרות להריון?'],
+        ['q_allergies', 'אלרגיות (לתרופות, למתכות, ללטקס, למזון או לצמחים)?'],
+        ['q_surgery', 'ניתוח, פציעה או אשפוז בשנה האחרונה?'],
+        ['q_skin', 'בעיות עור, או נטייה לחבורות או לדימומים?'],
+        ['q_needles', 'פחד ממחטים, או נטייה להתעלף?']
+    ];
+
+    var box = document.getElementById('questions');
+    QUESTIONS.forEach(function (q) {
+        var row = document.createElement('div');
+        row.className = 'q-row py-4 space-y-3';
+        row.innerHTML =
+            '<fieldset class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">' +
+                '<legend class="float-right sm:max-w-[70%]"></legend>' +
+                '<div class="flex gap-6 shrink-0">' +
+                    '<label class="flex items-center gap-2"><input type="radio" name="' + q[0] + '" value="כן" required class="w-5 h-5"> כן</label>' +
+                    '<label class="flex items-center gap-2"><input type="radio" name="' + q[0] + '" value="לא" class="w-5 h-5"> לא</label>' +
+                '</div>' +
+            '</fieldset>' +
+            '<textarea class="field hidden" name="' + q[0] + '_details" rows="2" placeholder="פרטים"></textarea>';
+        row.querySelector('legend').textContent = q[1] + ' *';
+        var details = row.querySelector('textarea');
+        row.querySelectorAll('input[type="radio"]').forEach(function (r) {
+            r.addEventListener('change', function () {
+                var yes = row.querySelector('input[value="כן"]').checked;
+                details.classList.toggle('hidden', !yes);
+                if (!yes) details.value = '';
+            });
+        });
+        box.appendChild(row);
+    });
+
+    // Parent details appear (and become required) only for patients under 18
+    var minor = document.getElementById('is-minor');
+    var parentBox = document.getElementById('parent-fields');
+    minor.addEventListener('change', function () {
+        parentBox.classList.toggle('hidden', !minor.checked);
+        parentBox.querySelectorAll('input').forEach(function (i) { i.required = minor.checked; if (!minor.checked) i.value = ''; });
+    });
+
+    var form = document.getElementById('health-form');
+    var errorBox = document.getElementById('form-error');
+    var submitBtn = document.getElementById('submit-btn');
+
+    function showError(msg) {
+        errorBox.textContent = msg;
+        errorBox.classList.remove('hidden');
+    }
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        errorBox.classList.add('hidden');
+
+        if (!form.checkValidity()) {
+            var bad = form.querySelector(':invalid');
+            showError('חסרים פרטים בטופס. אנא מלא/י את כל שדות החובה (מסומנים ב-*).');
+            if (bad) { bad.focus(); bad.scrollIntoView({ block: 'center' }); }
+            return;
+        }
+        if (!SCRIPT_URL) {
+            showError('הטופס עדיין לא מחובר. בינתיים אפשר לפנות בטלפון 054-444-2103.');
+            return;
+        }
+
+        var data = new URLSearchParams(new FormData(form));
+        data.set('is_minor', minor.checked ? 'כן' : 'לא');
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'שולח...';
+        fetch(SCRIPT_URL, { method: 'POST', body: data })
+            .then(function (res) { return res.json(); })
+            .then(function (res) {
+                if (!res.ok) throw new Error(res.error || 'error');
+                form.classList.add('hidden');
+                document.getElementById('form-done').classList.remove('hidden');
+                window.scrollTo(0, 0);
+            })
+            .catch(function () {
+                showError('השליחה לא הצליחה. אפשר לנסות שוב, או לפנות בטלפון 054-444-2103.');
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'שליחת ההצהרה';
+            });
+    });
+</script>
+</body>
+</html>
