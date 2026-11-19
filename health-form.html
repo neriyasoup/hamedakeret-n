@@ -64,8 +64,8 @@
                     <input class="field" type="text" id="hf-last" required autocomplete="family-name">
                 </label>
                 <label class="block space-y-1.5">
-                    <span>תעודת זהות</span>
-                    <input class="field" type="text" name="id_number" inputmode="numeric" maxlength="9">
+                    <span>תעודת זהות *</span>
+                    <input class="field" type="text" name="id_number" inputmode="numeric" maxlength="9" pattern="[0-9]{5,9}" required dir="ltr">
                 </label>
                 <label class="block space-y-1.5">
                     <span>תאריך לידה *</span>
@@ -76,8 +76,8 @@
                     <input class="field" type="tel" name="phone" required autocomplete="tel" dir="ltr">
                 </label>
                 <label class="block space-y-1.5">
-                    <span>מייל</span>
-                    <input class="field" type="email" name="email" autocomplete="email" dir="ltr">
+                    <span>מייל *</span>
+                    <input class="field" type="email" name="email" autocomplete="email" required dir="ltr">
                 </label>
             </div>
 
@@ -234,8 +234,16 @@
         errorBox.classList.add('hidden');
 
         if (!form.checkValidity()) {
-            var bad = form.querySelector(':invalid');
-            showError('חסרים פרטים בטופס. אנא מלא/י את כל שדות החובה (מסומנים ב-*).');
+            var bad = form.querySelector('input:invalid, textarea:invalid');
+            if (bad && !bad.validity.valueMissing) {
+                showError(bad.name === 'id_number'
+                    ? 'מספר תעודת הזהות לא תקין. אנא הקלד/י ספרות בלבד (עד 9 ספרות).'
+                    : bad.name === 'email'
+                        ? 'כתובת המייל לא תקינה. אנא בדוק/י אותה.'
+                        : 'אחד השדות לא מולא כראוי. אנא בדוק/י אותו.');
+            } else {
+                showError('חסרים פרטים בטופס. אנא מלא/י את כל שדות החובה (מסומנים ב-*).');
+            }
             if (bad) { bad.focus(); bad.scrollIntoView({ block: 'center' }); }
             return;
         }
