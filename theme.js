@@ -4,31 +4,37 @@ tailwind.config = {
     theme: {
         extend: {
             colors: {
-                // Pastel palette: mint, pale lime, peach, light coral, coral.
-                // The pastels are too light for text, so text stays dark; the pastels
-                // go into gradients (see theme.css), tints and accents.
-                "mint": "#A8E6CF",
-                "lime": "#DCEDC1",
-                "peach": "#FFD3B6",
-                "coral-light": "#FFAAA5",
-                "coral": "#FF8B94",
+                // Palette: blush pink, rose, raspberry, deep teal, near-black navy.
+                // Text stays dark; the pinks go into gentle gradients (see theme.css),
+                // the dark teal/navy into headings, buttons and the footer.
+                "blush": "#F8D7DF",
+                "rose": "#E9878F",
+                "raspberry": "#C9505A",
+                "teal": "#0F4E5B",
+                "navy": "#13262D",
+                // Older colour names still used in the pages, mapped onto this palette:
+                "mint": "#F8D7DF",                  // → blush (start of accent gradients)
+                "lime": "#F2C1CB",                  // → between blush and rose
+                "peach": "#E9878F",                 // → rose (middle of accent gradients)
+                "coral-light": "#E9878F",           // → rose
+                "coral": "#C9505A",                 // → raspberry (end of accent gradients)
                 // Roles (older names like "sand" and "saffron" are kept so the pages don't need edits)
-                "primary": "#2F4F4A",               // deep green (headings, buttons)
-                "soft-clay": "#C2414D",             // deep coral (links, hovers, current page)
-                "terracotta": "#24403C",            // darker partner for primary
-                "sand": "#FFD3B6",                  // colour bands (drawn as a pastel gradient in theme.css)
-                "saffron": "#FFAAA5",               // light coral accent (lines, small dots)
-                "saffron-deep": "#D65A64",          // coral dark enough for icons
-                "apricot": "#FFD3B6",               // peach fill
-                "sage-muted": "#A8E6CF",            // legacy name, now mint
+                "primary": "#0F4E5B",               // deep teal (headings, buttons)
+                "soft-clay": "#B9434E",             // raspberry, a touch deeper so links read well on white
+                "terracotta": "#13262D",            // darker partner for primary
+                "sand": "#F8D7DF",                  // colour bands (drawn as a gradient in theme.css)
+                "saffron": "#E9878F",               // rose accent (lines, small dots)
+                "saffron-deep": "#C9505A",          // raspberry for icons
+                "apricot": "#F8D7DF",               // blush fill
+                "sage-muted": "#E9878F",            // legacy name, now rose
                 "cream-bg": "#FFFFFF",              // page background
-                "surface": "#F6FBF8",               // alternate section background (mint whisper)
-                "surface-container": "#FFF5EF",     // footer (peach whisper)
-                "surface-container-high": "#FFE9DD",
-                "ink-text": "#2B3533",              // main text
-                "secondary": "#44504D",             // body text
-                "on-surface-variant": "#5A6562",    // muted text
-                "outline-variant": "#ECE4DD"        // thin lines and borders
+                "surface": "#FCF5F7",               // alternate section background (blush whisper)
+                "surface-container": "#F8ECEF",     // light fill
+                "surface-container-high": "#F3DDE3",
+                "ink-text": "#13262D",              // main text (near-black navy)
+                "secondary": "#3A4A50",             // body text
+                "on-surface-variant": "#55636A",    // muted text
+                "outline-variant": "#EEDDE2"        // thin lines and borders
             },
             borderRadius: {
                 // Nearly square corners, like the reference design

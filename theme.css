@@ -1,9 +1,10 @@
 /* Shared styles for every page. Colors match theme.js.
-   Look: white and airy, pastel gradients (mint → lime → peach → coral),
-   dark readable text, few boxes: text sits on the page, separated by space and thin lines. */
+   Palette: blush #F8D7DF, rose #E9878F, raspberry #C9505A, deep teal #0F4E5B, near-black navy #13262D.
+   Look: white and airy, gentle blush-to-rose gradients, dark readable text, a deep teal footer,
+   few boxes: text sits on the page, separated by space and thin lines. */
 body {
     background-color: #FFFFFF;
-    color: #2B3533;
+    color: #13262D;
     font-family: 'Assistant', sans-serif;
     font-size: 17px;
 }
@@ -23,55 +24,51 @@ h1, h2, h3, h4, .font-headline {
     display: none;
 }
 
-/* ---------- Pastel gradients ---------- */
-/* Full palette, for the band under the home photo */
+/* ---------- Gentle gradients ---------- */
+/* Band under the home photo: blush to rose, dark text stays readable on both ends */
 .band-gradient {
-    background-image: linear-gradient(90deg, #A8E6CF 0%, #DCEDC1 30%, #FFD3B6 62%, #FFAAA5 86%, #FF8B94 100%);
+    background-image: linear-gradient(90deg, #F8D7DF 0%, #F2BCC6 50%, #E9A0A8 100%);
 }
-/* Alternate sections: a barely-there wash from mint to peach */
+/* Alternate sections: a barely-there blush wash */
 section.bg-surface {
-    background-image: linear-gradient(180deg, #F2FAF6 0%, #FFF8F3 100%);
-}
-/* Footer: peach to light coral wash */
-footer.bg-surface-container {
-    background-image: linear-gradient(180deg, #FFF6F0 0%, #FFEDEA 100%);
+    background-image: linear-gradient(180deg, #FDF6F8 0%, #FAEEF1 100%);
 }
 
 /* ---------- Header ---------- */
 header.fixed {
     background: #FFFFFF;
-    border-bottom: 1px solid #ECE4DD;
+    border-bottom: 1px solid #EEDDE2;
     backdrop-filter: none;
 }
-/* Thin pastel line along the bottom of the header */
+/* Thin line along the bottom of the header: blush → rose → raspberry → teal */
 header.fixed::after {
     content: '';
     position: absolute;
     left: 0; right: 0; bottom: -1px;
     height: 2px;
-    background: linear-gradient(90deg, #A8E6CF, #DCEDC1, #FFD3B6, #FFAAA5, #FF8B94);
-    opacity: 0.8;
+    background: linear-gradient(90deg, #F8D7DF, #E9878F, #C9505A, #0F4E5B);
+    opacity: 0.75;
 }
 .nav-item {
-    color: #5A6562;
+    color: #55636A;
     font-weight: 400;
     letter-spacing: 0.06em;
     padding-bottom: 2px;
     border-bottom: 0;
 }
 .nav-item:hover {
-    color: #2B3533;
+    color: #13262D;
 }
 /* The current page's link */
 .nav-item.border-b-2 {
-    color: #C2414D;
+    color: #B9434E;
 }
 .nav-item::after {
     content: '';
     display: block;
     width: 0;
     height: 1px;
-    background: linear-gradient(90deg, #A8E6CF, #FF8B94);
+    background: linear-gradient(90deg, #E9878F, #C9505A);
     transition: width .3s;
 }
 .nav-item:hover::after {
@@ -80,22 +77,22 @@ header.fixed::after {
 /* Phone number: thin outlined box */
 header a[href^="tel:"] {
     background: transparent;
-    color: #2B3533;
-    border: 1px solid #5A6562;
+    color: #13262D;
+    border: 1px solid #55636A;
     border-radius: 0;
     font-weight: 400;
     letter-spacing: 0.08em;
     padding: 0.55rem 1.1rem;
 }
 header a[href^="tel:"]:hover {
-    background: #2F4F4A;
-    border-color: #2F4F4A;
+    background: #0F4E5B;
+    border-color: #0F4E5B;
     color: #FFFFFF;
 }
 
 /* ---------- Mobile menu ---------- */
 #mobile-menu {
-    background: linear-gradient(180deg, #FFFFFF 55%, #F2FAF6 80%, #FFF1EC 100%);
+    background: linear-gradient(180deg, #FFFFFF 55%, #FDF3F6 80%, #F9E1E7 100%);
 }
 #mobile-menu a.font-headline-md {
     font-weight: 400;
@@ -103,27 +100,27 @@ header a[href^="tel:"]:hover {
 }
 #mobile-menu a[href^="tel:"] {
     background: transparent;
-    color: #2B3533;
-    border: 1px solid #5A6562;
+    color: #13262D;
+    border: 1px solid #55636A;
     border-radius: 0;
     font-weight: 400;
     letter-spacing: 0.08em;
 }
 
 /* ---------- Page title band (inner pages) ---------- */
-/* The first section of each inner page: a soft pastel gradient with dark title text */
+/* The first section of each inner page: a soft blush-to-rose gradient with dark title text */
 main > section:first-child:not(.hero) {
-    background-color: #FFE4D2;
-    background-image: linear-gradient(90deg, #C9F0E0 0%, #E8F3D6 35%, #FFE1CD 70%, #FFCDCA 100%);
+    background-color: #F8D7DF;
+    background-image: linear-gradient(90deg, #FBE6EB 0%, #F6CDD6 55%, #F0B3BC 100%);
     border: 0;
 }
 main > section:first-child:not(.hero) h1 {
-    color: #2B3533;
+    color: #13262D;
     font-weight: 600;
     letter-spacing: 0.02em;
 }
 main > section:first-child:not(.hero) p {
-    color: #44504D;
+    color: #3A4A50;
 }
 
 /* ---------- Home hero ---------- */
@@ -134,9 +131,33 @@ main > section:first-child:not(.hero) p {
     text-shadow: 0 2px 18px rgba(0, 0, 0, 0.28);
 }
 
-/* ---------- Footer ---------- */
-footer {
-    border-top: 1px solid #ECE4DD;
+/* ---------- Footer: deep teal to near-black, light text ---------- */
+footer.bg-surface-container {
+    background-color: #13262D;
+    background-image: linear-gradient(160deg, #0F4E5B 0%, #13262D 100%);
+    color: rgba(255, 255, 255, 0.86);
+    border-top: 0;
+}
+footer.bg-surface-container h4 {
+    color: #F8D7DF;
+}
+footer.bg-surface-container li,
+footer.bg-surface-container a {
+    color: rgba(255, 255, 255, 0.86);
+}
+footer.bg-surface-container a:hover {
+    color: #FFFFFF;
+}
+/* Underlined links (privacy, photographer) */
+footer.bg-surface-container a.underline {
+    text-decoration-color: rgba(248, 215, 223, 0.55);
+}
+footer.bg-surface-container a.underline:hover {
+    text-decoration-color: #F8D7DF;
+}
+/* Floating WhatsApp button: a thin light ring so it stays visible over the dark footer */
+a.fixed[href*="wa.me"] {
+    box-shadow: 0 0 0 1px rgba(248, 215, 223, 0.7), 0 6px 18px -6px rgba(19, 38, 45, 0.45);
 }
 /* On phones, leave room under the footer so the floating WhatsApp button doesn't cover its last line */
 @media (max-width: 767px) {
