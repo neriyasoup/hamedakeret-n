@@ -138,3 +138,9 @@ main > section:first-child:not(.hero) p {
 footer {
     border-top: 1px solid #ECE4DD;
 }
+/* On phones, leave room under the footer so the floating WhatsApp button doesn't cover its last line */
+@media (max-width: 767px) {
+    footer.bg-surface-container {
+        padding-bottom: 6.5rem;
+    }
+}
